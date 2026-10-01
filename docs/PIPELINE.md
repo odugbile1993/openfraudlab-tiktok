@@ -26,5 +26,13 @@ AI-voiced, captioned vertical lesson videos (1080x1920, 60–90s) for TikTok **@
 6. Bump `state.json` → `next_lesson` = N+3, add the scheduled posts to `log`, commit and push.
 
 ## Caption format
-`Data Science from Scratch, Lesson N: <title> <one emoji> <short hook / follow CTA>`
-newline, then hashtags: `#datascience #learnontiktok` + 3–4 topical tags + `#datasciencefromscratch #OpenFraudLab`
+Professional, confident, beginner-friendly tone (a data professional teaching, not hype). Three short lines, then hashtags:
+
+```
+Lesson N · <Title> | Data Science from Scratch
+<One-sentence takeaway a beginner gets from this lesson.>
+Follow @_drhola for 3 data science lessons a day 📊 Like & share if this helped.
+
+#datascience #machinelearning #learnontiktok <2–3 topical tags> #datasciencefromscratch #OpenFraudLab
+```
+Max one emoji. No clickbait, no exaggerated claims.
