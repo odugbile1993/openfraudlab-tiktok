@@ -1,6 +1,22 @@
 {
   "next_lesson": 4,
   "log": [
-    {"lesson": 1, "status": "posted manually by Ayodele", "date": "2026-10-01"}
+    {
+      "lesson": 1,
+      "status": "posted manually by Ayodele",
+      "date": "2026-10-01"
+    },
+    {
+      "lesson": 2,
+      "status": "scheduled via Metricool",
+      "publish": "2026-10-01T13:00 Africa/Lagos",
+      "metricool_id": 385719351
+    },
+    {
+      "lesson": 3,
+      "status": "scheduled via Metricool",
+      "publish": "2026-10-01T20:00 Africa/Lagos",
+      "metricool_id": 385719496
+    }
   ]
 }

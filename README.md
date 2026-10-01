@@ -20,7 +20,7 @@ AI-voiced, captioned vertical lesson videos (1080x1920, 60–90s) for TikTok **@
    - Check each video with ffprobe (has video + audio, 50–120 s).
 4. Commit and push the specs and videos to `main`. Public URL pattern:
    `https://raw.githubusercontent.com/Odugbile1993/openfraudlab-tiktok/main/videos/<file>.mp4`
-5. Schedule each in Metricool (brand blogId `7180686`, timezone `Africa/Lagos`, provider `tiktok`) at 08:00, 13:00 and 20:00 Lagos time the same day, with `tiktokData.isAigc: true`, `autoPublish: true`, and a caption (see below).
+5. Schedule each in Metricool (brand blogId `7180686`, timezone `Africa/Lagos`, provider `tiktok`) at 08:00, 13:00 and 20:00 Lagos time the same day, with `autoPublish: true`, `tiktokData.title` (REQUIRED — e.g. "Lesson N: <short title>"), `tiktokData.isAigc: true`, `privacyOption: PUBLIC_TO_EVERYONE`, media = the raw GitHub URL, and a caption (see below). Metricool copies the video to its own storage when you schedule, so the push in step 4 must finish first.
 6. Bump `state.json` → `next_lesson` = N+3, add the scheduled posts to `log`, commit and push.
 
 ## Caption format
