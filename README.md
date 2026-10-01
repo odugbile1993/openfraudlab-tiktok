@@ -17,6 +17,13 @@
   Every lesson comes with a short video, study notes, and a small exercise to try yourself.
 </p>
 
+<table align="center"><tr><td align="center">
+<b>👉 Before you start</b><br><br>
+<b>1. <a href="https://www.tiktok.com/@_drhola">Follow @_drhola on TikTok</a></b> so you never miss a lesson<br>
+<b>2. Like</b> each video. It helps the lessons reach more learners<br>
+<b>3. Share</b> with a friend who wants to learn data science
+</td></tr></table>
+
 ---
 
 ## 📌 Contents
@@ -48,12 +55,12 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 
 | Step | What to do |
 |:-:|:--|
-| **1. Watch** | Start with the short video. The **▶ Watch** links take you to Ayodele's LinkedIn, and every lesson is also on [TikTok @_drhola](https://www.tiktok.com/@_drhola). |
+| **1. Watch** | Start with the short video on [TikTok @_drhola](https://www.tiktok.com/@_drhola). Follow, like and share as you go. |
 | **2. Read** | Open the lesson's **study notes** for the key ideas and the full transcript. |
 | **3. Practise** | Do the **"Try it yourself"** exercise at the end of each note. It takes about 5 minutes. |
 | **4. Ask** | Drop a question in the TikTok comments, or open an [Issue](../../issues) here. |
 
-> **Tip:** Follow on [TikTok @_drhola](https://www.tiktok.com/@_drhola) to get each lesson as it's released, and ⭐ **star this repo** to keep the notes one click away.
+> **Tip:** [Follow @_drhola on TikTok](https://www.tiktok.com/@_drhola) to get each lesson as it's released, and ⭐ **star this repo** to keep the notes one click away.
 
 ## 📚 Course map
 
@@ -62,9 +69,9 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 
 | # | Lesson | Watch | Study notes |
 |:-:|:--|:-:|:-:|
-| 1 | What is data science, really? | [▶ Watch](https://www.linkedin.com/in/ayodele-odugbile-939b97185) | [📝 Notes](notes/lesson-01.md) |
-| 2 | Types of data, and why they matter | [▶ Watch](https://www.linkedin.com/in/ayodele-odugbile-939b97185) | [📝 Notes](notes/lesson-02.md) |
-| 3 | Your first dataset: rows, columns & features | [▶ Watch](https://www.linkedin.com/in/ayodele-odugbile-939b97185) | [📝 Notes](notes/lesson-03.md) |
+| 1 | What is data science, really? | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-01.md) |
+| 2 | Types of data, and why they matter | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-02.md) |
+| 3 | Your first dataset: rows, columns & features | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-03.md) |
 
 #### Module 2 · Statistics & Exploring Data
 

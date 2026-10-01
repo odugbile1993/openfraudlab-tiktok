@@ -8,7 +8,7 @@ import glob, json, os, re
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 CURRICULUM = json.load(open(os.path.join(ROOT, "curriculum.json")))
-WATCH_URL = "https://www.linkedin.com/in/ayodele-odugbile-939b97185"  # where "Watch" links send learners
+WATCH_URL = "https://www.tiktok.com/@_drhola"  # where "Watch" links send learners
 SKIP_TAGS = {"NEXT LESSON", "THANKS FOR WATCHING", "NEXT"}
 
 MODULES = [
@@ -60,7 +60,8 @@ def write_note(n, spec, nums):
     if video:
         nav.append(f"[▶ Watch the video]({WATCH_URL})")
     nav.append("[📚 Course map](../README.md#-course-map)")
-    lines += [" · ".join(nav), ""]
+    lines += [" · ".join(nav), "",
+              f"> 👉 **First things first:** [follow @_drhola on TikTok]({WATCH_URL}), then **like** and **share** this lesson so more people can learn with you.", ""]
     if spec.get("summary"):
         lines += ["## In a nutshell", "", spec["summary"], ""]
     key = [s for s in spec["slides"][1:] if s.get("tag", "").upper() not in SKIP_TAGS]

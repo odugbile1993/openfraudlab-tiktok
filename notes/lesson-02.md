@@ -2,7 +2,9 @@
 
 **Data Science from Scratch** · Module 1 · Foundations · by Ayodele Odugbile, OpenFraudLab
 
-[▶ Watch the video](https://www.linkedin.com/in/ayodele-odugbile-939b97185) · [📚 Course map](../README.md#-course-map)
+[▶ Watch the video](https://www.tiktok.com/@_drhola) · [📚 Course map](../README.md#-course-map)
+
+> 👉 **First things first:** [follow @_drhola on TikTok](https://www.tiktok.com/@_drhola), then **like** and **share** this lesson so more people can learn with you.
 
 ## In a nutshell
 
