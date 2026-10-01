@@ -16,21 +16,21 @@
   {
    "tag": "BIG SPLIT",
    "text": "Structured vs unstructured",
-   "sub": "Tables with rows and columns \u00b7 text, images, audio",
+   "sub": "Tables with rows and columns · text, images, audio",
    "say": "First, the big split. Structured data fits neatly into tables, with rows and columns, like a spreadsheet. Unstructured data doesn't: think text, images, and audio."
   },
   {
    "tag": "NUMERICAL",
    "text": "Discrete: counted\nContinuous: measured",
    "size": 82,
-   "sub": "Number of loans \u00b7 a person's height",
+   "sub": "Number of loans · a person's height",
    "say": "Numerical data comes in two kinds. Discrete data is counted, like the number of loans someone has taken. Continuous data is measured, like a person's height, and can take any value in a range."
   },
   {
    "tag": "CATEGORICAL",
    "text": "Nominal: no order\nOrdinal: has an order",
    "size": 82,
-   "sub": "City, payment method \u00b7 low, medium, high risk",
+   "sub": "City, payment method · low, medium, high risk",
    "say": "Categorical data puts things into groups. Nominal categories have no natural order, like city or payment method. Ordinal categories do have an order, like low, medium, and high risk."
   },
   {
@@ -53,8 +53,10 @@
    "tag": "THANKS FOR WATCHING",
    "text": "Follow, like & share for more",
    "size": 92,
-   "sub": "Ayodele Odugbile \u00b7 OpenFraudLab",
+   "sub": "Ayodele Odugbile · OpenFraudLab",
    "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
   }
- ]
+ ],
+ "summary": "Data is structured or unstructured; numerical data is discrete or continuous; categorical data is nominal or ordinal. The type decides which analysis makes sense.",
+ "practice": "List 6 columns you might find in a customer table (for example age, city, number of purchases, membership level). Label each as discrete, continuous, nominal or ordinal."
 }

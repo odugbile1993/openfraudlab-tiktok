@@ -1,28 +1,167 @@
-# OpenFraudLab TikTok — "Data Science from Scratch"
+<p align="center">
+  <img src="assets/banner.png" alt="OpenFraudLab — Data Science from Scratch" width="100%">
+</p>
 
-AI-voiced, captioned vertical lesson videos (1080x1920, 60–90s) for TikTok **@_drhola**, by **Ayodele Odugbile · OpenFraudLab**. Videos in `videos/` are hosted here so Metricool can fetch them by public URL.
+<p align="center">
+  <a href="https://www.tiktok.com/@_drhola"><img alt="Watch on TikTok" src="https://img.shields.io/badge/Watch%20on-TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white"></a>
+  <img alt="Level: Beginner" src="https://img.shields.io/badge/Level-Beginner-00D6AA?style=for-the-badge">
+  <img alt="New lessons daily" src="https://img.shields.io/badge/New%20lessons-3%20a%20day-5B4B8A?style=for-the-badge">
+  <img alt="Free" src="https://img.shields.io/badge/Price-Free-1F2937?style=for-the-badge">
+</p>
 
-## Daily pipeline (what each scheduled run does)
+<h3 align="center">Learn data science one 90-second lesson at a time.</h3>
 
-1. Read `state.json` → `next_lesson` (N). Make lessons N, N+1, N+2 from `curriculum.json`. If the curriculum runs out, append new lessons that continue the series logically (intermediate data science / ML, with credit, fraud and finance examples where natural).
-2. Write each lesson spec as `lessons/dsNN.json` (NN = 2-digit lesson number), matching the format of `lessons/ds02.json`:
-   - `series`: "Data Science from Scratch", `lesson`: N
-   - 8–9 slides, each `{tag, text, sub?, size?, say}`; `say` is the narration (spoken, natural, ~70–90s total).
-   - Slide 1 hook: tag `LESSON N`, size 86–90, narration starts "Data Science from Scratch, lesson N: ..."
-   - Second-to-last slide: tag `NEXT LESSON`, teasing lesson N+1's title.
-   - Last slide is always exactly:
-     `{"tag": "THANKS FOR WATCHING", "text": "Follow, like & share for more", "size": 92, "sub": "Ayodele Odugbile · OpenFraudLab", "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."}`
-   - Keep `text` short (fits ~4 lines at size 78). Spell numbers out in `say` ("one point five"), write "AI" as "AI".
-   - Accuracy matters: no invented statistics, quotes, studies or tools. Hedge general claims ("often", "usually").
-3. Render: `python3 scripts/narrate.py lessons/dsNN.json videos/dsNN_<slug>.mp4 am_michael`
-   - Needs `pip install --break-system-packages kokoro-onnx soundfile` and the voice model in `tts/` (gitignored):
-     `curl -sSL -C - -o tts/kokoro-v1.0.onnx https://github.com/thewh1teagle/kokoro-onnx/releases/download/model-files-v1.0/kokoro-v1.0.onnx` (≈325 MB; repeat the same command with `-C -` if the connection resets until it loads) and `.../voices-v1.0.bin` (≈28 MB).
-   - Check each video with ffprobe (has video + audio, 50–120 s).
-4. Commit and push the specs and videos to `main`. Public URL pattern:
-   `https://raw.githubusercontent.com/Odugbile1993/openfraudlab-tiktok/main/videos/<file>.mp4`
-5. Schedule each in Metricool (brand blogId `7180686`, timezone `Africa/Lagos`, provider `tiktok`) at 08:00, 13:00 and 20:00 Lagos time the same day, with `autoPublish: true`, `tiktokData.title` (REQUIRED — e.g. "Lesson N: <short title>"), `tiktokData.isAigc: true`, `privacyOption: PUBLIC_TO_EVERYONE`, media = the raw GitHub URL, and a caption (see below). Metricool copies the video to its own storage when you schedule, so the push in step 4 must finish first.
-6. Bump `state.json` → `next_lesson` = N+3, add the scheduled posts to `log`, commit and push.
+<p align="center">
+  A free, beginner-friendly course from <b>OpenFraudLab</b>, built by <b>Ayodele Odugbile</b>.<br>
+  Every lesson comes with a short video, study notes, and a small exercise to try yourself.
+</p>
 
-## Caption format
-`Data Science from Scratch, Lesson N: <title> <one emoji> <short hook / follow CTA>`
-newline, then hashtags: `#datascience #learnontiktok` + 3–4 topical tags + `#datasciencefromscratch #OpenFraudLab`
+---
+
+## 📌 Contents
+
+- [Why this course](#-why-this-course)
+- [Who it's for](#-whos-it-for)
+- [How to use this course](#-how-to-use-this-course)
+- [Course map](#-course-map)
+- [Roadmap](#-roadmap)
+- [About the instructor](#-about-the-instructor)
+- [Questions, feedback & corrections](#-questions-feedback--corrections)
+
+## 💡 Why this course
+
+Most people give up on data science before they start, because the first step looks like a mountain of maths and code. This course goes the other way: **one idea per lesson, explained in plain language, in about a minute and a half.**
+
+The examples lean on real-world problems such as lending, payments and fraud. These are areas where data science quietly makes decisions about people every day, so you'll learn to ask good questions of data and not just run models.
+
+## 🎯 Who it's for
+
+- **Complete beginners** curious about data science, analytics or AI
+- **Students** who want the intuition behind what their textbooks teach
+- **Professionals** in finance, banking, fintech or operations who work alongside data teams
+- **Anyone** who wants to understand what's behind the AI headlines
+
+No prior coding or statistics knowledge is needed. Code arrives gradually, from Module 3 onward.
+
+## 🧭 How to use this course
+
+| Step | What to do |
+|:-:|:--|
+| **1. Watch** | Start with the short video (on TikTok or in this repo). |
+| **2. Read** | Open the lesson's **study notes** for the key ideas and the full transcript. |
+| **3. Practise** | Do the **"Try it yourself"** exercise at the end of each note. It takes about 5 minutes. |
+| **4. Ask** | Drop a question in the TikTok comments, or open an [Issue](../../issues) here. |
+
+> **Tip:** Follow on [TikTok @_drhola](https://www.tiktok.com/@_drhola) to get each lesson as it's released, and ⭐ **star this repo** to keep the notes one click away.
+
+## 📚 Course map
+
+<!-- COURSE-TABLE:START -->
+#### Module 1 · Foundations
+
+| # | Lesson | Watch | Study notes |
+|:-:|:--|:-:|:-:|
+| 1 | What is data science, really? | [▶ Video](videos/ds01_what_is_data_science.mp4) | [📝 Notes](notes/lesson-01.md) |
+| 2 | Types of data, and why they matter | [▶ Video](videos/ds02_types_of_data.mp4) | [📝 Notes](notes/lesson-02.md) |
+| 3 | Your first dataset: rows, columns & features | [▶ Video](videos/ds03_rows_columns_features.mp4) | [📝 Notes](notes/lesson-03.md) |
+
+#### Module 2 · Statistics & Exploring Data
+
+| # | Lesson | Watch | Study notes |
+|:-:|:--|:-:|:-:|
+| 4 | Mean, median & mode: describing data with one number | 🔜 Soon | — |
+| 5 | Spread: range, variance & standard deviation | 🔜 Soon | — |
+| 6 | Distributions and the normal curve | 🔜 Soon | — |
+| 7 | Outliers: errors, or the most interesting rows? | 🔜 Soon | — |
+| 8 | Missing data and what to do about it | 🔜 Soon | — |
+| 9 | Data cleaning basics | 🔜 Soon | — |
+| 10 | Exploratory data analysis (EDA) | 🔜 Soon | — |
+| 11 | Choosing the right chart | 🔜 Soon | — |
+| 12 | Correlation is not causation | 🔜 Soon | — |
+| 13 | Sampling and sampling bias | 🔜 Soon | — |
+| 14 | Probability basics for data science | 🔜 Soon | — |
+
+#### Module 3 · Tools of the Trade
+
+| # | Lesson | Watch | Study notes |
+|:-:|:--|:-:|:-:|
+| 15 | Why Python for data science | 🔜 Soon | — |
+| 16 | Meet the pandas DataFrame | 🔜 Soon | — |
+| 17 | SQL basics: SELECT, WHERE, GROUP BY | 🔜 Soon | — |
+
+#### Module 4 · Machine Learning Essentials
+
+| # | Lesson | Watch | Study notes |
+|:-:|:--|:-:|:-:|
+| 18 | Train/test split: why we hide data from the model | 🔜 Soon | — |
+| 19 | Linear regression intuition | 🔜 Soon | — |
+| 20 | Classification and logistic regression | 🔜 Soon | — |
+| 21 | Overfitting vs underfitting | 🔜 Soon | — |
+| 22 | Why accuracy can lie | 🔜 Soon | — |
+| 23 | The confusion matrix, precision & recall | 🔜 Soon | — |
+| 24 | Decision trees | 🔜 Soon | — |
+| 25 | Feature engineering | 🔜 Soon | — |
+| 26 | Cross-validation | 🔜 Soon | — |
+| 27 | Imbalanced data: the fraud detection problem | 🔜 Soon | — |
+
+#### Module 5 · Responsible Data Science & Next Steps
+
+| # | Lesson | Watch | Study notes |
+|:-:|:--|:-:|:-:|
+| 28 | Explainable AI: why did the model decide that? | 🔜 Soon | — |
+| 29 | Data ethics and bias in models | 🔜 Soon | — |
+| 30 | Your data science roadmap | 🔜 Soon | — |
+
+<sub>3 of 30 planned lessons released · new lessons are added daily.</sub>
+<!-- COURSE-TABLE:END -->
+
+## 🗺️ Roadmap
+
+| Status | Milestone |
+|:-:|:--|
+| ✅ | Daily lessons on TikTok, with study notes in this repository |
+| 🔜 | **YouTube:** full-length compilations of each module, one video per module |
+| 🔜 | **OpenFraudLab learning hub:** the complete course in one place, with progress tracking and downloadable resources |
+
+## 👤 About the instructor
+
+**Ayodele Odugbile** is a data and analytics professional with more than six years of experience across credit risk analytics, fraud detection, portfolio management and data engineering. He runs **OpenFraudLab**, an independent research initiative focused on trustworthy and explainable AI.
+
+This course is his way of making the field easier to enter, especially for learners who don't come from a computer science background.
+
+## 💬 Questions, feedback & corrections
+
+Accuracy matters here. If you spot a mistake, find something confusing, or want a topic covered:
+
+- **Open an [Issue](../../issues)** with the lesson number and what you noticed, or
+- **Comment on the lesson's TikTok video.**
+
+<details>
+<summary><b>How these lessons are made</b></summary>
+<br>
+
+Lesson scripts are drafted with AI assistance, and the videos are narrated with an AI-generated voice. That's why every TikTok post carries the AI-generated content label. The study notes in this repo are built from the same scripts, so the video, transcript and notes always match. Corrections from learners are welcome and are folded into future lessons.
+
+</details>
+
+<details>
+<summary><b>Repository structure</b></summary>
+<br>
+
+```
+├── notes/          Study notes for each lesson (start here)
+├── videos/         Lesson videos (vertical, about 60 to 90 seconds)
+├── lessons/        Lesson scripts as structured data (slides + narration)
+├── curriculum.json Full course outline
+├── scripts/        Tools that build the videos and the notes
+├── docs/           Production and automation notes
+└── assets/         Images used on this page
+```
+
+</details>
+
+---
+
+<p align="center">
+  <sub>© 2026 Ayodele Odugbile · OpenFraudLab · Built to make data science accessible to everyone.</sub>
+</p>
