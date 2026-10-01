@@ -1,2 +1,3 @@
 tts/
 __pycache__/
+.voice_cache/

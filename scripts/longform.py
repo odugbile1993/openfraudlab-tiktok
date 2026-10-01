@@ -15,8 +15,10 @@ from pygments.token import Token
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
-TTS = os.environ.get("TTS_DIR", os.path.join(ROOT, "..", "tts"))
-FONTS = os.environ.get("FONT_DIR", os.path.join(ROOT, "..", "fonts"))
+def _first(*paths):
+    return next((p for p in paths if os.path.exists(p)), paths[0])
+TTS = os.environ.get("TTS_DIR") or _first(os.path.join(ROOT, "tts", "kokoro-v1.0.onnx"), os.path.join(ROOT, "..", "tts", "kokoro-v1.0.onnx")).rsplit(os.sep, 1)[0]
+FONTS = os.environ.get("FONT_DIR", os.path.join(ROOT, "assets", "fonts"))
 DATA_URL = "https://raw.githubusercontent.com/Odugbile1993/openfraudlab-tiktok/main/data/loans.csv"
 LOCAL_DATA = os.path.join(ROOT, "data", "loans.csv")
 
@@ -25,7 +27,7 @@ MX0, MX1 = RAIL + 110, W - 110          # main content left/right
 INK, PAPER, BLUE, GREEN, AMBER = "#0E1A2B", "#FAFBFD", "#2453E6", "#0E9F6E", "#B45309"
 MUTED, LINE, NAVY2 = "#5B6B82", "#DCE3EE", "#16263D"
 EDITOR, EDITOR2 = "#0F1724", "#162033"
-CACHE = os.environ.get("VOICE_CACHE", os.path.join(ROOT, "..", "voice_cache"))
+CACHE = os.environ.get("VOICE_CACHE", os.path.join(ROOT, ".voice_cache"))
 os.makedirs(CACHE, exist_ok=True)
 SR, LEAD, TAIL = 24000, 0.45, 0.75
 
@@ -213,27 +215,41 @@ class Lesson:
                        f"+ {more} more columns: " + ", ".join(map(str, df.columns[6:])), font=F("r", 22), fill=MUTED)
         elif isinstance(val, pd.Series):
             s = val
-            f, fb = F("mono", 26), F("monom", 26)
-            rh = 52
+            avail = H - 40 - y
+            show_head = isinstance(s.name, str) or bool(s.index.name)
+            n_rows = len(s) + (1 if show_head else 0)
+            rh = max(34, min(52, avail // max(n_rows, 1)))
+            size = max(18, min(26, int(rh * 0.5)))
+            f, fb = F("mono", size), F("monom", size)
+            pad = int((rh - size * 1.2) / 2)
             idx = [str(i) for i in s.index]
-            vals = [f"{v:.3f}" if isinstance(v, float) else str(v) for v in s.values]
-            w1 = max(d.textlength(t, font=fb) for t in idx + [str(s.index.name or "")]) + 60
-            w2 = max(d.textlength(t, font=f) for t in vals + [str(s.name)]) + 60
+            # pandas' own formatting, so the screen matches what learners see
+            vals = [v.strip() for v in s.to_frame().to_string(header=False, index=False).split("\n")]
+            hn, hv = (str(s.index.name or ""), str(s.name)) if show_head else ("", "")
+            w1 = max(d.textlength(t, font=fb) for t in idx + [hn]) + 60
+            w2 = max(d.textlength(t, font=f) for t in vals + [hv]) + 60
             tw = w1 + w2
-            d.rounded_rectangle([x0, y, x0 + tw, y + rh * (len(s) + 1)], 8, fill="white", outline=LINE, width=2)
-            d.rectangle([x0 + 2, y + 2, x0 + tw - 2, y + rh], fill="#EEF2F9")
-            d.text((x0 + 22, y + 12), str(s.index.name or ""), font=fb, fill=INK)
-            d.text((x0 + w1 + 22, y + 12), str(s.name), font=fb, fill=INK)
-            for r, (a, b) in enumerate(zip(idx, vals), 1):
-                d.line([x0 + 2, y + rh * r, x0 + tw - 2, y + rh * r], fill=LINE, width=1)
-                d.text((x0 + 22, y + rh * r + 12), a, font=fb, fill=INK)
-                d.text((x0 + w1 + 22, y + rh * r + 12), b, font=f, fill=INK)
+            d.rounded_rectangle([x0, y, x0 + tw, y + rh * n_rows], 8, fill="white", outline=LINE, width=2)
+            off = 0
+            if show_head:
+                d.rectangle([x0 + 2, y + 2, x0 + tw - 2, y + rh], fill="#EEF2F9")
+                d.text((x0 + 22, y + pad), hn, font=fb, fill=INK)
+                d.text((x0 + w1 + 22, y + pad), hv, font=fb, fill=INK)
+                off = 1
+            for r, (a, b) in enumerate(zip(idx, vals)):
+                yy = y + rh * (r + off)
+                if r + off: d.line([x0 + 2, yy, x0 + tw - 2, yy], fill=LINE, width=1)
+                d.text((x0 + 22, yy + pad), a, font=fb, fill=INK)
+                d.text((x0 + w1 + 22, yy + pad), b, font=f, fill=INK)
         else:
             if hasattr(val, "item") and getattr(val, "ndim", 1) == 0:
                 val = val.item()  # numpy scalar -> plain Python number
             txt = (printed or "") + ("" if val is None else repr(val))
-            f = F("mono", 40 if len(txt) < 20 else 24)
             lines = txt.rstrip("\n").split("\n")
+            size = 40 if len(txt) < 30 else 28
+            while size > 16 and max(d.textlength(l, font=F("mono", size)) for l in lines) > (x1 - x0) - 70:
+                size -= 1
+            f = F("mono", size)
             bh = int(f.size * 1.5) * len(lines) + 44
             tw = max(d.textlength(l, font=f) for l in lines) + 60
             d.rounded_rectangle([x0, y, x0 + max(tw, 220), y + bh], 8, fill="white", outline=LINE, width=2)
@@ -246,7 +262,7 @@ class Lesson:
         d.text((MX0 + 60, 210), "YOUR TURN", font=F("s", 24), fill=AMBER)
         y = text_block(d, (MX0 + 60, 260), seg["task"], F("s", 46), INK, MX1 - MX0 - 120, 1.22)
         y = text_block(d, (MX0 + 60, y + 24), seg["hint"], F("mono", 28), MUTED, MX1 - MX0 - 120)
-        d.text((MX0 + 60, 680), "Pause the video  ·  Open the code lab below  ·  Check your answer", font=F("m", 26), fill=BLUE)
+        d.text((MX0 + 60, 680), "Pause the video  ·  Open the Practice tab  ·  Check your answers", font=F("m", 26), fill=BLUE)
 
     def outro(self, d, seg):
         d.text((MX0, 150), "NEXT UP", font=F("s", 24), fill=BLUE)

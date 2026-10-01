@@ -20,11 +20,14 @@ def build(spec):
         for s in codes:
             cells.append(md(s["say"]))
             cells.append(code(s["code"]))
-    p = spec["practice"]
-    cells.append(md(f"## Practice: {p['title']}\n\n{p['prompt']}\n\n*Hint: {p['hint']}*"))
-    cells.append(code(f'DATA_URL = "{DATA_URL}"\n\n' + p["starter"]))
-    cells.append(md("### Check your answer\n\nRun the cell below. If nothing goes wrong, you'll see a success message."))
-    cells.append(code(p["check"] + 'print("Correct! Well done.")'))
+    exs = spec.get("exercises") or [spec["practice"]]
+    cells.append(md("## Practice\n\nTry each exercise, then run the check cell under it. "
+                    "`DATA_URL` is the address of the practice dataset."))
+    cells.append(code(f'DATA_URL = "{DATA_URL}"'))
+    for i, p in enumerate(exs, 1):
+        cells.append(md(f"### Exercise {i}: {p['title']}\n\n{p['prompt']}\n\n*Hint: {p['hint']}*"))
+        cells.append(code(p["starter"]))
+        cells.append(code("# Check your answer\n" + p["check"] + 'print("Correct! Well done.")'))
     cells.append(md("---\nIf this helped, follow **@_drhola** on TikTok, like and share the lesson, and comment with your questions. "
                     "Then take the lesson quiz on [openfraudlabs.com/academy](https://openfraudlabs.com/academy/)."))
     return {"cells": cells, "metadata": {"kernelspec": {"display_name": "Python 3", "language": "python", "name": "python3"},
