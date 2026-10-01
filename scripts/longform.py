@@ -58,7 +58,7 @@ def text_block(draw, xy, text, font, fill, width, gap=1.28):
 # ---------- code execution (real) ----------
 NS = {}
 def run_code(src):
-    src = src.replace(DATA_URL, LOCAL_DATA)
+    src = src.replace(DATA_URL, LOCAL_DATA).replace(DATA_URL.rsplit("/", 1)[0] + "/", os.path.dirname(LOCAL_DATA) + "/")
     tree = ast.parse(src)
     last = None
     if tree.body and isinstance(tree.body[-1], ast.Expr):

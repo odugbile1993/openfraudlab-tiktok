@@ -7,7 +7,7 @@ URL = "https://raw.githubusercontent.com/Odugbile1993/openfraudlab-tiktok/main/d
 
 def run(src, ns):
     with contextlib.redirect_stdout(io.StringIO()):
-        exec(src.replace(URL, LOCAL), ns)
+        exec(src.replace(URL, LOCAL).replace(URL.rsplit("/", 1)[0] + "/", os.path.dirname(LOCAL) + "/"), ns)
 
 def check(spec):
     ok = True
