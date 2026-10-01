@@ -1,0 +1,501 @@
+loan_id,application_date,region,age,employment,monthly_income_ngn,loan_amount_ngn,tenure_months,previous_loans,risk_band,repaid
+L0001,2025-01-01,Abuja,60,Salaried,265000,790000,24,1,low,yes
+L0002,2025-01-02,Kano,56,Business owner,343000,535000,12,1,low,yes
+L0003,2025-01-02,Oyo,51,Salaried,215000,575000,18,4,low,yes
+L0004,2025-01-02,Rivers,32,Self-employed,126000,180000,3,2,high,no
+L0005,2025-01-02,Lagos,34,Self-employed,178000,300000,6,2,high,yes
+L0006,2025-01-03,Abuja,46,Salaried,460000,1750000,18,0,medium,yes
+L0007,2025-01-04,Lagos,41,Salaried,211000,225000,6,0,high,yes
+L0008,2025-01-07,Enugu,27,Salaried,100000,285000,12,1,high,no
+L0009,2025-01-07,Oyo,23,Salaried,662000,1040000,12,2,high,no
+L0010,2025-01-09,Enugu,40,Salaried,199000,355000,6,1,high,no
+L0011,2025-01-10,Oyo,45,Salaried,200000,500000,6,1,medium,yes
+L0012,2025-01-10,Abuja,46,Business owner,191000,575000,24,1,medium,yes
+L0013,2025-01-11,Oyo,50,Self-employed,162000,105000,3,2,medium,yes
+L0014,2025-01-13,Lagos,21,Salaried,225000,695000,18,0,high,yes
+L0015,2025-01-13,Oyo,44,Business owner,552000,770000,6,0,medium,yes
+L0016,2025-01-13,Abuja,53,Salaried,433000,1175000,18,1,medium,yes
+L0017,2025-01-14,Oyo,32,Self-employed,474000,1040000,6,0,high,yes
+L0018,2025-01-14,Lagos,47,Self-employed,162000,200000,6,0,high,no
+L0019,2025-01-14,Kano,51,Business owner,359000,575000,6,2,low,yes
+L0020,2025-01-14,Abuja,60,Salaried,1005000,2125000,12,1,medium,yes
+L0021,2025-01-16,Lagos,41,Business owner,475000,430000,6,3,low,yes
+L0022,2025-01-16,Abuja,48,Salaried,157000,275000,6,2,medium,yes
+L0023,2025-01-18,Lagos,43,Self-employed,166000,240000,3,2,high,no
+L0024,2025-01-18,Lagos,55,Salaried,244000,320000,18,1,low,yes
+L0025,2025-01-19,Lagos,25,Self-employed,285000,400000,6,1,high,no
+L0026,2025-01-19,Abuja,57,Business owner,110000,165000,6,1,medium,yes
+L0027,2025-01-21,Kano,33,Self-employed,153000,290000,6,1,high,yes
+L0028,2025-01-22,Kano,53,Self-employed,110000,275000,6,2,high,yes
+L0029,2025-01-23,Kano,56,Salaried,117000,210000,6,2,medium,yes
+L0030,2025-01-24,Kano,57,Business owner,315000,725000,12,2,medium,yes
+L0031,2025-01-26,Kano,30,Business owner,182000,265000,6,2,medium,yes
+L0032,2025-01-26,Lagos,48,Self-employed,142000,435000,12,2,medium,no
+L0033,2025-01-27,Rivers,47,Salaried,221000,535000,18,1,medium,yes
+L0034,2025-01-31,Lagos,33,Salaried,224000,345000,6,3,medium,yes
+L0035,2025-02-01,Oyo,42,Business owner,237000,295000,6,2,low,yes
+L0036,2025-02-01,Lagos,30,Business owner,240000,245000,12,1,high,yes
+L0037,2025-02-01,Kano,32,Business owner,581000,845000,18,6,low,yes
+L0038,2025-02-02,Rivers,50,Self-employed,276000,650000,18,1,medium,yes
+L0039,2025-02-02,Abuja,34,Business owner,359000,470000,12,0,high,yes
+L0040,2025-02-03,Abuja,36,Salaried,293000,365000,3,1,high,yes
+L0041,2025-02-05,Lagos,54,Salaried,278000,615000,6,0,high,yes
+L0042,2025-02-05,Lagos,35,Salaried,337000,355000,3,2,high,no
+L0043,2025-02-05,Abuja,46,Salaried,247000,440000,6,0,low,yes
+L0044,2025-02-05,Abuja,32,Self-employed,390000,1305000,24,0,high,yes
+L0045,2025-02-05,Enugu,24,Salaried,146000,365000,24,1,low,yes
+L0046,2025-02-06,Oyo,58,Self-employed,288000,255000,3,1,high,yes
+L0047,2025-02-10,Enugu,23,Self-employed,110000,255000,12,3,low,yes
+L0048,2025-02-10,Lagos,23,Self-employed,201000,575000,12,2,high,yes
+L0049,2025-02-10,Oyo,52,Self-employed,104000,220000,12,2,low,yes
+L0050,2025-02-11,Oyo,38,Salaried,286000,175000,3,3,low,yes
+L0051,2025-02-12,Oyo,36,Salaried,217000,415000,6,1,low,yes
+L0052,2025-02-15,Kano,50,Self-employed,195000,385000,12,1,high,yes
+L0053,2025-02-16,Lagos,27,Self-employed,225000,400000,3,3,high,yes
+L0054,2025-02-17,Abuja,36,Self-employed,100000,250000,18,2,high,no
+L0055,2025-02-18,Abuja,46,Self-employed,161000,125000,3,0,high,yes
+L0056,2025-02-18,Oyo,26,Self-employed,169000,235000,3,1,high,no
+L0057,2025-02-19,Rivers,37,Business owner,237000,720000,12,2,medium,yes
+L0058,2025-02-19,Lagos,50,Self-employed,294000,380000,6,2,medium,yes
+L0059,2025-02-19,Abuja,39,Salaried,219000,350000,12,3,low,yes
+L0060,2025-02-20,Rivers,55,Self-employed,147000,405000,12,4,low,yes
+L0061,2025-02-22,Lagos,25,Salaried,231000,470000,12,1,medium,yes
+L0062,2025-02-24,Lagos,36,Self-employed,209000,175000,12,5,low,no
+L0063,2025-02-25,Oyo,35,Self-employed,108000,125000,6,1,medium,yes
+L0064,2025-02-25,Abuja,46,Self-employed,240000,220000,6,3,medium,yes
+L0065,2025-02-25,Lagos,37,Business owner,305000,355000,3,1,high,no
+L0066,2025-03-01,Lagos,47,Salaried,149000,225000,24,2,medium,yes
+L0067,2025-03-03,Abuja,29,Salaried,351000,795000,12,1,medium,yes
+L0068,2025-03-03,Enugu,31,Self-employed,158000,300000,6,5,medium,yes
+L0069,2025-03-04,Kano,53,Salaried,141000,200000,24,2,low,no
+L0070,2025-03-04,Oyo,48,Self-employed,82000,55000,6,2,low,yes
+L0071,2025-03-06,Rivers,41,Salaried,297000,1040000,24,2,low,yes
+L0072,2025-03-06,Abuja,26,Salaried,297000,585000,12,1,low,yes
+L0073,2025-03-07,Lagos,60,Salaried,390000,515000,6,0,medium,yes
+L0074,2025-03-07,Lagos,26,Salaried,125000,120000,3,2,low,yes
+L0075,2025-03-07,Kano,56,Salaried,188000,595000,12,2,high,yes
+L0076,2025-03-09,Kano,45,Business owner,270000,465000,18,1,low,yes
+L0077,2025-03-10,Abuja,53,Business owner,268000,690000,12,1,medium,yes
+L0078,2025-03-11,Abuja,31,Business owner,141000,465000,18,0,high,yes
+L0079,2025-03-13,Lagos,39,Self-employed,262000,510000,12,2,medium,no
+L0080,2025-03-13,Lagos,32,Salaried,383000,965000,12,0,medium,yes
+L0081,2025-03-13,Oyo,26,Self-employed,193000,210000,3,2,medium,yes
+L0082,2025-03-13,Lagos,55,Salaried,128000,260000,6,1,high,yes
+L0083,2025-03-13,Abuja,34,Salaried,282000,700000,18,2,low,yes
+L0084,2025-03-13,Oyo,44,Self-employed,119000,85000,6,1,medium,yes
+L0085,2025-03-14,Lagos,56,Self-employed,266000,1035000,18,3,low,yes
+L0086,2025-03-14,Lagos,24,Salaried,518000,460000,6,3,medium,yes
+L0087,2025-03-15,Lagos,59,Salaried,268000,215000,3,1,high,yes
+L0088,2025-03-16,Abuja,54,Salaried,302000,705000,6,0,high,yes
+L0089,2025-03-18,Abuja,49,Business owner,200000,290000,6,2,high,yes
+L0090,2025-03-21,Rivers,48,Salaried,236000,345000,12,1,medium,yes
+L0091,2025-03-23,Abuja,46,Business owner,367000,775000,12,1,low,yes
+L0092,2025-03-25,Kano,60,Self-employed,125000,275000,12,2,medium,yes
+L0093,2025-03-25,Lagos,54,Salaried,499000,405000,12,2,low,yes
+L0094,2025-03-26,Kano,60,Business owner,214000,315000,24,0,low,yes
+L0095,2025-03-26,Oyo,25,Self-employed,150000,230000,12,2,medium,yes
+L0096,2025-03-27,Lagos,44,Salaried,327000,480000,12,1,medium,yes
+L0097,2025-03-29,Enugu,57,Salaried,192000,610000,18,0,medium,no
+L0098,2025-03-29,Rivers,58,Self-employed,112000,200000,6,2,medium,yes
+L0099,2025-03-30,Kano,40,Salaried,250000,470000,6,2,medium,no
+L0100,2025-04-01,Abuja,29,Business owner,220000,240000,3,1,high,yes
+L0101,2025-04-02,Enugu,26,Self-employed,97000,240000,6,3,high,no
+L0102,2025-04-02,Lagos,44,Salaried,224000,270000,3,3,medium,yes
+L0103,2025-04-04,Abuja,36,Business owner,201000,325000,6,1,high,yes
+L0104,2025-04-05,Kano,51,Business owner,241000,115000,3,1,medium,yes
+L0105,2025-04-05,Enugu,47,Business owner,339000,1170000,12,0,medium,no
+L0106,2025-04-06,Lagos,32,Self-employed,166000,270000,12,1,high,yes
+L0107,2025-04-06,Lagos,33,Salaried,158000,230000,6,0,high,no
+L0108,2025-04-07,Kano,21,Self-employed,102000,365000,18,1,high,no
+L0109,2025-04-07,Enugu,48,Salaried,344000,615000,24,2,low,yes
+L0110,2025-04-07,Rivers,49,Self-employed,196000,210000,6,2,medium,yes
+L0111,2025-04-08,Lagos,51,Business owner,182000,480000,12,3,low,yes
+L0112,2025-04-08,Oyo,21,Self-employed,120000,220000,12,0,medium,yes
+L0113,2025-04-08,Abuja,42,Business owner,148000,395000,12,0,high,yes
+L0114,2025-04-08,Lagos,32,Salaried,563000,2255000,18,2,medium,yes
+L0115,2025-04-09,Rivers,49,Salaried,251000,765000,24,1,low,yes
+L0116,2025-04-10,Lagos,53,Salaried,175000,225000,6,2,medium,yes
+L0117,2025-04-10,Enugu,24,Business owner,406000,1255000,12,1,high,yes
+L0118,2025-04-11,Oyo,51,Salaried,245000,625000,12,0,medium,yes
+L0119,2025-04-11,Lagos,24,Salaried,429000,525000,12,1,low,yes
+L0120,2025-04-12,Rivers,56,Self-employed,136000,270000,3,1,high,yes
+L0121,2025-04-13,Abuja,52,Self-employed,473000,395000,3,2,low,yes
+L0122,2025-04-14,Lagos,42,Salaried,330000,450000,12,0,medium,no
+L0123,2025-04-16,Kano,49,Self-employed,309000,1010000,12,2,medium,yes
+L0124,2025-04-17,Abuja,35,Salaried,121000,100000,6,2,low,yes
+L0125,2025-04-18,Lagos,28,Salaried,427000,810000,18,0,medium,no
+L0126,2025-04-20,Abuja,38,Salaried,180000,485000,12,0,high,no
+L0127,2025-04-20,Lagos,22,Salaried,350000,530000,12,4,low,yes
+L0128,2025-04-20,Oyo,41,Salaried,354000,445000,24,1,low,yes
+L0129,2025-04-21,Kano,23,Business owner,269000,385000,18,5,low,yes
+L0130,2025-04-21,Oyo,56,Self-employed,137000,385000,12,3,medium,yes
+L0131,2025-04-22,Oyo,49,Salaried,295000,665000,18,2,medium,yes
+L0132,2025-04-22,Kano,45,Self-employed,88000,220000,18,2,medium,yes
+L0133,2025-04-23,Kano,43,Business owner,427000,1260000,24,0,medium,yes
+L0134,2025-04-26,Rivers,41,Business owner,326000,240000,3,1,medium,yes
+L0135,2025-04-26,Kano,48,Salaried,243000,480000,18,2,low,yes
+L0136,2025-04-26,Oyo,45,Salaried,305000,450000,12,0,medium,yes
+L0137,2025-04-26,Lagos,49,Salaried,244000,500000,18,3,low,yes
+L0138,2025-04-27,Kano,43,Salaried,193000,210000,12,1,medium,yes
+L0139,2025-04-28,Lagos,27,Business owner,213000,190000,12,0,medium,yes
+L0140,2025-04-28,Abuja,32,Salaried,251000,930000,24,2,medium,yes
+L0141,2025-04-30,Enugu,42,Salaried,317000,960000,12,1,medium,yes
+L0142,2025-04-30,Abuja,35,Business owner,180000,555000,12,1,high,yes
+L0143,2025-04-30,Lagos,27,Self-employed,279000,535000,6,0,high,yes
+L0144,2025-05-02,Kano,27,Salaried,134000,465000,12,2,high,yes
+L0145,2025-05-04,Enugu,52,Self-employed,101000,85000,6,1,medium,yes
+L0146,2025-05-05,Abuja,56,Salaried,183000,230000,6,1,low,yes
+L0147,2025-05-06,Abuja,58,Salaried,481000,2080000,24,3,low,yes
+L0148,2025-05-06,Kano,56,Business owner,201000,490000,6,2,high,no
+L0149,2025-05-07,Lagos,23,Business owner,369000,785000,6,1,medium,yes
+L0150,2025-05-08,Lagos,40,Business owner,695000,1825000,24,1,medium,yes
+L0151,2025-05-09,Rivers,56,Self-employed,80000,140000,3,1,high,no
+L0152,2025-05-10,Lagos,40,Business owner,230000,380000,6,3,medium,yes
+L0153,2025-05-10,Lagos,35,Self-employed,175000,795000,24,3,medium,yes
+L0154,2025-05-11,Rivers,41,Self-employed,93000,240000,6,1,high,no
+L0155,2025-05-12,Lagos,36,Salaried,331000,680000,12,0,high,yes
+L0156,2025-05-12,Kano,33,Business owner,240000,320000,24,3,low,yes
+L0157,2025-05-13,Lagos,47,Salaried,260000,270000,3,1,medium,yes
+L0158,2025-05-14,Oyo,58,Self-employed,106000,175000,6,1,medium,yes
+L0159,2025-05-14,Lagos,57,Self-employed,129000,135000,18,0,low,yes
+L0160,2025-05-16,Rivers,43,Self-employed,189000,225000,6,1,medium,no
+L0161,2025-05-16,Enugu,35,Self-employed,94000,230000,18,3,medium,yes
+L0162,2025-05-17,Enugu,24,Salaried,359000,870000,12,1,low,yes
+L0163,2025-05-18,Kano,35,Self-employed,133000,245000,6,2,high,yes
+L0164,2025-05-19,Kano,54,Self-employed,221000,295000,6,2,medium,yes
+L0165,2025-05-20,Enugu,34,Salaried,239000,420000,18,3,low,yes
+L0166,2025-05-20,Kano,48,Salaried,213000,515000,12,1,medium,yes
+L0167,2025-05-20,Rivers,58,Self-employed,108000,145000,3,1,high,no
+L0168,2025-05-23,Lagos,53,Business owner,529000,730000,6,2,medium,yes
+L0169,2025-05-23,Lagos,24,Salaried,227000,895000,18,0,high,yes
+L0170,2025-05-24,Abuja,27,Salaried,158000,240000,3,2,high,yes
+L0171,2025-05-25,Enugu,27,Self-employed,123000,325000,6,2,high,yes
+L0172,2025-05-25,Kano,30,Business owner,244000,270000,6,2,medium,no
+L0173,2025-05-26,Rivers,58,Salaried,139000,260000,6,2,high,yes
+L0174,2025-05-26,Enugu,26,Self-employed,113000,245000,12,4,low,yes
+L0175,2025-05-28,Lagos,27,Salaried,307000,360000,24,0,medium,yes
+L0176,2025-05-29,Abuja,48,Salaried,259000,295000,6,2,medium,yes
+L0177,2025-05-30,Abuja,29,Self-employed,151000,385000,6,1,high,no
+L0178,2025-05-31,Lagos,35,Salaried,201000,320000,18,2,medium,no
+L0179,2025-05-31,Rivers,34,Salaried,168000,260000,12,0,medium,yes
+L0180,2025-05-31,Lagos,43,Business owner,384000,875000,6,4,low,yes
+L0181,2025-06-01,Rivers,57,Self-employed,95000,70000,6,2,low,yes
+L0182,2025-06-02,Oyo,34,Business owner,182000,345000,6,2,high,no
+L0183,2025-06-03,Rivers,45,Salaried,175000,535000,12,1,high,yes
+L0184,2025-06-04,Kano,47,Self-employed,302000,200000,6,1,medium,yes
+L0185,2025-06-04,Oyo,49,Self-employed,115000,250000,6,0,high,yes
+L0186,2025-06-04,Lagos,26,Salaried,153000,380000,6,1,high,yes
+L0187,2025-06-04,Lagos,47,Business owner,332000,340000,6,2,low,yes
+L0188,2025-06-05,Rivers,44,Self-employed,147000,355000,18,1,high,yes
+L0189,2025-06-06,Lagos,33,Self-employed,122000,230000,3,4,high,yes
+L0190,2025-06-06,Lagos,39,Business owner,213000,390000,6,1,high,yes
+L0191,2025-06-06,Rivers,44,Salaried,231000,530000,18,3,low,yes
+L0192,2025-06-06,Enugu,21,Salaried,362000,270000,3,2,medium,no
+L0193,2025-06-07,Oyo,51,Salaried,160000,180000,3,2,high,yes
+L0194,2025-06-08,Kano,53,Salaried,144000,315000,12,3,low,yes
+L0195,2025-06-08,Abuja,53,Business owner,392000,815000,6,2,high,no
+L0196,2025-06-08,Enugu,45,Self-employed,301000,325000,6,4,low,yes
+L0197,2025-06-09,Kano,40,Salaried,141000,270000,6,0,high,no
+L0198,2025-06-10,Abuja,60,Self-employed,307000,485000,12,3,low,yes
+L0199,2025-06-11,Kano,54,Business owner,365000,850000,12,3,low,yes
+L0200,2025-06-11,Abuja,43,Salaried,268000,325000,12,2,low,yes
+L0201,2025-06-13,Abuja,50,Salaried,233000,455000,6,1,high,yes
+L0202,2025-06-14,Enugu,53,Business owner,66000,95000,6,1,high,yes
+L0203,2025-06-14,Lagos,31,Salaried,331000,1465000,24,2,medium,yes
+L0204,2025-06-14,Abuja,53,Business owner,140000,110000,3,2,medium,yes
+L0205,2025-06-14,Enugu,23,Self-employed,118000,145000,12,3,medium,yes
+L0206,2025-06-15,Lagos,34,Self-employed,162000,120000,3,4,low,yes
+L0207,2025-06-15,Kano,48,Self-employed,109000,205000,6,0,high,yes
+L0208,2025-06-15,Rivers,34,Salaried,337000,440000,12,0,high,yes
+L0209,2025-06-16,Lagos,26,Business owner,146000,315000,6,1,medium,yes
+L0210,2025-06-16,Abuja,39,Business owner,177000,425000,12,1,high,yes
+L0211,2025-06-17,Rivers,54,Self-employed,141000,255000,6,1,high,yes
+L0212,2025-06-18,Lagos,23,Salaried,373000,1445000,24,4,medium,yes
+L0213,2025-06-19,Rivers,30,Business owner,262000,450000,24,0,medium,yes
+L0214,2025-06-20,Abuja,36,Self-employed,141000,500000,18,1,high,no
+L0215,2025-06-20,Lagos,42,Salaried,178000,480000,12,0,medium,yes
+L0216,2025-06-20,Oyo,34,Business owner,242000,350000,6,0,high,yes
+L0217,2025-06-22,Oyo,27,Salaried,139000,185000,12,6,low,yes
+L0218,2025-06-23,Oyo,35,Self-employed,60000,245000,18,1,high,no
+L0219,2025-06-24,Kano,50,Self-employed,147000,360000,12,3,low,yes
+L0220,2025-06-25,Abuja,42,Business owner,885000,1040000,12,4,low,yes
+L0221,2025-06-25,Oyo,42,Salaried,99000,260000,12,1,medium,yes
+L0222,2025-06-25,Rivers,27,Salaried,154000,375000,12,0,high,yes
+L0223,2025-06-27,Abuja,30,Self-employed,242000,325000,12,1,high,yes
+L0224,2025-06-27,Rivers,22,Self-employed,173000,280000,12,2,low,yes
+L0225,2025-06-28,Rivers,58,Business owner,278000,465000,12,0,medium,no
+L0226,2025-06-30,Oyo,44,Salaried,212000,205000,12,0,high,yes
+L0227,2025-06-30,Kano,42,Salaried,320000,280000,12,0,medium,yes
+L0228,2025-06-30,Abuja,24,Salaried,182000,310000,6,1,medium,yes
+L0229,2025-06-30,Lagos,26,Self-employed,123000,255000,6,0,high,no
+L0230,2025-07-02,Rivers,27,Business owner,211000,510000,6,1,high,yes
+L0231,2025-07-03,Lagos,53,Self-employed,288000,985000,12,1,medium,yes
+L0232,2025-07-03,Lagos,36,Salaried,150000,265000,6,0,high,no
+L0233,2025-07-03,Abuja,51,Self-employed,197000,825000,24,2,medium,yes
+L0234,2025-07-04,Kano,54,Salaried,163000,260000,3,2,high,yes
+L0235,2025-07-05,Kano,50,Self-employed,251000,555000,6,4,high,no
+L0236,2025-07-06,Lagos,45,Business owner,242000,235000,6,2,low,yes
+L0237,2025-07-06,Lagos,58,Self-employed,301000,1030000,12,1,medium,yes
+L0238,2025-07-06,Enugu,26,Business owner,243000,455000,12,3,medium,yes
+L0239,2025-07-07,Rivers,54,Salaried,167000,740000,24,1,low,yes
+L0240,2025-07-09,Oyo,26,Salaried,215000,400000,3,3,high,yes
+L0241,2025-07-09,Lagos,30,Self-employed,234000,170000,6,2,low,yes
+L0242,2025-07-09,Lagos,33,Self-employed,234000,390000,12,1,high,yes
+L0243,2025-07-09,Lagos,43,Self-employed,163000,465000,12,2,medium,yes
+L0244,2025-07-09,Kano,41,Salaried,419000,1090000,18,3,low,yes
+L0245,2025-07-11,Kano,24,Salaried,246000,850000,12,1,high,yes
+L0246,2025-07-11,Enugu,56,Self-employed,116000,120000,6,1,medium,yes
+L0247,2025-07-13,Oyo,52,Salaried,342000,895000,6,1,high,no
+L0248,2025-07-13,Oyo,23,Salaried,229000,290000,18,3,low,yes
+L0249,2025-07-15,Enugu,57,Business owner,269000,570000,12,1,medium,yes
+L0250,2025-07-15,Lagos,56,Self-employed,331000,430000,6,4,low,yes
+L0251,2025-07-15,Lagos,43,Self-employed,317000,360000,3,1,high,no
+L0252,2025-07-16,Enugu,48,Self-employed,168000,130000,6,2,medium,yes
+L0253,2025-07-17,Oyo,53,Self-employed,98000,230000,6,2,high,no
+L0254,2025-07-17,Rivers,43,Salaried,311000,685000,6,0,high,no
+L0255,2025-07-17,Lagos,47,Self-employed,109000,400000,18,1,medium,yes
+L0256,2025-07-17,Lagos,53,Salaried,247000,240000,18,2,low,yes
+L0257,2025-07-17,Lagos,36,Salaried,194000,655000,12,4,low,yes
+L0258,2025-07-17,Lagos,50,Salaried,562000,650000,3,4,medium,no
+L0259,2025-07-18,Lagos,31,Self-employed,435000,945000,24,2,low,no
+L0260,2025-07-19,Rivers,26,Business owner,616000,1005000,12,2,low,yes
+L0261,2025-07-19,Enugu,34,Self-employed,203000,490000,12,0,high,no
+L0262,2025-07-19,Rivers,52,Self-employed,83000,215000,18,2,low,yes
+L0263,2025-07-19,Lagos,52,Business owner,446000,545000,18,0,low,yes
+L0264,2025-07-20,Abuja,24,Salaried,221000,530000,6,1,high,yes
+L0265,2025-07-20,Kano,60,Self-employed,131000,115000,6,1,medium,yes
+L0266,2025-07-21,Lagos,37,Business owner,352000,415000,6,2,medium,yes
+L0267,2025-07-21,Oyo,48,Salaried,237000,705000,18,1,low,yes
+L0268,2025-07-21,Kano,49,Salaried,137000,140000,12,3,low,yes
+L0269,2025-07-21,Rivers,51,Salaried,170000,295000,12,0,medium,yes
+L0270,2025-07-22,Kano,40,Self-employed,66000,200000,18,5,low,yes
+L0271,2025-07-22,Kano,21,Business owner,130000,335000,12,1,high,yes
+L0272,2025-07-23,Rivers,58,Self-employed,181000,375000,6,3,high,yes
+L0273,2025-07-23,Rivers,51,Salaried,315000,670000,6,3,medium,yes
+L0274,2025-07-23,Oyo,21,Salaried,357000,470000,6,1,medium,yes
+L0275,2025-07-24,Lagos,40,Self-employed,370000,1205000,12,1,high,yes
+L0276,2025-07-24,Rivers,58,Self-employed,116000,360000,12,1,medium,yes
+L0277,2025-07-24,Lagos,53,Salaried,203000,265000,12,3,low,yes
+L0278,2025-07-25,Rivers,50,Business owner,179000,270000,6,2,high,yes
+L0279,2025-07-27,Kano,49,Self-employed,425000,1235000,12,1,high,yes
+L0280,2025-07-27,Lagos,29,Salaried,194000,430000,18,1,medium,yes
+L0281,2025-07-28,Lagos,53,Self-employed,300000,455000,12,3,low,yes
+L0282,2025-07-29,Abuja,60,Self-employed,287000,320000,12,1,medium,yes
+L0283,2025-07-29,Lagos,48,Business owner,538000,665000,24,1,low,yes
+L0284,2025-07-29,Lagos,58,Self-employed,99000,250000,12,0,medium,yes
+L0285,2025-07-30,Kano,36,Self-employed,141000,285000,12,0,high,yes
+L0286,2025-07-31,Abuja,50,Salaried,403000,575000,6,3,low,yes
+L0287,2025-07-31,Lagos,39,Salaried,213000,180000,6,3,medium,yes
+L0288,2025-08-01,Oyo,36,Salaried,282000,910000,12,1,medium,yes
+L0289,2025-08-03,Lagos,27,Salaried,110000,120000,18,1,medium,yes
+L0290,2025-08-04,Rivers,29,Salaried,208000,275000,12,2,medium,yes
+L0291,2025-08-04,Enugu,49,Business owner,566000,830000,24,2,medium,yes
+L0292,2025-08-04,Oyo,45,Self-employed,140000,195000,6,1,high,yes
+L0293,2025-08-05,Kano,38,Self-employed,314000,915000,18,1,medium,yes
+L0294,2025-08-06,Lagos,43,Salaried,188000,245000,6,0,medium,yes
+L0295,2025-08-07,Lagos,33,Self-employed,246000,360000,6,4,medium,yes
+L0296,2025-08-08,Rivers,42,Self-employed,157000,540000,18,2,medium,yes
+L0297,2025-08-09,Abuja,21,Self-employed,228000,285000,12,1,high,yes
+L0298,2025-08-10,Lagos,39,Self-employed,252000,290000,6,4,low,yes
+L0299,2025-08-10,Lagos,53,Self-employed,235000,570000,12,5,medium,yes
+L0300,2025-08-13,Lagos,48,Self-employed,125000,115000,3,2,medium,yes
+L0301,2025-08-14,Abuja,56,Self-employed,56000,50000,6,0,medium,yes
+L0302,2025-08-14,Kano,39,Self-employed,125000,80000,6,3,high,yes
+L0303,2025-08-14,Enugu,40,Self-employed,108000,195000,18,3,medium,yes
+L0304,2025-08-15,Abuja,46,Salaried,213000,330000,3,1,high,yes
+L0305,2025-08-15,Enugu,22,Self-employed,234000,220000,6,3,medium,yes
+L0306,2025-08-15,Abuja,54,Salaried,214000,270000,3,2,medium,yes
+L0307,2025-08-16,Abuja,21,Salaried,293000,985000,12,1,high,yes
+L0308,2025-08-16,Kano,35,Self-employed,136000,380000,24,2,low,yes
+L0309,2025-08-18,Rivers,26,Salaried,170000,150000,3,3,medium,yes
+L0310,2025-08-18,Lagos,57,Salaried,396000,1380000,12,4,medium,yes
+L0311,2025-08-19,Abuja,47,Self-employed,231000,520000,24,1,medium,yes
+L0312,2025-08-20,Lagos,25,Salaried,73000,250000,12,1,high,yes
+L0313,2025-08-21,Kano,57,Salaried,313000,945000,18,2,medium,yes
+L0314,2025-08-22,Lagos,41,Business owner,321000,950000,12,4,medium,no
+L0315,2025-08-23,Abuja,58,Salaried,134000,100000,6,2,low,yes
+L0316,2025-08-25,Abuja,60,Salaried,311000,1110000,18,2,low,yes
+L0317,2025-08-25,Enugu,50,Salaried,203000,825000,24,2,medium,yes
+L0318,2025-08-26,Lagos,22,Business owner,103000,145000,3,2,high,yes
+L0319,2025-08-27,Abuja,24,Business owner,409000,965000,6,2,high,no
+L0320,2025-08-27,Abuja,23,Self-employed,116000,175000,18,0,medium,yes
+L0321,2025-08-28,Abuja,36,Business owner,203000,545000,12,2,low,yes
+L0322,2025-08-29,Enugu,41,Salaried,144000,300000,6,3,medium,yes
+L0323,2025-08-30,Lagos,50,Salaried,362000,1220000,12,0,medium,no
+L0324,2025-08-30,Lagos,51,Salaried,208000,285000,6,2,low,yes
+L0325,2025-09-01,Abuja,48,Salaried,189000,575000,18,0,medium,yes
+L0326,2025-09-02,Kano,41,Business owner,203000,130000,6,0,medium,yes
+L0327,2025-09-05,Lagos,27,Business owner,310000,445000,12,1,medium,yes
+L0328,2025-09-05,Oyo,31,Salaried,225000,595000,12,3,medium,no
+L0329,2025-09-06,Kano,30,Business owner,133000,500000,24,2,medium,yes
+L0330,2025-09-06,Lagos,42,Self-employed,217000,675000,12,1,high,yes
+L0331,2025-09-07,Kano,26,Salaried,133000,325000,12,2,medium,yes
+L0332,2025-09-07,Lagos,25,Business owner,179000,285000,3,4,high,no
+L0333,2025-09-08,Oyo,54,Business owner,264000,465000,3,0,high,no
+L0334,2025-09-11,Rivers,28,Self-employed,123000,195000,3,2,high,yes
+L0335,2025-09-12,Rivers,60,Business owner,383000,370000,12,3,low,yes
+L0336,2025-09-12,Abuja,59,Self-employed,147000,135000,6,3,low,yes
+L0337,2025-09-13,Rivers,42,Self-employed,247000,205000,6,0,medium,yes
+L0338,2025-09-14,Lagos,45,Salaried,243000,595000,12,3,low,yes
+L0339,2025-09-15,Rivers,40,Self-employed,103000,105000,12,5,low,yes
+L0340,2025-09-16,Kano,48,Self-employed,121000,300000,6,1,high,no
+L0341,2025-09-17,Lagos,29,Salaried,234000,315000,6,1,medium,yes
+L0342,2025-09-17,Enugu,32,Self-employed,288000,730000,12,0,high,no
+L0343,2025-09-18,Rivers,59,Salaried,167000,140000,6,2,low,yes
+L0344,2025-09-18,Abuja,21,Self-employed,134000,455000,12,3,medium,yes
+L0345,2025-09-19,Lagos,36,Business owner,358000,905000,6,1,high,yes
+L0346,2025-09-19,Kano,55,Business owner,180000,620000,12,3,medium,no
+L0347,2025-09-21,Rivers,54,Business owner,311000,1230000,18,4,low,yes
+L0348,2025-09-22,Abuja,35,Salaried,181000,345000,3,3,high,yes
+L0349,2025-09-22,Kano,46,Salaried,347000,1260000,18,1,medium,yes
+L0350,2025-09-22,Lagos,28,Salaried,299000,205000,3,2,medium,yes
+L0351,2025-09-23,Lagos,58,Self-employed,395000,375000,18,3,low,yes
+L0352,2025-09-23,Lagos,35,Salaried,373000,575000,12,0,medium,yes
+L0353,2025-09-23,Abuja,32,Salaried,257000,435000,12,0,high,no
+L0354,2025-09-25,Kano,54,Self-employed,187000,605000,12,1,medium,yes
+L0355,2025-09-27,Lagos,28,Self-employed,173000,550000,24,1,high,yes
+L0356,2025-09-27,Lagos,50,Self-employed,262000,165000,6,0,medium,yes
+L0357,2025-09-27,Lagos,40,Business owner,404000,435000,6,2,medium,yes
+L0358,2025-09-27,Lagos,27,Salaried,298000,800000,12,2,medium,no
+L0359,2025-09-27,Abuja,40,Business owner,386000,860000,12,3,medium,yes
+L0360,2025-09-29,Abuja,47,Self-employed,194000,495000,6,0,high,yes
+L0361,2025-09-29,Lagos,48,Salaried,258000,310000,6,2,medium,yes
+L0362,2025-09-29,Lagos,27,Salaried,342000,590000,3,0,high,yes
+L0363,2025-09-30,Lagos,28,Self-employed,112000,110000,6,2,medium,yes
+L0364,2025-10-01,Enugu,21,Salaried,390000,830000,18,0,high,yes
+L0365,2025-10-01,Lagos,38,Business owner,446000,965000,6,2,high,no
+L0366,2025-10-01,Abuja,48,Self-employed,265000,600000,12,0,high,yes
+L0367,2025-10-01,Kano,27,Salaried,121000,305000,6,3,high,yes
+L0368,2025-10-01,Rivers,59,Business owner,357000,675000,18,0,low,yes
+L0369,2025-10-03,Lagos,44,Self-employed,203000,215000,3,0,high,yes
+L0370,2025-10-03,Enugu,27,Salaried,414000,1130000,12,3,medium,yes
+L0371,2025-10-03,Lagos,48,Salaried,122000,300000,6,2,high,yes
+L0372,2025-10-03,Abuja,31,Self-employed,206000,690000,24,1,medium,yes
+L0373,2025-10-04,Kano,25,Business owner,300000,220000,6,3,low,yes
+L0374,2025-10-04,Enugu,47,Salaried,331000,280000,12,3,low,yes
+L0375,2025-10-05,Rivers,29,Business owner,137000,175000,12,4,medium,no
+L0376,2025-10-06,Abuja,60,Business owner,601000,625000,12,1,low,yes
+L0377,2025-10-06,Oyo,25,Self-employed,61000,210000,24,1,high,yes
+L0378,2025-10-06,Rivers,50,Salaried,194000,325000,12,1,low,yes
+L0379,2025-10-06,Oyo,44,Self-employed,284000,855000,24,3,low,yes
+L0380,2025-10-09,Lagos,38,Self-employed,192000,450000,12,0,high,yes
+L0381,2025-10-09,Oyo,56,Salaried,232000,255000,12,4,low,yes
+L0382,2025-10-09,Enugu,60,Salaried,783000,1195000,18,2,low,yes
+L0383,2025-10-09,Abuja,36,Salaried,293000,425000,6,1,medium,yes
+L0384,2025-10-10,Rivers,29,Business owner,145000,285000,6,1,high,no
+L0385,2025-10-11,Lagos,51,Self-employed,149000,210000,6,5,low,yes
+L0386,2025-10-12,Lagos,53,Self-employed,263000,1160000,24,3,medium,yes
+L0387,2025-10-12,Lagos,21,Salaried,227000,200000,3,0,high,yes
+L0388,2025-10-13,Abuja,53,Salaried,220000,690000,12,2,medium,no
+L0389,2025-10-13,Lagos,51,Salaried,228000,360000,12,2,low,yes
+L0390,2025-10-13,Lagos,32,Self-employed,357000,1100000,18,2,low,no
+L0391,2025-10-14,Lagos,27,Salaried,289000,535000,12,1,medium,yes
+L0392,2025-10-15,Rivers,56,Salaried,404000,605000,3,0,high,yes
+L0393,2025-10-16,Lagos,39,Business owner,423000,1120000,24,2,medium,yes
+L0394,2025-10-17,Kano,28,Salaried,201000,355000,12,1,high,yes
+L0395,2025-10-17,Kano,24,Self-employed,214000,580000,18,2,medium,yes
+L0396,2025-10-18,Lagos,34,Salaried,337000,700000,12,0,medium,no
+L0397,2025-10-19,Kano,56,Business owner,440000,1110000,24,0,medium,yes
+L0398,2025-10-20,Oyo,24,Business owner,139000,190000,3,4,medium,yes
+L0399,2025-10-22,Abuja,52,Self-employed,110000,225000,24,2,low,yes
+L0400,2025-10-22,Kano,50,Salaried,123000,225000,6,2,medium,yes
+L0401,2025-10-23,Lagos,49,Self-employed,237000,860000,24,1,high,yes
+L0402,2025-10-23,Lagos,43,Business owner,212000,670000,18,1,high,no
+L0403,2025-10-23,Rivers,50,Self-employed,97000,115000,18,4,low,yes
+L0404,2025-10-24,Kano,26,Self-employed,375000,1420000,24,0,high,yes
+L0405,2025-10-24,Oyo,33,Self-employed,191000,130000,6,1,low,yes
+L0406,2025-10-26,Abuja,48,Self-employed,141000,490000,12,1,high,yes
+L0407,2025-10-28,Oyo,27,Business owner,496000,875000,6,0,high,no
+L0408,2025-10-28,Abuja,21,Self-employed,309000,560000,12,1,high,no
+L0409,2025-10-28,Abuja,22,Salaried,177000,165000,12,2,low,yes
+L0410,2025-10-28,Lagos,32,Salaried,149000,140000,6,1,high,yes
+L0411,2025-10-28,Enugu,44,Self-employed,149000,425000,18,4,medium,yes
+L0412,2025-10-30,Enugu,25,Salaried,300000,450000,12,2,low,yes
+L0413,2025-10-31,Lagos,44,Salaried,473000,465000,3,4,medium,yes
+L0414,2025-10-31,Rivers,29,Business owner,518000,585000,6,0,medium,yes
+L0415,2025-11-01,Rivers,30,Self-employed,194000,185000,6,3,medium,yes
+L0416,2025-11-03,Rivers,35,Business owner,171000,360000,6,3,medium,yes
+L0417,2025-11-04,Rivers,51,Business owner,291000,275000,18,2,low,yes
+L0418,2025-11-04,Lagos,57,Salaried,371000,980000,24,2,low,yes
+L0419,2025-11-06,Kano,50,Self-employed,89000,95000,12,0,medium,yes
+L0420,2025-11-06,Oyo,53,Business owner,304000,220000,3,2,low,yes
+L0421,2025-11-09,Lagos,54,Self-employed,456000,530000,12,5,low,yes
+L0422,2025-11-10,Lagos,52,Self-employed,67000,200000,24,4,medium,yes
+L0423,2025-11-11,Lagos,48,Business owner,338000,840000,6,2,high,yes
+L0424,2025-11-14,Abuja,24,Self-employed,332000,545000,6,5,medium,yes
+L0425,2025-11-15,Rivers,22,Business owner,434000,1780000,18,2,medium,no
+L0426,2025-11-15,Lagos,54,Business owner,229000,160000,3,3,medium,no
+L0427,2025-11-15,Lagos,26,Self-employed,277000,1020000,24,2,medium,yes
+L0428,2025-11-16,Lagos,32,Self-employed,233000,275000,6,5,medium,yes
+L0429,2025-11-16,Lagos,52,Self-employed,313000,975000,18,3,low,yes
+L0430,2025-11-18,Rivers,42,Self-employed,74000,95000,12,0,medium,yes
+L0431,2025-11-18,Oyo,43,Self-employed,201000,130000,6,2,low,yes
+L0432,2025-11-19,Lagos,37,Business owner,342000,845000,6,1,high,no
+L0433,2025-11-20,Lagos,39,Salaried,211000,460000,6,0,high,yes
+L0434,2025-11-20,Kano,29,Business owner,316000,350000,3,1,high,yes
+L0435,2025-11-21,Abuja,23,Salaried,173000,395000,6,0,high,no
+L0436,2025-11-21,Lagos,42,Salaried,262000,325000,6,1,medium,yes
+L0437,2025-11-21,Abuja,33,Salaried,377000,440000,18,1,high,yes
+L0438,2025-11-23,Lagos,54,Salaried,293000,520000,24,2,low,yes
+L0439,2025-11-23,Kano,33,Self-employed,179000,525000,24,1,medium,yes
+L0440,2025-11-23,Lagos,59,Business owner,266000,285000,3,1,medium,yes
+L0441,2025-11-23,Abuja,35,Business owner,405000,920000,12,2,low,yes
+L0442,2025-11-25,Rivers,25,Self-employed,170000,165000,6,3,medium,yes
+L0443,2025-11-25,Kano,46,Business owner,646000,1730000,12,2,medium,yes
+L0444,2025-11-25,Lagos,41,Salaried,134000,235000,12,2,medium,yes
+L0445,2025-11-26,Oyo,24,Self-employed,168000,370000,12,2,medium,yes
+L0446,2025-11-26,Abuja,44,Salaried,226000,615000,12,3,medium,yes
+L0447,2025-11-27,Lagos,45,Self-employed,185000,135000,6,2,medium,yes
+L0448,2025-11-27,Lagos,50,Salaried,239000,515000,6,1,medium,yes
+L0449,2025-11-27,Lagos,56,Self-employed,302000,750000,12,1,high,no
+L0450,2025-11-29,Lagos,51,Self-employed,153000,175000,6,2,low,yes
+L0451,2025-11-29,Enugu,23,Self-employed,234000,235000,6,1,medium,yes
+L0452,2025-11-29,Lagos,26,Self-employed,224000,190000,6,2,high,yes
+L0453,2025-11-29,Oyo,28,Salaried,205000,180000,6,0,medium,yes
+L0454,2025-12-02,Lagos,39,Self-employed,425000,280000,6,1,medium,yes
+L0455,2025-12-02,Lagos,31,Self-employed,159000,325000,6,2,high,yes
+L0456,2025-12-04,Abuja,55,Business owner,211000,315000,6,1,medium,yes
+L0457,2025-12-05,Lagos,35,Salaried,754000,1615000,18,3,low,yes
+L0458,2025-12-05,Rivers,57,Salaried,128000,200000,6,0,medium,yes
+L0459,2025-12-07,Abuja,48,Salaried,257000,725000,12,1,low,no
+L0460,2025-12-07,Rivers,44,Salaried,193000,530000,24,2,low,yes
+L0461,2025-12-07,Oyo,58,Salaried,344000,495000,12,2,low,yes
+L0462,2025-12-08,Oyo,43,Salaried,267000,570000,6,3,high,yes
+L0463,2025-12-10,Abuja,33,Business owner,249000,785000,12,0,high,yes
+L0464,2025-12-11,Abuja,33,Salaried,336000,1030000,24,3,low,yes
+L0465,2025-12-11,Abuja,47,Salaried,674000,775000,12,4,low,yes
+L0466,2025-12-11,Kano,46,Self-employed,250000,330000,6,1,medium,yes
+L0467,2025-12-11,Lagos,25,Self-employed,114000,190000,6,1,high,yes
+L0468,2025-12-11,Rivers,21,Salaried,290000,680000,12,1,medium,yes
+L0469,2025-12-11,Abuja,53,Salaried,181000,420000,24,0,low,yes
+L0470,2025-12-12,Lagos,21,Salaried,316000,760000,6,0,high,yes
+L0471,2025-12-12,Abuja,36,Self-employed,405000,315000,6,3,medium,yes
+L0472,2025-12-12,Rivers,52,Self-employed,122000,350000,12,0,high,yes
+L0473,2025-12-14,Lagos,39,Self-employed,188000,435000,24,0,medium,yes
+L0474,2025-12-14,Rivers,35,Self-employed,138000,295000,6,1,high,no
+L0475,2025-12-15,Kano,46,Self-employed,762000,1245000,6,1,high,yes
+L0476,2025-12-15,Lagos,28,Self-employed,164000,425000,12,2,high,yes
+L0477,2025-12-16,Lagos,21,Business owner,134000,255000,6,1,high,no
+L0478,2025-12-17,Abuja,29,Salaried,201000,415000,6,3,medium,yes
+L0479,2025-12-17,Oyo,60,Business owner,343000,835000,6,2,medium,yes
+L0480,2025-12-19,Rivers,38,Salaried,144000,325000,6,3,medium,yes
+L0481,2025-12-19,Abuja,52,Salaried,168000,90000,3,1,low,yes
+L0482,2025-12-20,Oyo,53,Self-employed,53000,80000,6,3,medium,yes
+L0483,2025-12-20,Abuja,23,Salaried,281000,535000,24,1,low,yes
+L0484,2025-12-20,Rivers,47,Business owner,404000,780000,3,1,high,no
+L0485,2025-12-21,Lagos,31,Salaried,583000,445000,6,2,medium,yes
+L0486,2025-12-22,Abuja,38,Salaried,167000,525000,12,0,medium,yes
+L0487,2025-12-23,Kano,43,Self-employed,136000,310000,18,2,medium,yes
+L0488,2025-12-23,Lagos,57,Self-employed,254000,780000,24,0,medium,no
+L0489,2025-12-24,Kano,50,Self-employed,315000,600000,12,3,low,yes
+L0490,2025-12-25,Abuja,21,Business owner,407000,570000,3,0,high,no
+L0491,2025-12-26,Lagos,50,Business owner,266000,230000,3,3,medium,yes
+L0492,2025-12-27,Enugu,53,Business owner,176000,340000,12,2,low,yes
+L0493,2025-12-27,Abuja,37,Salaried,324000,610000,18,0,medium,yes
+L0494,2025-12-29,Lagos,30,Business owner,491000,1430000,18,1,medium,yes
+L0495,2025-12-29,Lagos,47,Business owner,360000,460000,12,3,low,yes
+L0496,2025-12-30,Oyo,29,Salaried,214000,135000,6,1,low,yes
+L0497,2025-12-30,Lagos,45,Self-employed,300000,400000,6,2,medium,yes
+L0498,2025-12-31,Lagos,49,Business owner,397000,1035000,24,3,low,yes
+L0499,2025-12-31,Kano,44,Salaried,409000,525000,3,0,high,no
+L0500,2025-12-31,Lagos,27,Self-employed,337000,1305000,24,2,medium,yes
