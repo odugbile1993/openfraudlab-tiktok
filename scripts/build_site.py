@@ -61,7 +61,7 @@ def write_note(n, spec, nums):
         nav.append(f"[▶ Watch the video]({WATCH_URL})")
     nav.append("[📚 Course map](../README.md#-course-map)")
     lines += [" · ".join(nav), "",
-              f"> 👉 **First things first:** [follow @_drhola on TikTok]({WATCH_URL}), then **like** and **share** this lesson so more people can learn with you.", ""]
+              f"> 👉 **First things first:** [follow @_drhola on TikTok]({WATCH_URL}), then **like**, **share** and **comment** on this lesson so more people can learn with you.", ""]
     if spec.get("summary"):
         lines += ["## In a nutshell", "", spec["summary"], ""]
     key = [s for s in spec["slides"][1:] if s.get("tag", "").upper() not in SKIP_TAGS]

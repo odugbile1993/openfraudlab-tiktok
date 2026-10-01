@@ -21,7 +21,8 @@
 <b>👉 Before you start</b><br><br>
 <b>1. <a href="https://www.tiktok.com/@_drhola">Follow @_drhola on TikTok</a></b> so you never miss a lesson<br>
 <b>2. Like</b> each video. It helps the lessons reach more learners<br>
-<b>3. Share</b> with a friend who wants to learn data science
+<b>3. Share</b> with a friend who wants to learn data science<br>
+<b>4. Comment</b> with your questions. They shape future lessons
 </td></tr></table>
 
 ---
@@ -55,7 +56,7 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 
 | Step | What to do |
 |:-:|:--|
-| **1. Watch** | Start with the short video on [TikTok @_drhola](https://www.tiktok.com/@_drhola). Follow, like and share as you go. |
+| **1. Watch** | Start with the short video on [TikTok @_drhola](https://www.tiktok.com/@_drhola). Follow, like, share and comment as you go. |
 | **2. Read** | Open the lesson's **study notes** for the key ideas and the full transcript. |
 | **3. Practise** | Do the **"Try it yourself"** exercise at the end of each note. It takes about 5 minutes. |
 | **4. Ask** | Drop a question in the TikTok comments, or open an [Issue](../../issues) here. |
