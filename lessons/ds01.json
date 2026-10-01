@@ -1,0 +1,27 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 1,
+ "slides": [
+  {"tag": "LESSON 1", "text": "What is data science, really?", "size": 90,
+   "say": "Welcome to Data Science from Scratch. Lesson one: what is data science, really?"},
+  {"tag": "DEFINITION", "text": "Turning raw data into insights and better decisions.",
+   "say": "Data science is the practice of turning raw data into useful insights, and better decisions."},
+  {"tag": "3 INGREDIENTS", "text": "Statistics\nProgramming\nDomain knowledge", "size": 86,
+   "sub": "Reason about data · work with it at scale · know which questions matter",
+   "say": "It sits where three things meet. Statistics, to reason about data. Programming, to work with it at scale. And domain knowledge, to know which questions actually matter."},
+  {"tag": "THE WORKFLOW", "text": "Question → Collect → Clean → Explore → Model → Communicate", "size": 72,
+   "say": "Most projects follow the same loop. Ask a question. Collect the data. Clean it. Explore it. Build a model if you need one. Then communicate what you found."},
+  {"tag": "BEGINNER SURPRISE", "text": "Cleaning data is often the most time-consuming part.",
+   "say": "And here's what surprises most beginners: cleaning and preparing the data is often the most time-consuming part of the job."},
+  {"tag": "REAL EXAMPLE", "text": "\"Which customers are likely to repay?\"",
+   "sub": "Past repayment records → clean → find patterns → model → better lending decisions",
+   "say": "For example, a lender might ask: which customers are likely to repay? A data scientist gathers past repayment records, cleans them, finds patterns, and builds a model to support that decision."},
+  {"tag": "TAKEAWAY", "text": "Data science isn't just models.\nIt's asking good questions of data.",
+   "say": "So remember: data science isn't just about models. It's about asking good questions of data."},
+  {"tag": "NEXT LESSON", "text": "Types of data, and why they matter.",
+   "say": "Next lesson: the different types of data, and why they matter."},
+  {"tag": "THANKS FOR WATCHING", "text": "Follow, like & share for more", "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."}
+ ]
+}

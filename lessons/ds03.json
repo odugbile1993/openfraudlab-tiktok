@@ -1,0 +1,60 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 3,
+ "slides": [
+  {
+   "tag": "LESSON 3",
+   "text": "Your first dataset: rows, columns & features",
+   "size": 86,
+   "say": "Data Science from Scratch, lesson three: your first dataset. Rows, columns, and features."
+  },
+  {
+   "tag": "THE SHAPE",
+   "text": "Most data science starts with a table.",
+   "say": "Most data science projects start with a simple table of data. Once you can read that table, everything else gets easier."
+  },
+  {
+   "tag": "ROWS",
+   "text": "Each row = one observation",
+   "sub": "One customer, one transaction, one loan",
+   "say": "Each row is one observation. That could be one customer, one transaction, or one loan."
+  },
+  {
+   "tag": "COLUMNS",
+   "text": "Each column = one variable",
+   "sub": "Age, income, loan amount, repaid?",
+   "say": "Each column is one variable: something you recorded about every observation, like age, income, or loan amount."
+  },
+  {
+   "tag": "FEATURES vs TARGET",
+   "text": "Features: what you know\nTarget: what you want to predict",
+   "size": 74,
+   "sub": "Features: age, income, loan amount \u00b7 Target: repaid, yes or no",
+   "say": "In machine learning, the columns you use as inputs are called features. The column you want to predict is called the target. For a lender, the features might be age, income, and loan amount, and the target might be: did they repay, yes or no?"
+  },
+  {
+   "tag": "QUICK CHECK",
+   "text": "Rows \u00d7 columns = the shape of your data",
+   "sub": "1,000 customers with 8 columns \u2192 shape (1000, 8)",
+   "say": "The number of rows and columns together is called the shape of your data. A thousand customers with eight columns has a shape of one thousand by eight."
+  },
+  {
+   "tag": "TAKEAWAY",
+   "text": "Rows are examples.\nColumns are variables.\nThe target is your question.",
+   "size": 76,
+   "say": "So remember: rows are examples, columns are variables, and the target is the question you're trying to answer."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Mean, median & mode: describing data with one number",
+   "say": "Next lesson: mean, median, and mode. How to describe your data with a single number."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile \u00b7 OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ]
+}
