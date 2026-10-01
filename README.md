@@ -4,6 +4,7 @@
 
 <p align="center">
   <a href="https://www.tiktok.com/@_drhola"><img alt="Watch on TikTok" src="https://img.shields.io/badge/Watch%20on-TikTok-000000?style=for-the-badge&logo=tiktok&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/ayodele-odugbile-939b97185"><img alt="Connect on LinkedIn" src="https://img.shields.io/badge/Connect%20on-LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"></a>
   <img alt="Level: Beginner" src="https://img.shields.io/badge/Level-Beginner-00D6AA?style=for-the-badge">
   <img alt="New lessons daily" src="https://img.shields.io/badge/New%20lessons-3%20a%20day-5B4B8A?style=for-the-badge">
   <img alt="Free" src="https://img.shields.io/badge/Price-Free-1F2937?style=for-the-badge">
@@ -47,7 +48,7 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 
 | Step | What to do |
 |:-:|:--|
-| **1. Watch** | Start with the short video (on TikTok or in this repo). |
+| **1. Watch** | Start with the short video. The **▶ Watch** links take you to Ayodele's LinkedIn, and every lesson is also on [TikTok @_drhola](https://www.tiktok.com/@_drhola). |
 | **2. Read** | Open the lesson's **study notes** for the key ideas and the full transcript. |
 | **3. Practise** | Do the **"Try it yourself"** exercise at the end of each note. It takes about 5 minutes. |
 | **4. Ask** | Drop a question in the TikTok comments, or open an [Issue](../../issues) here. |
@@ -61,9 +62,9 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 
 | # | Lesson | Watch | Study notes |
 |:-:|:--|:-:|:-:|
-| 1 | What is data science, really? | [▶ Video](videos/ds01_what_is_data_science.mp4) | [📝 Notes](notes/lesson-01.md) |
-| 2 | Types of data, and why they matter | [▶ Video](videos/ds02_types_of_data.mp4) | [📝 Notes](notes/lesson-02.md) |
-| 3 | Your first dataset: rows, columns & features | [▶ Video](videos/ds03_rows_columns_features.mp4) | [📝 Notes](notes/lesson-03.md) |
+| 1 | What is data science, really? | [▶ Watch](https://www.linkedin.com/in/ayodele-odugbile-939b97185) | [📝 Notes](notes/lesson-01.md) |
+| 2 | Types of data, and why they matter | [▶ Watch](https://www.linkedin.com/in/ayodele-odugbile-939b97185) | [📝 Notes](notes/lesson-02.md) |
+| 3 | Your first dataset: rows, columns & features | [▶ Watch](https://www.linkedin.com/in/ayodele-odugbile-939b97185) | [📝 Notes](notes/lesson-03.md) |
 
 #### Module 2 · Statistics & Exploring Data
 
@@ -126,6 +127,8 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 ## 👤 About the instructor
 
 **Ayodele Odugbile** is a data and analytics professional with more than six years of experience across credit risk analytics, fraud detection, portfolio management and data engineering. He runs **OpenFraudLab**, an independent research initiative focused on trustworthy and explainable AI.
+
+👉 [Connect with Ayodele on LinkedIn](https://www.linkedin.com/in/ayodele-odugbile-939b97185)
 
 This course is his way of making the field easier to enter, especially for learners who don't come from a computer science background.
 

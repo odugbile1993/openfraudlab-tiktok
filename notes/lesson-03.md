@@ -2,7 +2,7 @@
 
 **Data Science from Scratch** · Module 1 · Foundations · by Ayodele Odugbile, OpenFraudLab
 
-[▶ Watch the video](../videos/ds03_rows_columns_features.mp4) · [📚 Course map](../README.md#-course-map)
+[▶ Watch the video](https://www.linkedin.com/in/ayodele-odugbile-939b97185) · [📚 Course map](../README.md#-course-map)
 
 ## In a nutshell
 

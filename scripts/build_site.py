@@ -8,6 +8,7 @@ import glob, json, os, re
 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 CURRICULUM = json.load(open(os.path.join(ROOT, "curriculum.json")))
+WATCH_URL = "https://www.linkedin.com/in/ayodele-odugbile-939b97185"  # where "Watch" links send learners
 SKIP_TAGS = {"NEXT LESSON", "THANKS FOR WATCHING", "NEXT"}
 
 MODULES = [
@@ -57,7 +58,7 @@ def write_note(n, spec, nums):
              f"**Data Science from Scratch** · {module_for(n)} · by Ayodele Odugbile, OpenFraudLab", ""]
     nav = []
     if video:
-        nav.append(f"[▶ Watch the video](../videos/{video})")
+        nav.append(f"[▶ Watch the video]({WATCH_URL})")
     nav.append("[📚 Course map](../README.md#-course-map)")
     lines += [" · ".join(nav), ""]
     if spec.get("summary"):
@@ -99,7 +100,7 @@ def course_table(nums):
             out += [f"#### {mod}", "", "| # | Lesson | Watch | Study notes |", "|:-:|:--|:-:|:-:|"]
             current = mod
         spec, video = spec_for(n), video_for(n)
-        watch = f"[▶ Video](videos/{video})" if video else "🔜 Soon"
+        watch = f"[▶ Watch]({WATCH_URL})" if video else "🔜 Soon"
         notes = f"[📝 Notes](notes/lesson-{n:02d}.md)" if spec else "—"
         out.append(f"| {n} | {title_of(n)} | {watch} | {notes} |")
     released = sum(1 for n in nums if video_for(n))
