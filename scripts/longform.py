@@ -102,7 +102,7 @@ class Lesson:
         d.rectangle([0, 0, RAIL, H], fill=INK)
         d.rectangle([56, 64, 74, 82], fill=BLUE)
         d.text((88, 58), "Open Fraud Labs Academy", font=F("s", 24), fill="white")
-        d.text((56, 128), f"DATA SCIENCE FROM SCRATCH  ·  LESSON {self.s['lesson']}", font=F("m", 17), fill="#8FA3C0")
+        d.text((56, 128), "DATA SCIENCE FROM SCRATCH  ·  " + self.s.get("label", f"Lesson {self.s['lesson']}").upper(), font=F("m", 17), fill="#8FA3C0")
         y = text_block(d, (56, 160), self.s["title"], F("s", 34), "white", RAIL - 100, 1.22)
         y += 34
         d.line([56, y, RAIL - 56, y], fill=NAVY2, width=2)
@@ -129,7 +129,7 @@ class Lesson:
 
     # ----- segment frames -----
     def title(self, d):
-        d.text((MX0, 300), f"Lesson {self.s['lesson']}", font=F("s", 30), fill=BLUE)
+        d.text((MX0, 300), self.s.get("label", f"Lesson {self.s['lesson']}"), font=F("s", 30), fill=BLUE)
         y = text_block(d, (MX0, 350), self.s["title"], F("b", 84), INK, MX1 - MX0, 1.12)
         y = text_block(d, (MX0, y + 20), self.s["subtitle"], F("r", 38), MUTED, MX1 - MX0)
         d.line([MX0, y + 40, MX0 + 120, y + 40], fill=BLUE, width=6)
@@ -213,6 +213,12 @@ class Lesson:
             d.rounded_rectangle([x0 - 2, y - 2, x0 + img.width + 2, y + img.height + 2], 8, outline=LINE, width=2, fill="white")
             d._image.paste(img, (x0, y))
             return
+        if printed.strip() and isinstance(val, (pd.DataFrame, pd.Series)):
+            # Printed lines first, then the table, as a notebook would show them.
+            f = F("mono", 22)
+            for ln in printed.rstrip().split("\n")[:4]:
+                d.text((x0, y), ln, font=f, fill=INK); y += 32
+            y += 10
         if isinstance(val, pd.DataFrame):
             df = val
             cols = list(df.columns[:6])

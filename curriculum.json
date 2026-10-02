@@ -1,36 +1,201 @@
 {
-  "series": "Data Science from Scratch",
-  "note": "Lessons 1-3 are published. Each daily run makes the next 3 lessons in order. 'next_lesson' in state.json says where to start.",
-  "lessons": [
-    {"n": 1, "slug": "what_is_data_science", "title": "What is data science, really?"},
-    {"n": 2, "slug": "types_of_data", "title": "Types of data, and why they matter"},
-    {"n": 3, "slug": "rows_columns_features", "title": "Your first dataset: rows, columns & features"},
-    {"n": 4, "slug": "mean_median_mode", "title": "Mean, median & mode: describing data with one number"},
-    {"n": 5, "slug": "spread", "title": "Spread: range, variance & standard deviation"},
-    {"n": 6, "slug": "distributions", "title": "Distributions and the normal curve"},
-    {"n": 7, "slug": "outliers", "title": "Outliers: errors, or the most interesting rows?"},
-    {"n": 8, "slug": "missing_data", "title": "Missing data and what to do about it"},
-    {"n": 9, "slug": "data_cleaning", "title": "Data cleaning basics"},
-    {"n": 10, "slug": "eda", "title": "Exploratory data analysis (EDA)"},
-    {"n": 11, "slug": "choosing_charts", "title": "Choosing the right chart"},
-    {"n": 12, "slug": "correlation_causation", "title": "Correlation is not causation"},
-    {"n": 13, "slug": "sampling_bias", "title": "Sampling and sampling bias"},
-    {"n": 14, "slug": "probability_basics", "title": "Probability basics for data science"},
-    {"n": 15, "slug": "why_python", "title": "Why Python for data science"},
-    {"n": 16, "slug": "pandas_dataframe", "title": "Meet the pandas DataFrame"},
-    {"n": 17, "slug": "sql_basics", "title": "SQL basics: SELECT, WHERE, GROUP BY"},
-    {"n": 18, "slug": "train_test_split", "title": "Train/test split: why we hide data from the model"},
-    {"n": 19, "slug": "linear_regression", "title": "Linear regression intuition"},
-    {"n": 20, "slug": "classification", "title": "Classification and logistic regression"},
-    {"n": 21, "slug": "overfitting", "title": "Overfitting vs underfitting"},
-    {"n": 22, "slug": "accuracy_trap", "title": "Why accuracy can lie"},
-    {"n": 23, "slug": "confusion_matrix", "title": "The confusion matrix, precision & recall"},
-    {"n": 24, "slug": "decision_trees", "title": "Decision trees"},
-    {"n": 25, "slug": "feature_engineering", "title": "Feature engineering"},
-    {"n": 26, "slug": "cross_validation", "title": "Cross-validation"},
-    {"n": 27, "slug": "imbalanced_data", "title": "Imbalanced data: the fraud detection problem"},
-    {"n": 28, "slug": "explainable_ai", "title": "Explainable AI: why did the model decide that?"},
-    {"n": 29, "slug": "data_ethics", "title": "Data ethics and bias in models"},
-    {"n": 30, "slug": "roadmap", "title": "Your data science roadmap"}
-  ]
+ "series": "Data Science from Scratch",
+ "note": "Lessons 1-3 are published. Each daily run makes the next 3 lessons in order. 'next_lesson' in state.json says where to start.",
+ "lessons": [
+  {
+   "n": 1,
+   "slug": "what_is_data_science",
+   "title": "What is data science, really?"
+  },
+  {
+   "n": 2,
+   "slug": "types_of_data",
+   "title": "Types of data, and why they matter"
+  },
+  {
+   "n": 3,
+   "slug": "rows_columns_features",
+   "title": "Your first dataset: rows, columns & features"
+  },
+  {
+   "n": 4,
+   "slug": "mean_median_mode",
+   "title": "Mean, median & mode: describing data with one number"
+  },
+  {
+   "n": 5,
+   "slug": "spread",
+   "title": "Spread: range, variance & standard deviation"
+  },
+  {
+   "n": 6,
+   "slug": "distributions",
+   "title": "Distributions and the normal curve"
+  },
+  {
+   "n": 7,
+   "slug": "outliers",
+   "title": "Outliers: errors, or the most interesting rows?"
+  },
+  {
+   "n": 8,
+   "slug": "missing_data",
+   "title": "Missing data and what to do about it"
+  },
+  {
+   "n": 9,
+   "slug": "data_cleaning",
+   "title": "Data cleaning basics"
+  },
+  {
+   "n": 10,
+   "slug": "eda",
+   "title": "Exploratory data analysis (EDA)"
+  },
+  {
+   "n": 11,
+   "slug": "choosing_charts",
+   "title": "Choosing the right chart"
+  },
+  {
+   "n": 12,
+   "slug": "correlation_causation",
+   "title": "Correlation is not causation"
+  },
+  {
+   "n": 13,
+   "slug": "sampling_bias",
+   "title": "Sampling and sampling bias"
+  },
+  {
+   "n": 14,
+   "slug": "probability_basics",
+   "title": "Probability basics for data science"
+  },
+  {
+   "n": 15,
+   "slug": "why_python",
+   "title": "Why Python for data science"
+  },
+  {
+   "n": 16,
+   "slug": "pandas_dataframe",
+   "title": "Meet the pandas DataFrame"
+  },
+  {
+   "n": 17,
+   "slug": "sql_basics",
+   "title": "SQL basics: SELECT, WHERE, GROUP BY"
+  },
+  {
+   "n": 18,
+   "slug": "train_test_split",
+   "title": "Train/test split: why we hide data from the model"
+  },
+  {
+   "n": 19,
+   "slug": "linear_regression",
+   "title": "Linear regression intuition"
+  },
+  {
+   "n": 20,
+   "slug": "classification",
+   "title": "Classification and logistic regression"
+  },
+  {
+   "n": 21,
+   "slug": "overfitting",
+   "title": "Overfitting vs underfitting"
+  },
+  {
+   "n": 22,
+   "slug": "accuracy_trap",
+   "title": "Why accuracy can lie"
+  },
+  {
+   "n": 23,
+   "slug": "confusion_matrix",
+   "title": "The confusion matrix, precision & recall"
+  },
+  {
+   "n": 24,
+   "slug": "decision_trees",
+   "title": "Decision trees"
+  },
+  {
+   "n": 25,
+   "slug": "feature_engineering",
+   "title": "Feature engineering"
+  },
+  {
+   "n": 26,
+   "slug": "cross_validation",
+   "title": "Cross-validation"
+  },
+  {
+   "n": 27,
+   "slug": "imbalanced_data",
+   "title": "Imbalanced data: the fraud detection problem"
+  },
+  {
+   "n": 28,
+   "slug": "explainable_ai",
+   "title": "Explainable AI: why did the model decide that?"
+  },
+  {
+   "n": 29,
+   "slug": "data_ethics",
+   "title": "Data ethics and bias in models"
+  },
+  {
+   "n": 30,
+   "slug": "roadmap",
+   "title": "Your data science roadmap"
+  },
+  {
+   "n": 31,
+   "slug": "p1_credit_framing",
+   "title": "Project 1 · Part 1: Credit risk — framing the problem and preparing the data"
+  },
+  {
+   "n": 32,
+   "slug": "p1_credit_eda",
+   "title": "Project 1 · Part 2: Credit risk — what drives default?"
+  },
+  {
+   "n": 33,
+   "slug": "p1_credit_model",
+   "title": "Project 1 · Part 3: Credit risk — a default model and an approval policy"
+  },
+  {
+   "n": 34,
+   "slug": "p2_clinic_framing",
+   "title": "Project 2 · Part 1: Clinic no-shows — framing the problem and preparing the data"
+  },
+  {
+   "n": 35,
+   "slug": "p2_clinic_eda",
+   "title": "Project 2 · Part 2: Clinic no-shows — who misses appointments, and why?"
+  },
+  {
+   "n": 36,
+   "slug": "p2_clinic_model",
+   "title": "Project 2 · Part 3: Clinic no-shows — predicting no-shows and targeting reminders"
+  },
+  {
+   "n": 37,
+   "slug": "p3_rent_framing",
+   "title": "Project 3 · Part 1: Lagos rents — cleaning listings and building features"
+  },
+  {
+   "n": 38,
+   "slug": "p3_rent_eda",
+   "title": "Project 3 · Part 2: Lagos rents — exploring prices across Lagos"
+  },
+  {
+   "n": 39,
+   "slug": "p3_rent_model",
+   "title": "Project 3 · Part 3: Lagos rents — a price model, error analysis and portfolio write-up"
+  }
+ ]
 }
