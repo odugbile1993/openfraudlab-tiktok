@@ -102,7 +102,8 @@ class Lesson:
         d.rectangle([0, 0, RAIL, H], fill=INK)
         d.rectangle([56, 64, 74, 82], fill=BLUE)
         d.text((88, 58), "Open Fraud Labs Academy", font=F("s", 24), fill="white")
-        d.text((56, 128), "DATA SCIENCE FROM SCRATCH  ·  " + self.s.get("label", f"Lesson {self.s['lesson']}").upper(), font=F("m", 17), fill="#8FA3C0")
+        kick = ("DATA SCIENCE  ·  " + self.s["label"].upper()) if self.s.get("label") else ("DATA SCIENCE FROM SCRATCH  ·  " + f"Lesson {self.s['lesson']}".upper())
+        d.text((56, 128), kick, font=F("m", 17), fill="#8FA3C0")
         y = text_block(d, (56, 160), self.s["title"], F("s", 34), "white", RAIL - 100, 1.22)
         y += 34
         d.line([56, y, RAIL - 56, y], fill=NAVY2, width=2)
