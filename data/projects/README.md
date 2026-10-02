@@ -4,16 +4,16 @@ Three datasets for the Data Science from Scratch portfolio projects. They are **
 
 ## `credit_applications.csv` — Project 1 (finance): credit risk
 
-3,000 loan applications to a lender, 2024–2025. Target: `defaulted` (1 = the borrower defaulted).
+3,000 loan applications to a consumer lender, 2024–2025. Money is in US dollars. Target: `defaulted` (1 = the borrower defaulted).
 
 | Column | Description |
 | --- | --- |
 | `application_id`, `application_date` | Application reference and date |
-| `region`, `age`, `employment_type`, `months_at_employer` | Applicant details (`employment_type` and `months_at_employer` have some missing values) |
-| `monthly_income_ngn`, `existing_debt_ngn` | Monthly income and other outstanding debt, in naira |
-| `loan_purpose`, `loan_amount_ngn`, `tenure_months`, `monthly_repayment_ngn` | The loan requested |
+| `region` (Capital, North, South, …), `age`, `employment_type`, `months_at_employer` | Applicant details (`employment_type` and `months_at_employer` have some missing values) |
+| `monthly_income_usd`, `existing_debt_usd` | Monthly income and other outstanding debt, in US dollars |
+| `loan_purpose`, `loan_amount_usd`, `tenure_months`, `monthly_repayment_usd` | The loan requested |
 | `previous_loans`, `previous_late_payments` | Credit history with the lender |
-| `has_salary_account`, `mobile_money_txn_per_month`, `has_guarantor` | Banking behaviour and security (`mobile_money_txn_per_month` has some missing values) |
+| `has_salary_account`, `digital_payments_per_month`, `has_guarantor` | Banking behaviour and security (`digital_payments_per_month` has some missing values) |
 | `defaulted` | 1 if the loan defaulted, 0 if not |
 
 ## `clinic_appointments.csv` — Project 2 (health): appointment no-shows
@@ -29,22 +29,22 @@ Three datasets for the Data Science from Scratch portfolio projects. They are **
 | `sms_reminder_sent` | 1 if an SMS reminder was sent |
 | `previous_appointments`, `previous_no_shows` | The patient's history at the clinic |
 | `distance_km` | Distance from home to the clinic (some missing) |
-| `insurance` | NHIA, Private HMO or None (some missing) |
+| `insurance` | Public, Private or None (some missing) |
 | `chronic_condition`, `rain_forecast` | 1 if the patient has a chronic condition / rain was forecast that day |
 | `no_show` | 1 if the patient did not attend |
 
-## `lagos_rentals.csv` — Project 3 (real estate): rent estimation
+## `city_rentals.csv` — Project 3 (real estate): rent estimation
 
-About 2,500 rental listings across Lagos areas, 2025, including a few duplicated listings. Target: `annual_rent_ngn`.
+About 2,500 rental listings across the neighbourhoods of one fictional city, 2025, including a few duplicated listings. Target: `monthly_rent_usd`.
 
 | Column | Description |
 | --- | --- |
 | `listing_id`, `listed_date` | Listing reference and date |
-| `area`, `property_type` | Neighbourhood and type (self-contain, mini flat, flat, terrace or detached duplex) |
+| `neighbourhood`, `property_type` | Neighbourhood and type (studio, 1-bed apartment, apartment, townhouse or detached house) |
 | `bedrooms`, `bathrooms`, `size_sqm` | Size (`size_sqm` has some missing values) |
-| `serviced`, `furnished`, `parking_spaces` | Amenities |
-| `year_built`, `distance_to_main_road_km` | Age and location detail (`year_built` has some missing values) |
-| `annual_rent_ngn` | Asking rent per year, in naira (synthetic) |
+| `furnished`, `balcony`, `parking_spaces`, `pets_allowed` | Features |
+| `year_built`, `distance_to_transit_km` | Age and location detail (`year_built` has some missing values) |
+| `monthly_rent_usd` | Asking rent per month, in US dollars (synthetic) |
 
 ## Load in Python
 
@@ -53,7 +53,7 @@ import pandas as pd
 base = "https://raw.githubusercontent.com/Odugbile1993/openfraudlab-tiktok/main/data/projects/"
 credit = pd.read_csv(base + "credit_applications.csv")
 clinic = pd.read_csv(base + "clinic_appointments.csv")
-rentals = pd.read_csv(base + "lagos_rentals.csv")
+rentals = pd.read_csv(base + "city_rentals.csv")
 ```
 
 **Note on `insurance`:** pandas reads the text "None" as a missing value by default. Load the clinic file with `pd.read_csv(url, keep_default_na=False, na_values=[""])` so "None" (no insurance) stays a category and only truly empty cells become missing. Project 2, Part 1 explains this.

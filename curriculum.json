@@ -185,17 +185,17 @@
   {
    "n": 37,
    "slug": "p3_rent_framing",
-   "title": "Project 3 · Part 1: Lagos rents — cleaning listings and building features"
+   "title": "Project 3 · Part 1: City rents — cleaning listings and building features"
   },
   {
    "n": 38,
    "slug": "p3_rent_eda",
-   "title": "Project 3 · Part 2: Lagos rents — exploring prices across Lagos"
+   "title": "Project 3 · Part 2: City rents — exploring prices across the city"
   },
   {
    "n": 39,
    "slug": "p3_rent_model",
-   "title": "Project 3 · Part 3: Lagos rents — a price model, error analysis and portfolio write-up"
+   "title": "Project 3 · Part 3: City rents — a price model, error analysis and portfolio write-up"
   }
  ]
 }
