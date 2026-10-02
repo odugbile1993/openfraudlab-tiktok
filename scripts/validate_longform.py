@@ -1,6 +1,8 @@
 """Check a long-form lesson before rendering: every code segment runs, every exercise's
 starter code fails its check and its solution passes.  python3 scripts/validate_longform.py longform/ds01.json"""
 import json, os, sys, io, contextlib
+import matplotlib
+matplotlib.use("Agg")
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOCAL = os.path.join(ROOT, "data", "loans.csv")
 URL = "https://raw.githubusercontent.com/Odugbile1993/openfraudlab-tiktok/main/data/loans.csv"

@@ -63,11 +63,21 @@ def run_code(src):
     last = None
     if tree.body and isinstance(tree.body[-1], ast.Expr):
         last = ast.Expression(tree.body.pop().value)
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    plt.close("all")
     buf = io.StringIO()
     with contextlib.redirect_stdout(buf):
         exec(compile(tree, "<lesson>", "exec"), NS)
         val = eval(compile(last, "<lesson>", "eval"), NS) if last else None
-    return buf.getvalue(), val
+    fig = None
+    if plt.get_fignums():
+        png = io.BytesIO()
+        plt.gcf().savefig(png, format="png", dpi=150, bbox_inches="tight", facecolor="white")
+        fig = png.getvalue()
+        plt.close("all")
+    return buf.getvalue(), val, fig
 
 # ---------- syntax colours (one-dark style) ----------
 def tok_colour(t):
@@ -188,7 +198,21 @@ class Lesson:
         self.output(d, result, x0, out_top + 36, x1)
 
     def output(self, d, result, x0, y, x1):
-        printed, val = result
+        printed, val, fig = result if len(result) == 3 else (result[0], result[1], None)
+        if fig is not None:
+            # A chart: show the figure itself (the Axes object returned by .plot() is not useful to print).
+            img = Image.open(io.BytesIO(fig)).convert("RGB")
+            if printed.strip():
+                f = F("mono", 22)
+                for ln in printed.rstrip().split("\n")[:3]:
+                    d.text((x0, y), ln, font=f, fill=INK); y += 32
+                y += 8
+            maxw, maxh = x1 - x0, H - 50 - y
+            scale = min(maxw / img.width, maxh / img.height)
+            img = img.resize((int(img.width * scale), int(img.height * scale)), Image.LANCZOS)
+            d.rounded_rectangle([x0 - 2, y - 2, x0 + img.width + 2, y + img.height + 2], 8, outline=LINE, width=2, fill="white")
+            d._image.paste(img, (x0, y))
+            return
         if isinstance(val, pd.DataFrame):
             df = val
             cols = list(df.columns[:6])
