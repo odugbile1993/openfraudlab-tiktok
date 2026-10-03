@@ -78,9 +78,9 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 
 | # | Lesson | Watch | Study notes |
 |:-:|:--|:-:|:-:|
-| 4 | Mean, median & mode: describing data with one number | 🔜 Soon | — |
-| 5 | Spread: range, variance & standard deviation | 🔜 Soon | — |
-| 6 | Distributions and the normal curve | 🔜 Soon | — |
+| 4 | Mean, median & mode: describing data with one number | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-04.md) |
+| 5 | Spread: range, variance & standard deviation | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-05.md) |
+| 6 | Distributions and the normal curve | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-06.md) |
 | 7 | Outliers: errors, or the most interesting rows? | 🔜 Soon | — |
 | 8 | Missing data and what to do about it | 🔜 Soon | — |
 | 9 | Data cleaning basics | 🔜 Soon | — |
@@ -121,7 +121,21 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 29 | Data ethics and bias in models | 🔜 Soon | — |
 | 30 | Your data science roadmap | 🔜 Soon | — |
 
-<sub>3 of 30 planned lessons released · new lessons are added daily.</sub>
+#### Module 6 · Going Further
+
+| # | Lesson | Watch | Study notes |
+|:-:|:--|:-:|:-:|
+| 31 | Project 1 · Part 1: Credit risk — framing the problem and preparing the data | 🔜 Soon | — |
+| 32 | Project 1 · Part 2: Credit risk — what drives default? | 🔜 Soon | — |
+| 33 | Project 1 · Part 3: Credit risk — a default model and an approval policy | 🔜 Soon | — |
+| 34 | Project 2 · Part 1: Clinic no-shows — framing the problem and preparing the data | 🔜 Soon | — |
+| 35 | Project 2 · Part 2: Clinic no-shows — who misses appointments, and why? | 🔜 Soon | — |
+| 36 | Project 2 · Part 3: Clinic no-shows — predicting no-shows and targeting reminders | 🔜 Soon | — |
+| 37 | Project 3 · Part 1: City rents — cleaning listings and building features | 🔜 Soon | — |
+| 38 | Project 3 · Part 2: City rents — exploring prices across the city | 🔜 Soon | — |
+| 39 | Project 3 · Part 3: City rents — a price model, error analysis and portfolio write-up | 🔜 Soon | — |
+
+<sub>6 of 39 planned lessons released · new lessons are added daily.</sub>
 <!-- COURSE-TABLE:END -->
 
 ## 🗺️ Roadmap

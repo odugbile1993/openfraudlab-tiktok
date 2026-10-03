@@ -1,0 +1,61 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 5,
+ "slides": [
+  {
+   "tag": "LESSON 5",
+   "text": "Spread: range, variance & standard deviation",
+   "size": 86,
+   "say": "Data Science from Scratch, lesson five: spread. Range, variance, and standard deviation."
+  },
+  {
+   "tag": "WHY IT MATTERS",
+   "text": "Same average, very different data",
+   "sub": "Branch A: 48, 50, 52 · Branch B: 10, 50, 90",
+   "say": "Two branches both average fifty transactions a day. Branch A had forty-eight, fifty, and fifty-two. Branch B had ten, fifty, and ninety. Same mean, very different stories. Spread measures that difference."
+  },
+  {
+   "tag": "RANGE",
+   "text": "Range = maximum − minimum",
+   "sub": "A: 52 − 48 = 4 · B: 90 − 10 = 80",
+   "say": "The simplest measure is the range: the biggest value minus the smallest. Branch A has a range of four. Branch B has a range of eighty. But the range only uses two values, so one extreme point can distort it."
+  },
+  {
+   "tag": "VARIANCE",
+   "text": "Variance: average squared distance from the mean",
+   "size": 80,
+   "say": "Variance uses every value. For each one, measure how far it is from the mean, square that distance, then average the squares. Squaring stops negative and positive distances cancelling out."
+  },
+  {
+   "tag": "STANDARD DEVIATION",
+   "text": "Standard deviation = √variance",
+   "sub": "Back in the original units",
+   "say": "The standard deviation is the square root of the variance. That brings it back to the original units, so you can read it as a typical distance from the mean. A small standard deviation means values sit close together."
+  },
+  {
+   "tag": "GOOD TO KNOW",
+   "text": "Samples usually divide by n − 1",
+   "sub": "Software often does this for you",
+   "say": "One detail: when you work with a sample rather than the whole population, the variance is usually divided by n minus one instead of n. Many tools do this by default, so check which one yours uses."
+  },
+  {
+   "tag": "TAKEAWAY",
+   "text": "Report the average and the spread together.",
+   "say": "So the takeaway: an average on its own hides a lot. Always look at the spread alongside it."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Distributions and the normal curve",
+   "say": "Next lesson: distributions, and the normal curve."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Spread describes how far values sit from the centre. The range is maximum minus minimum, the variance is the average squared distance from the mean, and the standard deviation is its square root, in the original units.",
+ "practice": "Take two small lists, 48, 50, 52 and 10, 50, 90. For each, compute the mean, the range, and the standard deviation by hand (square each distance from the mean, average them, then take the square root). Compare the results."
+}
