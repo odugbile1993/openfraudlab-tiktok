@@ -1,0 +1,61 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 8,
+ "slides": [
+  {
+   "tag": "LESSON 8",
+   "text": "Missing data and what to do about it",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson eight: missing data, and what to do about it."
+  },
+  {
+   "tag": "SPOT IT",
+   "text": "Blanks, NA, NaN… and sneaky placeholders",
+   "sub": "0, -999 or 'unknown' can also mean missing",
+   "say": "Missing values show up as blanks, N A, or N a N. But watch for sneaky placeholders too. A zero, minus nine nine nine, or the word unknown can quietly stand in for missing, and they'll distort your averages."
+  },
+  {
+   "tag": "ASK WHY",
+   "text": "Missing is often not random",
+   "sub": "The pattern of gaps can carry information",
+   "say": "Before fixing anything, ask why it's missing. Gaps are often not random. For example, an income field might be skipped more by some groups of applicants than others, and that pattern can bias your results."
+  },
+  {
+   "tag": "OPTION 1: DROP",
+   "text": "Remove rows with gaps",
+   "sub": "Simple, but you can lose data and add bias",
+   "say": "Option one: drop the rows with missing values. It's simple, but you can throw away a lot of data, and if the gaps aren't random, what's left may not represent everyone."
+  },
+  {
+   "tag": "OPTION 2: FILL",
+   "text": "Impute a sensible value",
+   "sub": "Median for numbers · most common value for categories",
+   "say": "Option two: fill the gaps, which is called imputation. A common start is the median for numeric columns, and the most common value for categories."
+  },
+  {
+   "tag": "OPTION 3: FLAG",
+   "text": "Add a 'was missing' column",
+   "sub": "Keeps the pattern visible to you and your model",
+   "say": "Option three: flag it. Add a yes or no column that records whether the value was missing. That keeps the pattern visible, and models can sometimes learn from it."
+  },
+  {
+   "tag": "TAKEAWAY",
+   "text": "Find it, ask why, then choose and document.",
+   "say": "So the takeaway: find every kind of missing value, ask why it's missing, then choose a strategy and write it down."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Data cleaning basics",
+   "say": "Next lesson: data cleaning basics."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Missing values can appear as blanks, NA or NaN, or hide behind placeholders like 0 or -999. Ask why data is missing, then drop, impute (e.g. median or most common value) or flag it, and document the choice.",
+ "practice": "Write a small table of 8 people with columns age, city and income, leaving 3 cells empty. For each gap, decide whether you would drop the row, fill it (and with what), or add a 'was missing' flag, and write one sentence explaining why."
+}

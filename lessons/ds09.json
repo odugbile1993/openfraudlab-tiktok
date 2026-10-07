@@ -1,0 +1,64 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 9,
+ "slides": [
+  {
+   "tag": "LESSON 9",
+   "text": "Data cleaning basics",
+   "size": 90,
+   "say": "Data Science from Scratch, lesson nine: data cleaning basics."
+  },
+  {
+   "tag": "WHY CLEAN",
+   "text": "Messy data in, misleading answers out",
+   "sub": "Cleaning is usually a big part of the job",
+   "say": "Raw data is almost always messy, and messy data gives misleading answers. Cleaning is usually a big part of any data project. Here are four checks to start with."
+  },
+  {
+   "tag": "1 · DUPLICATES",
+   "text": "The same record counted twice",
+   "sub": "Inflates counts and totals",
+   "say": "One: duplicates. The same customer or transaction recorded twice will inflate your counts and totals. Check for repeated rows and repeated IDs."
+  },
+  {
+   "tag": "2 · INCONSISTENT LABELS",
+   "text": "'Lagos', 'lagos', 'LAGOS '",
+   "sub": "Three spellings, one city",
+   "size": 80,
+   "say": "Two: inconsistent labels. Lagos with a capital, lagos in lower case, and LAGOS with a trailing space look like three different cities to a computer. Standardise case, spacing, and spelling."
+  },
+  {
+   "tag": "3 · WRONG TYPES",
+   "text": "Numbers stored as text\nDates in mixed formats",
+   "size": 80,
+   "sub": "'₦5,000' can't be averaged until it's a number",
+   "say": "Three: wrong data types. An amount stored as text, with a currency sign and commas, can't be averaged until you convert it to a number. And dates written in different formats need to be made consistent."
+  },
+  {
+   "tag": "4 · IMPOSSIBLE VALUES",
+   "text": "Age 250? Negative loan amount?",
+   "sub": "Check values against real-world rules",
+   "say": "Four: impossible values. An age of two hundred and fifty, or a negative loan amount, breaks real-world rules. Write simple checks to catch them."
+  },
+  {
+   "tag": "TAKEAWAY",
+   "text": "Keep the raw file. Record every step.",
+   "sub": "So anyone can repeat your cleaning",
+   "say": "So the takeaway: never overwrite the raw data. Clean a copy, and record every step, so you or anyone else can repeat it."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Exploratory data analysis (EDA)",
+   "say": "Next lesson: exploratory data analysis, or E D A."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Start cleaning with four checks: duplicates, inconsistent labels, wrong data types and impossible values. Always keep the raw file untouched and record each cleaning step so it can be repeated.",
+ "practice": "Make a 6-row list of transactions on paper that includes one duplicate, a city spelled three ways, an amount written as text with a currency sign, and a negative amount. Then write the cleaned version and list each change you made."
+}

@@ -1,0 +1,63 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 7,
+ "slides": [
+  {
+   "tag": "LESSON 7",
+   "text": "Outliers: errors, or the most interesting rows?",
+   "size": 86,
+   "say": "Data Science from Scratch, lesson seven: outliers. Are they errors, or the most interesting rows in your data?"
+  },
+  {
+   "tag": "OUTLIER",
+   "text": "A value far from the rest of the data",
+   "sub": "One loan of 50 million in a column of 50 thousands",
+   "say": "An outlier is a value that sits far away from the rest of your data. Picture one loan of fifty million in a column where most loans are around fifty thousand."
+  },
+  {
+   "tag": "WHERE THEY COME FROM",
+   "text": "Typos\nMeasurement errors\nReal rare events",
+   "size": 80,
+   "say": "Outliers usually come from one of three places. A typo, like an extra zero. A measurement or system error. Or a real, rare event that actually happened."
+  },
+  {
+   "tag": "IQR RULE",
+   "text": "Below Q1 − 1.5×IQR\nAbove Q3 + 1.5×IQR",
+   "size": 78,
+   "sub": "IQR = Q3 − Q1, the middle 50% of the data",
+   "say": "A common way to flag them is the IQR rule. The interquartile range is the spread of the middle half of your data. Values more than one and a half times that range below the first quartile, or above the third quartile, get flagged as possible outliers."
+  },
+  {
+   "tag": "WHY IT MATTERS",
+   "text": "Outliers pull the mean. The median barely moves.",
+   "sub": "Remember lesson 4",
+   "say": "Why care? A single extreme value can drag the mean a long way, while the median barely moves. That's why one outlier can make an average misleading."
+  },
+  {
+   "tag": "FRAUD ANGLE",
+   "text": "Sometimes the outlier is the story",
+   "sub": "Unusual is a reason to look, not proof of fraud",
+   "say": "In fraud work, the unusual transaction is often exactly what you want to find. But be careful: unusual is a reason to investigate, not proof that something is wrong."
+  },
+  {
+   "tag": "TAKEAWAY",
+   "text": "Investigate before you delete.",
+   "sub": "Fix errors · keep real values · write down what you did",
+   "say": "So the takeaway: never delete outliers automatically. Fix the errors, keep the real values, and write down what you decided."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Missing data and what to do about it",
+   "say": "Next lesson: missing data, and what to do about it."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "An outlier is a value far from the rest of the data, caused by a typo, a measurement error or a genuine rare event. The IQR rule flags values below Q1 − 1.5×IQR or above Q3 + 1.5×IQR; investigate them before deciding to fix, keep or remove.",
+ "practice": "Write down these 10 numbers: 12, 15, 14, 13, 16, 15, 14, 13, 15, 95. Find Q1, Q3 and the IQR, use the 1.5×IQR rule to check whether 95 is an outlier, then compare the mean and the median with and without it."
+}

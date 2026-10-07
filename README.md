@@ -81,9 +81,9 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 4 | Mean, median & mode: describing data with one number | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-04.md) |
 | 5 | Spread: range, variance & standard deviation | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-05.md) |
 | 6 | Distributions and the normal curve | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-06.md) |
-| 7 | Outliers: errors, or the most interesting rows? | 🔜 Soon | — |
-| 8 | Missing data and what to do about it | 🔜 Soon | — |
-| 9 | Data cleaning basics | 🔜 Soon | — |
+| 7 | Outliers: errors, or the most interesting rows? | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-07.md) |
+| 8 | Missing data and what to do about it | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-08.md) |
+| 9 | Data cleaning basics | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-09.md) |
 | 10 | Exploratory data analysis (EDA) | 🔜 Soon | — |
 | 11 | Choosing the right chart | 🔜 Soon | — |
 | 12 | Correlation is not causation | 🔜 Soon | — |
@@ -135,7 +135,7 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 38 | Project 3 · Part 2: City rents — exploring prices across the city | 🔜 Soon | — |
 | 39 | Project 3 · Part 3: City rents — a price model, error analysis and portfolio write-up | 🔜 Soon | — |
 
-<sub>6 of 39 planned lessons released · new lessons are added daily.</sub>
+<sub>9 of 39 planned lessons released · new lessons are added daily.</sub>
 <!-- COURSE-TABLE:END -->
 
 ## 🗺️ Roadmap

@@ -50,4 +50,4 @@ Follow, like, and share for more. This lesson was brought to you by Ayodele Odug
 
 ---
 
-[← Lesson 5](lesson-05.md)
+[← Lesson 5](lesson-05.md) · [Lesson 7 →](lesson-07.md)
