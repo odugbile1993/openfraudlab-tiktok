@@ -1,5 +1,5 @@
 {
-  "next_lesson": 10,
+  "next_lesson": 13,
   "log": [
     {
       "lesson": 1,
@@ -53,6 +53,24 @@
       "status": "scheduled via Metricool",
       "publish": "2026-10-07T20:00 Africa/Lagos",
       "metricool_id": 390026647
+    },
+    {
+      "lesson": 10,
+      "status": "scheduled via Metricool",
+      "publish": "2026-10-08T08:00 Africa/Lagos",
+      "metricool_id": 390874873
+    },
+    {
+      "lesson": 11,
+      "status": "scheduled via Metricool",
+      "publish": "2026-10-08T13:00 Africa/Lagos",
+      "metricool_id": 390874891
+    },
+    {
+      "lesson": 12,
+      "status": "scheduled via Metricool",
+      "publish": "2026-10-08T20:00 Africa/Lagos",
+      "metricool_id": 390874910
     }
   ],
   "academy_next": 40
