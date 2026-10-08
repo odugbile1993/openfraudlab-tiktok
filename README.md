@@ -84,9 +84,9 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 7 | Outliers: errors, or the most interesting rows? | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-07.md) |
 | 8 | Missing data and what to do about it | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-08.md) |
 | 9 | Data cleaning basics | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-09.md) |
-| 10 | Exploratory data analysis (EDA) | 🔜 Soon | — |
-| 11 | Choosing the right chart | 🔜 Soon | — |
-| 12 | Correlation is not causation | 🔜 Soon | — |
+| 10 | Exploratory data analysis (EDA) | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-10.md) |
+| 11 | Choosing the right chart | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-11.md) |
+| 12 | Correlation is not causation | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-12.md) |
 | 13 | Sampling and sampling bias | 🔜 Soon | — |
 | 14 | Probability basics for data science | 🔜 Soon | — |
 
@@ -135,7 +135,7 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 38 | Project 3 · Part 2: City rents — exploring prices across the city | 🔜 Soon | — |
 | 39 | Project 3 · Part 3: City rents — a price model, error analysis and portfolio write-up | 🔜 Soon | — |
 
-<sub>9 of 39 planned lessons released · new lessons are added daily.</sub>
+<sub>12 of 39 planned lessons released · new lessons are added daily.</sub>
 <!-- COURSE-TABLE:END -->
 
 ## 🗺️ Roadmap

@@ -1,0 +1,65 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 11,
+ "slides": [
+  {
+   "tag": "LESSON 11",
+   "text": "Choosing the right chart",
+   "size": 90,
+   "say": "Data Science from Scratch, lesson eleven: choosing the right chart."
+  },
+  {
+   "tag": "START HERE",
+   "text": "What question are you answering?",
+   "sub": "Compare · trend · distribution · relationship",
+   "say": "Start with the question, not the chart. Are you comparing groups, showing a trend over time, showing a distribution, or showing a relationship between two things?"
+  },
+  {
+   "tag": "COMPARE",
+   "text": "Bar chart",
+   "size": 90,
+   "sub": "Transactions by payment method",
+   "say": "To compare categories, use a bar chart, like the number of transactions by payment method. It's usually easier to read than a pie chart, especially with many slices. And start the bars at zero, so differences aren't exaggerated."
+  },
+  {
+   "tag": "TREND",
+   "text": "Line chart",
+   "size": 90,
+   "sub": "Monthly loan applications",
+   "say": "To show a trend over time, use a line chart, like monthly loan applications. Time usually goes along the horizontal axis, from left to right."
+  },
+  {
+   "tag": "DISTRIBUTION",
+   "text": "Histogram or box plot",
+   "size": 86,
+   "sub": "How transaction amounts are spread out",
+   "say": "To show a distribution, use a histogram or a box plot. They show where most values sit, how spread out they are, and whether there are outliers."
+  },
+  {
+   "tag": "RELATIONSHIP",
+   "text": "Scatter plot",
+   "size": 90,
+   "sub": "Income vs loan amount · one dot per customer",
+   "say": "To show the relationship between two number columns, use a scatter plot, like income against loan amount. Each dot is one customer."
+  },
+  {
+   "tag": "TAKEAWAY",
+   "text": "Question first, then pick the chart.",
+   "say": "So the takeaway: decide the question first, then pick the simplest chart that answers it."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Correlation is not causation",
+   "say": "Next lesson: correlation is not causation."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Choose a chart by the question you are answering: bar charts compare categories, line charts show trends over time, histograms and box plots show distributions, and scatter plots show the relationship between two numeric columns.",
+ "practice": "Write four questions about your own spending, for example 'Which category do I spend most on?' or 'Is my spending rising month by month?'. For each one, name the chart you would use (bar, line, histogram or scatter) and sketch it on paper."
+}

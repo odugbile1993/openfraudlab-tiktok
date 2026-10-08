@@ -1,0 +1,61 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 12,
+ "slides": [
+  {
+   "tag": "LESSON 12",
+   "text": "Correlation is not causation",
+   "size": 90,
+   "say": "Data Science from Scratch, lesson twelve: correlation is not causation."
+  },
+  {
+   "tag": "CORRELATION",
+   "text": "Two things that tend to move together",
+   "sub": "Pearson's r runs from -1 to +1",
+   "say": "Correlation means two things tend to move together. The most common measure, Pearson's r, runs from minus one to plus one. Plus one is a perfect positive straight-line link, minus one is a perfect negative one, and zero means no straight-line link."
+  },
+  {
+   "tag": "THE TRAP",
+   "text": "Moving together doesn't mean one causes the other",
+   "say": "The trap is assuming that because two things move together, one must cause the other. Correlation alone can't tell you that."
+  },
+  {
+   "tag": "HIDDEN FACTOR",
+   "text": "A third factor can drive both",
+   "sub": "Ice cream sales and drownings both rise in hot weather",
+   "say": "Often a third factor drives both. A classic example: ice cream sales and drownings both rise in hot weather. Ice cream doesn't cause drowning. The heat drives both."
+  },
+  {
+   "tag": "WRONG DIRECTION",
+   "text": "The cause can run the other way",
+   "sub": "Failed payments lead to support calls, not the reverse",
+   "say": "Sometimes the cause runs the other way. Customers who call support more may have more failed payments. The calls probably don't cause the failures. The failures cause the calls."
+  },
+  {
+   "tag": "CHANCE",
+   "text": "Some correlations are pure coincidence",
+   "sub": "Compare enough columns and some will line up",
+   "say": "And some correlations are just chance. If you compare enough columns, some will line up by coincidence."
+  },
+  {
+   "tag": "TAKEAWAY",
+   "text": "Correlation is a clue, not proof.",
+   "sub": "Testing cause usually needs an experiment",
+   "say": "So the takeaway: treat correlation as a clue, not proof. To test cause and effect, you usually need a controlled experiment, or a carefully designed study."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Sampling and sampling bias",
+   "say": "Next lesson: sampling, and sampling bias."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Correlation measures how two variables move together (Pearson's r runs from -1 to +1), but it does not show cause. A hidden third factor, reverse causation or pure chance can all produce correlations; testing cause usually needs an experiment or careful study design.",
+ "practice": "Think of two things that tend to rise together, for example umbrella sales and traffic jams. Write down a third factor that could drive both, then describe a simple comparison or experiment that could check whether one really causes the other."
+}
