@@ -1,0 +1,60 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 15,
+ "slides": [
+  {
+   "tag": "LESSON 15",
+   "text": "Why Python for data science",
+   "size": 90,
+   "say": "Data Science from Scratch, lesson fifteen: why Python for data science."
+  },
+  {
+   "tag": "THE QUESTION",
+   "text": "Spreadsheets get you far. Why code?",
+   "say": "Spreadsheets can take you surprisingly far. So why do most data scientists learn to code, and why is Python such a common choice?"
+  },
+  {
+   "tag": "READABLE",
+   "text": "Python reads almost like plain English",
+   "sub": "Friendly for beginners",
+   "say": "First, Python is known for being readable. Its code often looks close to plain English, which makes it a friendly first language."
+  },
+  {
+   "tag": "LIBRARIES",
+   "text": "pandas · NumPy · Matplotlib · scikit-learn",
+   "size": 78,
+   "sub": "Tables · maths · charts · machine learning",
+   "say": "Second, its libraries. pandas handles tables, NumPy handles fast maths on arrays, Matplotlib draws charts, and scikit-learn gives you many standard machine learning models."
+  },
+  {
+   "tag": "REPEATABLE",
+   "text": "Code is a recipe you can rerun",
+   "sub": "New data next month? Run it again.",
+   "say": "Third, code is repeatable. A script is a recipe: when new data arrives next month, you run the same steps again, and anyone can check exactly what you did."
+  },
+  {
+   "tag": "FREE & SUPPORTED",
+   "text": "Free, open source, huge community",
+   "say": "And Python is free and open source, with a large community, so when you get stuck, someone has usually asked the same question before."
+  },
+  {
+   "tag": "TAKEAWAY",
+   "text": "Python isn't the only option, but it's a strong first one",
+   "say": "So the takeaway: Python isn't the only option. R and SQL are useful too. But it's a strong first language for data science."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Meet the pandas DataFrame",
+   "say": "Next lesson: meet the pandas DataFrame."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Python is a popular first language for data science because it is readable, free, and has strong libraries like pandas, NumPy, Matplotlib and scikit-learn. Code also makes your analysis repeatable.",
+ "practice": "Think of one task you repeat in a spreadsheet every week or month. Write down, step by step in plain English, what you do — that list is the start of a script."
+}

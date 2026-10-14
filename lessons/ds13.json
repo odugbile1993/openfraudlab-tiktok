@@ -1,0 +1,61 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 13,
+ "slides": [
+  {
+   "tag": "LESSON 13",
+   "text": "Sampling and sampling bias",
+   "size": 90,
+   "say": "Data Science from Scratch, lesson thirteen: sampling, and sampling bias."
+  },
+  {
+   "tag": "WHY SAMPLE?",
+   "text": "We rarely get data on everyone",
+   "sub": "Population: the whole group · Sample: the part you observe",
+   "say": "We rarely get data on every single person or transaction we care about. The whole group is called the population. The part we actually observe is the sample, and we use it to learn about the whole."
+  },
+  {
+   "tag": "THE GOAL",
+   "text": "A sample should look like the population",
+   "say": "A good sample looks like the population in the ways that matter. Then what's true in the sample is likely to be roughly true for everyone."
+  },
+  {
+   "tag": "RANDOM SAMPLING",
+   "text": "Everyone has an equal chance of being picked",
+   "sub": "The simplest way to avoid picking favourites",
+   "say": "The simplest approach is a random sample, where every member of the population has an equal chance of being picked. That stops you, or your process, from choosing favourites."
+  },
+  {
+   "tag": "SAMPLING BIAS",
+   "text": "When some groups are more likely to be included",
+   "size": 82,
+   "sub": "An online-only survey misses people who aren't online",
+   "say": "Sampling bias happens when some groups are more likely to end up in your data than others. For example, an online-only survey misses people who aren't online, so its results can't speak for them."
+  },
+  {
+   "tag": "IN FRAUD DATA",
+   "text": "You only see the cases that were caught",
+   "sub": "Fraud that slipped through never gets a label",
+   "say": "Fraud data has a classic version of this. Your labelled fraud cases are usually the ones that were caught. Fraud that slipped through often never gets a label, so your data can quietly over-represent the easy-to-catch kinds."
+  },
+  {
+   "tag": "TAKEAWAY",
+   "text": "Ask: who is missing from my data?",
+   "say": "So the takeaway: before you trust any result, ask who or what is missing from your data, and why."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Probability basics for data science",
+   "say": "Next lesson: probability basics for data science."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "A sample is the part of a population you actually observe. Random sampling helps a sample represent the population; sampling bias happens when some groups are more likely to be included than others.",
+ "practice": "Imagine a bank surveys customers only through its mobile app. Write down two groups of customers this survey might miss, and how that could skew the results."
+}

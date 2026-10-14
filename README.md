@@ -87,14 +87,14 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 10 | Exploratory data analysis (EDA) | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-10.md) |
 | 11 | Choosing the right chart | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-11.md) |
 | 12 | Correlation is not causation | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-12.md) |
-| 13 | Sampling and sampling bias | 🔜 Soon | — |
-| 14 | Probability basics for data science | 🔜 Soon | — |
+| 13 | Sampling and sampling bias | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-13.md) |
+| 14 | Probability basics for data science | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-14.md) |
 
 #### Module 3 · Tools of the Trade
 
 | # | Lesson | Watch | Study notes |
 |:-:|:--|:-:|:-:|
-| 15 | Why Python for data science | 🔜 Soon | — |
+| 15 | Why Python for data science | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-15.md) |
 | 16 | Meet the pandas DataFrame | 🔜 Soon | — |
 | 17 | SQL basics: SELECT, WHERE, GROUP BY | 🔜 Soon | — |
 
@@ -135,7 +135,7 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 38 | Project 3 · Part 2: City rents — exploring prices across the city | 🔜 Soon | — |
 | 39 | Project 3 · Part 3: City rents — a price model, error analysis and portfolio write-up | 🔜 Soon | — |
 
-<sub>12 of 39 planned lessons released · new lessons are added daily.</sub>
+<sub>15 of 39 planned lessons released · new lessons are added daily.</sub>
 <!-- COURSE-TABLE:END -->
 
 ## 🗺️ Roadmap
