@@ -92,21 +92,21 @@
     },
     {
       "lesson": 16,
-      "status": "scheduled via Metricool",
+      "status": "scheduled via Metricool (video re-rendered with cleaner slides)",
       "publish": "2026-10-15T08:00 Africa/Lagos",
-      "metricool_id": 396507192
+      "metricool_id": 396538344
     },
     {
       "lesson": 17,
-      "status": "scheduled via Metricool",
+      "status": "scheduled via Metricool (video re-rendered with cleaner slides)",
       "publish": "2026-10-15T13:00 Africa/Lagos",
-      "metricool_id": 396507235
+      "metricool_id": 396538378
     },
     {
       "lesson": 18,
-      "status": "scheduled via Metricool",
+      "status": "scheduled via Metricool (video re-rendered with cleaner slides)",
       "publish": "2026-10-15T20:00 Africa/Lagos",
-      "metricool_id": 396507266
+      "metricool_id": 396538411
     }
   ],
   "academy_next": 40
