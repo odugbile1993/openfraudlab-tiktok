@@ -5,52 +5,56 @@
   {
    "tag": "LESSON 16",
    "text": "Meet the pandas DataFrame",
-   "size": 90,
+   "size": 88,
    "say": "Data Science from Scratch, lesson sixteen: meet the pandas DataFrame."
   },
   {
    "tag": "WHAT IT IS",
-   "text": "A table in Python: rows, columns and labels",
-   "sub": "Each column is a pandas Series",
-   "say": "A DataFrame is how pandas holds a table in Python. It has rows and columns, just like a spreadsheet, and every row and column has a label. Each single column is called a Series."
+   "text": "A table inside Python",
+   "sub": "Rows · columns · labels",
+   "say": "A DataFrame is how pandas holds a table in Python. It has rows and columns, just like a spreadsheet, and every row and column has a label. Each single column is called a Series.",
+   "size": 80
   },
   {
    "tag": "LOAD IT",
-   "text": "df = pd.read_csv(\n\"transactions.csv\")",
-   "size": 72,
-   "sub": "import pandas as pd first",
+   "text": "pd.read_csv()",
+   "size": 80,
+   "sub": "Turns a CSV file into a table",
    "say": "Most of the time you start by loading a file. After importing pandas as p d, one line, read underscore csv, turns a CSV file into a DataFrame, usually named d f."
   },
   {
    "tag": "FIRST LOOK",
-   "text": "df.head()\ndf.shape\ndf.info()",
-   "size": 82,
-   "sub": "First rows · (rows, columns) · column types & missing values",
+   "text": "head · shape · info",
+   "size": 80,
+   "sub": "First rows · size · column types",
    "say": "Then take a first look. head shows the first five rows. shape tells you how many rows and columns you have. And info lists each column's data type and how many values are not missing."
   },
   {
    "tag": "SUMMARY STATS",
    "text": "df.describe()",
-   "size": 86,
-   "sub": "Count, mean, std, min, quartiles, max",
+   "size": 80,
+   "sub": "Quick stats for number columns",
    "say": "describe gives quick summary statistics for your numeric columns: the count, mean, standard deviation, minimum, quartiles, and maximum. It's a fast way to spot strange values."
   },
   {
    "tag": "SELECT & FILTER",
-   "text": "df[\"amount\"]\ndf[df[\"amount\"] > 1000]",
-   "size": 70,
-   "sub": "One column · only rows that match a condition",
+   "text": "Pick & filter",
+   "size": 80,
+   "sub": "df[\"amount\"] > 1000",
    "say": "To pick one column, put its name in square brackets. To filter rows, put a condition in the brackets instead. For example, keep only transactions where the amount is above one thousand."
   },
   {
    "tag": "TAKEAWAY",
-   "text": "Load it, look at it, then ask questions.",
-   "say": "So the takeaway: load your data, take a first look with head, shape, info, and describe, and only then start asking questions."
+   "text": "Look before you analyse",
+   "say": "So the takeaway: load your data, take a first look with head, shape, info, and describe, and only then start asking questions.",
+   "size": 80
   },
   {
    "tag": "NEXT LESSON",
-   "text": "SQL basics: SELECT, WHERE, GROUP BY",
-   "say": "Next lesson: SQL basics. Select, where, and group by."
+   "text": "SQL basics",
+   "say": "Next lesson: SQL basics. Select, where, and group by.",
+   "sub": "SELECT · WHERE · GROUP BY",
+   "size": 80
   },
   {
    "tag": "THANKS FOR WATCHING",

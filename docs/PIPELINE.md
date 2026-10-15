@@ -12,7 +12,8 @@ AI-voiced, captioned vertical lesson videos (1080x1920, 60–90s) for TikTok **@
    - Second-to-last slide: tag `NEXT LESSON`, teasing lesson N+1's title.
    - Last slide is always exactly:
      `{"tag": "THANKS FOR WATCHING", "text": "Follow, like & share for more", "size": 92, "sub": "Ayodele Odugbile · OpenFraudLab", "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."}`
-   - Keep `text` short (fits ~4 lines at size 78). Spell numbers out in `say` ("one point five"), write "AI" as "AI".
+   - **On-screen text must be neat and minimal (Ayodele's standing request).** One idea per slide. `text` ≤ 5 words, max 2 lines; `sub` ≤ 7 words, one line. Use size 80 (hook 88). No long code or sentences on screen: put the detail in `say` (narration) and show only a short keyword, formula or snippet (≤ 25 characters). Don't repeat the tag as the text.
+   - After rendering, make a contact sheet (`ffmpeg -i video.mp4 -vf "fps=1/10,scale=270:-1,tile=5x2" -frames:v 1 sheet.png`) and check every slide: nothing cut off or crowded. Spell numbers out in `say` ("one point five"), write "AI" as "AI".
    - Accuracy matters: no invented statistics, quotes, studies or tools. Hedge general claims ("often", "usually").
    - Also add two top-level fields used for the learner notes on GitHub:
      `summary` (1–2 sentence recap of the lesson) and `practice` (one small, concrete exercise a beginner can do without special software or data).

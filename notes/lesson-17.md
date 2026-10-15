@@ -12,12 +12,12 @@ SELECT chooses columns and FROM names the table, WHERE filters individual rows, 
 
 ## Key ideas
 
-- **Why sql:** Much of the world's data lives in databases — SQL is how you ask them questions
-- **Select:** SELECT customer_id, amount / FROM transactions — Which columns, from which table
-- **Where:** WHERE amount > 1000 — Keep only rows that match
-- **Group by:** SELECT city, COUNT(*), AVG(amount) / FROM transactions / GROUP BY city — One summary row per group
-- **Watch out:** WHERE filters rows before grouping. / HAVING filters groups after. — e.g. HAVING COUNT(*) > 50
-- **Takeaway:** Choose columns, filter rows, then summarise groups.
+- **Why sql:** Ask a database questions — Much business data lives there
+- **Select:** Choose your columns — SELECT amount FROM transactions
+- **Where:** Filter the rows — WHERE amount > 1000
+- **Group by:** Summarise groups — GROUP BY city
+- **Watch out:** WHERE vs HAVING — Rows before grouping · groups after
+- **Takeaway:** Columns, rows, then groups
 
 ## Try it yourself
 

@@ -41,25 +41,31 @@ def render_slide(bg, slide, series, lesson_no, total):
     hf = ImageFont.truetype(BOLD, 40)
     d.text((80, 150), BRAND.upper(), font=hf, fill=ACCENT)
     d.text((80, 205), f"{series}  ·  Lesson {lesson_no}", font=ImageFont.truetype(REG, 38), fill=MUTED)
-    # tag (section label)
+    # content block (tag + main text + sub), vertically centred between header and footer
+    size = slide.get("size", 78)
+    mf = ImageFont.truetype(BOLD, size)
+    # auto-shrink so no single word/line overflows the safe width
+    while size > 48 and any(d.textlength(w, font=mf) > W - 160 for p in slide["text"].split("\n") for w in p.split()):
+        size -= 4; mf = ImageFont.truetype(BOLD, size)
+    lines = wrap(d, slide["text"], mf, W - 160)
+    sf = ImageFont.truetype(REG, 50)
+    sub_lines = wrap(d, slide["sub"], sf, W - 160) if slide.get("sub") else []
+    lh = int(size * 1.28)
+    block = (70 + 60 if slide.get("tag") else 0) + len(lines) * lh + ((40 + len(sub_lines) * 68) if sub_lines else 0)
+    top, bottom = 330, H - 320
+    y = max(top, (top + bottom - block) // 2)
     if slide.get("tag"):
         tf = ImageFont.truetype(BOLD, 36)
         tw = d.textlength(slide["tag"], font=tf)
-        d.rounded_rectangle([80, 520, 80 + tw + 60, 590], radius=35, fill=ACCENT)
-        d.text((110, 533), slide["tag"], font=tf, fill=(10, 20, 30))
-    # main text
-    size = slide.get("size", 78)
-    mf = ImageFont.truetype(BOLD, size)
-    lines = wrap(d, slide["text"], mf, W - 160)
-    y = 650
+        d.rounded_rectangle([80, y, 80 + tw + 60, y + 70], radius=35, fill=ACCENT)
+        d.text((110, y + 13), slide["tag"], font=tf, fill=(10, 20, 30))
+        y += 130
     for ln in lines:
         d.text((80, y), ln, font=mf, fill=WHITE)
-        y += int(size * 1.28)
-    # sub text
-    if slide.get("sub"):
-        sf = ImageFont.truetype(REG, 50)
+        y += lh
+    if sub_lines:
         y += 40
-        for ln in wrap(d, slide["sub"], sf, W - 160):
+        for ln in sub_lines:
             d.text((80, y), ln, font=sf, fill=MUTED)
             y += 68
     # footer

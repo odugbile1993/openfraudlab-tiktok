@@ -12,12 +12,12 @@ Split data into a training set the model learns from and a hidden test set used 
 
 ## Key ideas
 
-- **The problem:** A model can memorise the data it learned from — Great scores on old data ≠ good on new data
-- **The fix:** Training set: the model learns / Test set: kept hidden — Score the model only on the test set
-- **How much:** Often 80 / 20 or 70 / 30 — A common rule of thumb, not a law
-- **Rare events:** Stratify: keep the same fraud rate in both sets — Otherwise the test set may have almost no fraud
-- **Time matters:** Train on the past, test on the future — For data that changes over time, split by date
-- **Takeaway:** Never let the model see the test set while it learns.
+- **The problem:** Models can memorise — High scores on old data can mislead
+- **The fix:** Learn on one part. / Test on the other.
+- **How much:** 80/20 or 70/30 — A common rule of thumb
+- **Rare events:** Stratify the split — Same fraud rate in both sets
+- **Time matters:** Train on the past. / Test on the future. — Split by date when patterns shift
+- **Takeaway:** Keep the test set hidden
 
 ## Try it yourself
 

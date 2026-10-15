@@ -4,53 +4,58 @@
  "slides": [
   {
    "tag": "LESSON 17",
-   "text": "SQL basics: SELECT, WHERE, GROUP BY",
-   "size": 86,
-   "say": "Data Science from Scratch, lesson seventeen: SQL basics. Select, where, and group by."
+   "text": "SQL basics",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson seventeen: SQL basics. Select, where, and group by.",
+   "sub": "SELECT · WHERE · GROUP BY"
   },
   {
    "tag": "WHY SQL",
-   "text": "Much of the world's data lives in databases",
-   "sub": "SQL is how you ask them questions",
-   "say": "A lot of business data, like customers and transactions, lives in relational databases. SQL is the standard language for asking those databases questions, so it's one of the most useful skills a data scientist can have."
+   "text": "Ask a database questions",
+   "sub": "Much business data lives there",
+   "say": "A lot of business data, like customers and transactions, lives in relational databases. SQL is the standard language for asking those databases questions, so it's one of the most useful skills a data scientist can have.",
+   "size": 80
   },
   {
    "tag": "SELECT",
-   "text": "SELECT customer_id, amount\nFROM transactions",
-   "size": 70,
-   "sub": "Which columns, from which table",
+   "text": "Choose your columns",
+   "size": 80,
+   "sub": "SELECT amount FROM transactions",
    "say": "Every query starts with select. You list the columns you want, then say which table they come from, using from."
   },
   {
    "tag": "WHERE",
-   "text": "WHERE amount > 1000",
-   "size": 82,
-   "sub": "Keep only rows that match",
+   "text": "Filter the rows",
+   "size": 80,
+   "sub": "WHERE amount > 1000",
    "say": "Where filters the rows. Here we keep only transactions where the amount is greater than one thousand. Rows that don't match are left out."
   },
   {
    "tag": "GROUP BY",
-   "text": "SELECT city, COUNT(*), AVG(amount)\nFROM transactions\nGROUP BY city",
-   "size": 62,
-   "sub": "One summary row per group",
+   "text": "Summarise groups",
+   "size": 80,
+   "sub": "GROUP BY city",
    "say": "Group by puts rows into groups and gives you one summary row per group. Combine it with functions like count, sum, or average, and you get, say, the number of transactions and the average amount for each city."
   },
   {
    "tag": "WATCH OUT",
-   "text": "WHERE filters rows before grouping.\nHAVING filters groups after.",
-   "size": 70,
-   "sub": "e.g. HAVING COUNT(*) > 50",
+   "text": "WHERE vs HAVING",
+   "size": 80,
+   "sub": "Rows before grouping · groups after",
    "say": "One thing that trips beginners up: where filters individual rows before they are grouped. To filter the groups themselves, like cities with more than fifty transactions, you use having."
   },
   {
    "tag": "TAKEAWAY",
-   "text": "Choose columns, filter rows, then summarise groups.",
-   "say": "So the takeaway: select chooses columns, where filters rows, and group by summarises groups."
+   "text": "Columns, rows, then groups",
+   "say": "So the takeaway: select chooses columns, where filters rows, and group by summarises groups.",
+   "size": 80
   },
   {
    "tag": "NEXT LESSON",
-   "text": "Train/test split: why we hide data from the model",
-   "say": "Next lesson: the train test split, and why we hide data from the model."
+   "text": "Train/test split",
+   "say": "Next lesson: the train test split, and why we hide data from the model.",
+   "sub": "Why we hide data from the model",
+   "size": 80
   },
   {
    "tag": "THANKS FOR WATCHING",

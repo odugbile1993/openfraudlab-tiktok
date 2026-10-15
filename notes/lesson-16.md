@@ -12,12 +12,12 @@ A pandas DataFrame is a labelled table of rows and columns, where each column is
 
 ## Key ideas
 
-- **What it is:** A table in Python: rows, columns and labels — Each column is a pandas Series
-- **Load it:** df = pd.read_csv( / "transactions.csv") — import pandas as pd first
-- **First look:** df.head() / df.shape / df.info() — First rows · (rows, columns) · column types & missing values
-- **Summary stats:** df.describe() — Count, mean, std, min, quartiles, max
-- **Select & filter:** df["amount"] / df[df["amount"] > 1000] — One column · only rows that match a condition
-- **Takeaway:** Load it, look at it, then ask questions.
+- **What it is:** A table inside Python — Rows · columns · labels
+- **Load it:** pd.read_csv() — Turns a CSV file into a table
+- **First look:** head · shape · info — First rows · size · column types
+- **Summary stats:** df.describe() — Quick stats for number columns
+- **Select & filter:** Pick & filter — df["amount"] > 1000
+- **Takeaway:** Look before you analyse
 
 ## Try it yourself
 

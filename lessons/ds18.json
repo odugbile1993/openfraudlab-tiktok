@@ -4,52 +4,56 @@
  "slides": [
   {
    "tag": "LESSON 18",
-   "text": "Train/test split: why we hide data from the model",
-   "size": 86,
-   "say": "Data Science from Scratch, lesson eighteen: the train test split, and why we hide data from the model."
+   "text": "Train/test split",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson eighteen: the train test split, and why we hide data from the model.",
+   "sub": "Why we hide data from the model"
   },
   {
    "tag": "THE PROBLEM",
-   "text": "A model can memorise the data it learned from",
-   "sub": "Great scores on old data ≠ good on new data",
-   "say": "A model can do very well on the data it learned from, partly by memorising it. That tells you little about how it will do on new data, which is the whole point."
+   "text": "Models can memorise",
+   "sub": "High scores on old data can mislead",
+   "say": "A model can do very well on the data it learned from, partly by memorising it. That tells you little about how it will do on new data, which is the whole point.",
+   "size": 80
   },
   {
    "tag": "THE FIX",
-   "text": "Training set: the model learns\nTest set: kept hidden",
-   "size": 78,
-   "sub": "Score the model only on the test set",
+   "text": "Learn on one part.\nTest on the other.",
+   "size": 80,
    "say": "The fix is simple. Split your data in two. The model learns from the training set, and the test set stays hidden until the end, when you use it to score the model."
   },
   {
    "tag": "HOW MUCH",
-   "text": "Often 80 / 20 or 70 / 30",
-   "size": 86,
-   "sub": "A common rule of thumb, not a law",
+   "text": "80/20 or 70/30",
+   "size": 80,
+   "sub": "A common rule of thumb",
    "say": "A common choice is eighty percent for training and twenty for testing, or seventy and thirty. These are rules of thumb, not laws."
   },
   {
    "tag": "RARE EVENTS",
-   "text": "Stratify: keep the same fraud rate in both sets",
-   "size": 78,
-   "sub": "Otherwise the test set may have almost no fraud",
+   "text": "Stratify the split",
+   "size": 80,
+   "sub": "Same fraud rate in both sets",
    "say": "With rare events like fraud, a random split can leave the test set with very few fraud cases. Stratifying keeps the share of fraud roughly the same in both sets."
   },
   {
    "tag": "TIME MATTERS",
-   "text": "Train on the past, test on the future",
-   "sub": "For data that changes over time, split by date",
-   "say": "When data changes over time, as fraud patterns often do, it's usually better to split by date. Train on older data and test on newer data, just like the model will face in real life."
+   "text": "Train on the past.\nTest on the future.",
+   "sub": "Split by date when patterns shift",
+   "say": "When data changes over time, as fraud patterns often do, it's usually better to split by date. Train on older data and test on newer data, just like the model will face in real life.",
+   "size": 80
   },
   {
    "tag": "TAKEAWAY",
-   "text": "Never let the model see the test set while it learns.",
-   "say": "So the takeaway: keep the test set hidden while the model learns, or your scores will look better than reality."
+   "text": "Keep the test set hidden",
+   "say": "So the takeaway: keep the test set hidden while the model learns, or your scores will look better than reality.",
+   "size": 80
   },
   {
    "tag": "NEXT LESSON",
    "text": "Linear regression intuition",
-   "say": "Next lesson: linear regression, the intuition."
+   "say": "Next lesson: linear regression, the intuition.",
+   "size": 80
   },
   {
    "tag": "THANKS FOR WATCHING",
