@@ -1,0 +1,65 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 16,
+ "slides": [
+  {
+   "tag": "LESSON 16",
+   "text": "Meet the pandas DataFrame",
+   "size": 90,
+   "say": "Data Science from Scratch, lesson sixteen: meet the pandas DataFrame."
+  },
+  {
+   "tag": "WHAT IT IS",
+   "text": "A table in Python: rows, columns and labels",
+   "sub": "Each column is a pandas Series",
+   "say": "A DataFrame is how pandas holds a table in Python. It has rows and columns, just like a spreadsheet, and every row and column has a label. Each single column is called a Series."
+  },
+  {
+   "tag": "LOAD IT",
+   "text": "df = pd.read_csv(\n\"transactions.csv\")",
+   "size": 72,
+   "sub": "import pandas as pd first",
+   "say": "Most of the time you start by loading a file. After importing pandas as p d, one line, read underscore csv, turns a CSV file into a DataFrame, usually named d f."
+  },
+  {
+   "tag": "FIRST LOOK",
+   "text": "df.head()\ndf.shape\ndf.info()",
+   "size": 82,
+   "sub": "First rows · (rows, columns) · column types & missing values",
+   "say": "Then take a first look. head shows the first five rows. shape tells you how many rows and columns you have. And info lists each column's data type and how many values are not missing."
+  },
+  {
+   "tag": "SUMMARY STATS",
+   "text": "df.describe()",
+   "size": 86,
+   "sub": "Count, mean, std, min, quartiles, max",
+   "say": "describe gives quick summary statistics for your numeric columns: the count, mean, standard deviation, minimum, quartiles, and maximum. It's a fast way to spot strange values."
+  },
+  {
+   "tag": "SELECT & FILTER",
+   "text": "df[\"amount\"]\ndf[df[\"amount\"] > 1000]",
+   "size": 70,
+   "sub": "One column · only rows that match a condition",
+   "say": "To pick one column, put its name in square brackets. To filter rows, put a condition in the brackets instead. For example, keep only transactions where the amount is above one thousand."
+  },
+  {
+   "tag": "TAKEAWAY",
+   "text": "Load it, look at it, then ask questions.",
+   "say": "So the takeaway: load your data, take a first look with head, shape, info, and describe, and only then start asking questions."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "SQL basics: SELECT, WHERE, GROUP BY",
+   "say": "Next lesson: SQL basics. Select, where, and group by."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "A pandas DataFrame is a labelled table of rows and columns, where each column is a Series. Load data with pd.read_csv, inspect it with head, shape, info and describe, then select columns and filter rows with square brackets.",
+ "practice": "Write down, on paper, the five commands you would run first on a new CSV called loans.csv (load it, then four ways to look at it). Next to each, write in one sentence what it tells you."
+}

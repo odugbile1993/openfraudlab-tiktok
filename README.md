@@ -95,14 +95,14 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | # | Lesson | Watch | Study notes |
 |:-:|:--|:-:|:-:|
 | 15 | Why Python for data science | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-15.md) |
-| 16 | Meet the pandas DataFrame | 🔜 Soon | — |
-| 17 | SQL basics: SELECT, WHERE, GROUP BY | 🔜 Soon | — |
+| 16 | Meet the pandas DataFrame | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-16.md) |
+| 17 | SQL basics: SELECT, WHERE, GROUP BY | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-17.md) |
 
 #### Module 4 · Machine Learning Essentials
 
 | # | Lesson | Watch | Study notes |
 |:-:|:--|:-:|:-:|
-| 18 | Train/test split: why we hide data from the model | 🔜 Soon | — |
+| 18 | Train/test split: why we hide data from the model | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-18.md) |
 | 19 | Linear regression intuition | 🔜 Soon | — |
 | 20 | Classification and logistic regression | 🔜 Soon | — |
 | 21 | Overfitting vs underfitting | 🔜 Soon | — |
@@ -135,7 +135,7 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 38 | Project 3 · Part 2: City rents — exploring prices across the city | 🔜 Soon | — |
 | 39 | Project 3 · Part 3: City rents — a price model, error analysis and portfolio write-up | 🔜 Soon | — |
 
-<sub>15 of 39 planned lessons released · new lessons are added daily.</sub>
+<sub>18 of 39 planned lessons released · new lessons are added daily.</sub>
 <!-- COURSE-TABLE:END -->
 
 ## 🗺️ Roadmap
