@@ -80,52 +80,54 @@
     },
     {
       "lesson": 14,
-      "status": "scheduled via Metricool",
+      "status": "FAILED in Metricool: 'You have reached your Metricool account limit.' Not posted; video kept for re-posting.",
       "publish": "2026-10-14T13:00 Africa/Lagos",
       "metricool_id": 395550887
     },
     {
       "lesson": 15,
-      "status": "scheduled via Metricool",
+      "status": "FAILED in Metricool: 'You have reached your Metricool account limit.' Not posted; video kept for re-posting.",
       "publish": "2026-10-14T20:00 Africa/Lagos",
       "metricool_id": 395550952
     },
     {
       "lesson": 16,
-      "status": "scheduled via Metricool (video re-rendered with cleaner slides)",
+      "status": "FAILED in Metricool: 'You have reached your Metricool account limit.' Not posted; video kept for re-posting.",
       "publish": "2026-10-15T08:00 Africa/Lagos",
       "metricool_id": 396538344
     },
     {
       "lesson": 17,
-      "status": "scheduled via Metricool (video re-rendered with cleaner slides)",
+      "status": "FAILED in Metricool: 'You have reached your Metricool account limit.' Not posted; video kept for re-posting.",
       "publish": "2026-10-15T13:00 Africa/Lagos",
       "metricool_id": 396538378
     },
     {
       "lesson": 18,
-      "status": "scheduled via Metricool (video re-rendered with cleaner slides)",
+      "status": "FAILED in Metricool: 'You have reached your Metricool account limit.' Not posted; video kept for re-posting.",
       "publish": "2026-10-15T20:00 Africa/Lagos",
       "metricool_id": 396538411
     },
     {
       "lesson": 19,
-      "status": "scheduled via Metricool",
+      "status": "FAILED in Metricool: 'You have reached your Metricool account limit.' Not posted; video kept for re-posting.",
       "publish": "2026-10-16T08:00 Africa/Lagos",
       "metricool_id": 397421258
     },
     {
       "lesson": 20,
-      "status": "scheduled via Metricool",
+      "status": "scheduled via Metricool but expected to fail (October Free-plan limit reached); not counted as posted",
       "publish": "2026-10-16T13:00 Africa/Lagos",
       "metricool_id": 397421276
     },
     {
       "lesson": 21,
-      "status": "scheduled via Metricool",
+      "status": "scheduled via Metricool but expected to fail (October Free-plan limit reached); not counted as posted",
       "publish": "2026-10-16T20:00 Africa/Lagos",
       "metricool_id": 397421296
     }
   ],
-  "academy_next": 40
+  "academy_next": 40,
+  "posted_through": 13,
+  "posting_note": "Metricool Free plan (20 posts/month). Lesson 13 (2026-10-14) was the last lesson posted. Lessons 14-21 are rendered but unposted; they post first from November, 4 a week (Mon/Tue/Thu/Fri 13:00 Lagos), unless Ayodele uploads them manually (then raise posted_through)."
 }

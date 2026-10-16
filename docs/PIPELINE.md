@@ -4,7 +4,9 @@ AI-voiced, captioned vertical lesson videos (1080x1920, 60–90s) for TikTok **@
 
 ## Daily pipeline (what each scheduled run does)
 
-1. Read `state.json` → `next_lesson` (N). Make lessons N, N+1, N+2 from `curriculum.json`. If the curriculum runs out, append new lessons that continue the series logically (intermediate data science / ML, with credit, fraud and finance examples where natural).
+**Posting cadence (from November 2026): Metricool is on the Free plan, which allows 20 scheduled posts per month across the whole account. Post ONE lesson per run, on Mondays, Tuesdays, Thursdays and Fridays at 13:00 Lagos time (about 17 a month), leaving the rest of the quota for other Open Fraud Labs posts. Post the backlog first: `state.json` → `posted_through` is the last lesson that actually went live on TikTok; the next lesson to post is `posted_through + 1`. If its video already exists in `videos/`, skip steps 1–4 and just schedule it. Only make a new lesson when every rendered lesson has been posted.**
+
+1. Read `state.json` → `next_lesson` (N). Make lesson N from `curriculum.json`. If the curriculum runs out, append new lessons that continue the series logically (intermediate data science / ML, with credit, fraud and finance examples where natural).
 2. Write each lesson spec as `lessons/dsNN.json` (NN = 2-digit lesson number), matching the format of `lessons/ds02.json`:
    - `series`: "Data Science from Scratch", `lesson`: N
    - 8–9 slides, each `{tag, text, sub?, size?, say}`; `say` is the narration (spoken, natural, ~70–90s total).
@@ -23,9 +25,9 @@ AI-voiced, captioned vertical lesson videos (1080x1920, 60–90s) for TikTok **@
    - Check each video with ffprobe (has video + audio, 50–120 s).
 4. Run `python3 scripts/build_site.py` to regenerate `notes/` and the course table in the root `README.md` (never hand-edit the table between the `COURSE-TABLE` markers). Then commit and push the specs, videos, notes and README to `main`. Public URL pattern:
    `https://raw.githubusercontent.com/Odugbile1993/openfraudlab-tiktok/main/videos/<file>.mp4`
-5. Schedule each in Metricool (brand blogId `7180686`, timezone `Africa/Lagos`, provider `tiktok`) at 08:00, 13:00 and 20:00 Lagos time the same day, with `autoPublish: true`, `tiktokData.title` (REQUIRED — e.g. "Lesson N: <short title>"), `tiktokData.isAigc: true`, `privacyOption: PUBLIC_TO_EVERYONE`, media = the raw GitHub URL, and a caption (see below). Metricool copies the video to its own storage when you schedule, so the push in step 4 must finish first.
+5. Schedule each in Metricool (brand blogId `7180686`, timezone `Africa/Lagos`, provider `tiktok`) at 13:00 Lagos time the same day (if that has passed, 30 minutes from now). Before scheduling, call getScheduledPosts for the current month: if any post this month shows "You have reached your Metricool account limit", don't schedule; tell Ayodele instead, with `autoPublish: true`, `tiktokData.title` (REQUIRED — e.g. "Lesson N: <short title>"), `tiktokData.isAigc: true`, `privacyOption: PUBLIC_TO_EVERYONE`, media = the raw GitHub URL, and a caption (see below). Metricool copies the video to its own storage when you schedule, so the push in step 4 must finish first.
 6. **Academy lessons are not part of this pipeline.** Full-length Academy lessons, their notes, exercises, solutions, quizzes and videos live in the private repo `OpenFraudLabs/openfraudlab-academy` and in Supabase. Never add lesson scripts, solutions, quiz answers or long-form videos to this public repo.
-7. Bump `state.json` → `next_lesson` = N+3, add the scheduled posts to `log`, commit and push.
+7. Update `state.json`: `next_lesson` = N+1 if you made a new lesson; add the scheduled post to `log`. At the start of each run, check the previous run's post with getScheduledPosts: if it shows PUBLISHED, set `posted_through` to that lesson; if it shows an ERROR, leave `posted_through` alone and report it. Commit and push.
 
 ## Website
 The Open Fraud Labs Academy at https://openfraudlabs.com/academy/ (repo OpenFraudLabs/lab-docs) reads `curriculum.json` and `state.json` from this repo for its course outline. Lesson content is private (see step 6). The practice datasets in `data/` are public and loaded by the in-browser code lab, so keep their paths stable.
@@ -36,7 +38,7 @@ Professional, confident, beginner-friendly tone (a data professional teaching, n
 ```
 Lesson N · <Title> | Data Science from Scratch
 <One-sentence takeaway a beginner gets from this lesson.>
-Follow @_drhola for 3 data science lessons a day 📊 Like & share if this helped.
+Follow @_drhola for new data science lessons every week 📊 Like & share if this helped.
 
 #datascience #machinelearning #learnontiktok <2–3 topical tags> #datasciencefromscratch #OpenFraudLab
 ```
