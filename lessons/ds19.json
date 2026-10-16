@@ -1,0 +1,68 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 19,
+ "slides": [
+  {
+   "tag": "LESSON 19",
+   "text": "Linear regression",
+   "sub": "Drawing the best straight line",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson nineteen: linear regression, the intuition behind one of the oldest and most useful models in data science."
+  },
+  {
+   "tag": "THE IDEA",
+   "text": "Fit a straight line",
+   "size": 80,
+   "say": "Linear regression predicts a number by fitting a straight line through your data. For example, predicting a loan amount from a customer's income."
+  },
+  {
+   "tag": "THE FORMULA",
+   "text": "y = a + b·x",
+   "sub": "Intercept plus slope times x",
+   "size": 80,
+   "say": "The line has two parts. The intercept, a, is where the line starts when x is zero. The slope, b, is how much y changes when x goes up by one."
+  },
+  {
+   "tag": "BEST FIT",
+   "text": "Smallest squared errors",
+   "sub": "Least squares",
+   "size": 80,
+   "say": "How does it choose the line? The usual method, called least squares, picks the line that makes the squared gaps between the points and the line as small as possible."
+  },
+  {
+   "tag": "READ THE SLOPE",
+   "text": "Slope = change per unit",
+   "sub": "Easy to explain",
+   "size": 80,
+   "say": "If the slope is two hundred, each extra unit of x adds about two hundred to the prediction, on average. That makes the model easy to explain to others."
+  },
+  {
+   "tag": "MORE INPUTS",
+   "text": "Many features, one line",
+   "size": 80,
+   "say": "You can use many inputs at once, like income, age and loan term. This is called multiple regression, and each input gets its own slope."
+  },
+  {
+   "tag": "WATCH OUT",
+   "text": "Lines can't bend",
+   "sub": "Plot your data first",
+   "size": 80,
+   "say": "The catch: it assumes a roughly straight-line relationship. If the real pattern curves, or there are big outliers, the line can mislead you. Always plot your data first."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Classification",
+   "size": 80,
+   "say": "Next lesson: classification, and logistic regression, for predicting yes or no answers like fraud or not fraud."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Linear regression predicts a number by fitting the straight line y = a + b·x that minimises squared errors (least squares). The slope tells you how much the prediction changes per unit of x, but the method assumes a roughly straight-line relationship, so plot your data first.",
+ "practice": "Write down five pairs of (hours studied, test score) from imagination or your own life, plot them on paper, and draw the straight line you think fits best. Estimate its slope: how many points does one extra hour add?"
+}

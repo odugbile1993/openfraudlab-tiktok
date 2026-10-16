@@ -1,0 +1,67 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 21,
+ "slides": [
+  {
+   "tag": "LESSON 21",
+   "text": "Overfitting vs underfitting",
+   "sub": "Too clever or too simple",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson twenty one: overfitting versus underfitting."
+  },
+  {
+   "tag": "THE GOAL",
+   "text": "Generalise to new data",
+   "size": 80,
+   "say": "A good model learns patterns that hold on new data it has never seen, not just on the data it was trained on. That's called generalising."
+  },
+  {
+   "tag": "UNDERFITTING",
+   "text": "Too simple",
+   "sub": "Bad on train and test",
+   "size": 80,
+   "say": "Underfitting means the model is too simple to capture the real pattern, like fitting a straight line to a clear curve. It does badly on training data and on test data."
+  },
+  {
+   "tag": "OVERFITTING",
+   "text": "Too clever",
+   "sub": "Great on train, poor on test",
+   "size": 80,
+   "say": "Overfitting is the opposite. The model is so flexible it memorises the noise in the training data. It scores brilliantly in training, then disappoints on new data."
+  },
+  {
+   "tag": "HOW TO SPOT IT",
+   "text": "Compare train vs test",
+   "sub": "Watch the gap",
+   "size": 80,
+   "say": "This is where your test set from lesson eighteen pays off. A big gap between training and test scores usually signals overfitting. Low scores on both usually signal underfitting."
+  },
+  {
+   "tag": "FIX OVERFITTING",
+   "text": "Simplify or add data",
+   "size": 80,
+   "say": "To reduce overfitting, you can simplify the model, get more training data, use regularisation to penalise complexity, or check performance with cross validation."
+  },
+  {
+   "tag": "FIX UNDERFITTING",
+   "text": "Add signal",
+   "size": 80,
+   "say": "To fix underfitting, give the model more to work with: better features, or a more flexible model."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Why accuracy can lie",
+   "size": 80,
+   "say": "Next lesson: why accuracy can lie, especially when fraud is rare."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Underfitting means a model is too simple and does poorly on both training and test data; overfitting means it memorises noise, scoring well on training data but poorly on new data. Comparing training and test scores is the usual way to tell them apart.",
+ "practice": "A model scores 99% on its training data and 70% on its test data. A second model scores 72% on both. Write down which one is likely overfitting, which may be underfitting, and one thing you would try to improve each."
+}

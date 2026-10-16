@@ -1,0 +1,69 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 20,
+ "slides": [
+  {
+   "tag": "LESSON 20",
+   "text": "Classification",
+   "sub": "Predicting yes or no",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson twenty: classification, and logistic regression."
+  },
+  {
+   "tag": "THE TASK",
+   "text": "Pick a category",
+   "sub": "Fraud or not fraud?",
+   "size": 80,
+   "say": "Regression predicts a number. Classification predicts a category. Is this transaction fraud or not? Will this customer repay the loan or default?"
+  },
+  {
+   "tag": "WHY NOT A LINE",
+   "text": "Lines overshoot",
+   "sub": "Probabilities stay between 0 and 1",
+   "size": 80,
+   "say": "A straight line can predict values below zero or above one, which make no sense as probabilities. So we need a different shape."
+  },
+  {
+   "tag": "THE S-CURVE",
+   "text": "Sigmoid function",
+   "size": 80,
+   "say": "Logistic regression passes a straight-line score through an S-shaped curve called the sigmoid. That squeezes any score into a probability between zero and one."
+  },
+  {
+   "tag": "THE OUTPUT",
+   "text": "P(fraud) = 0.82",
+   "sub": "A probability, not a verdict",
+   "size": 80,
+   "say": "So the model doesn't just say yes or no. It gives a probability, like zero point eight two, meaning it rates this case as quite likely to be fraud."
+  },
+  {
+   "tag": "THRESHOLD",
+   "text": "Pick a cut-off",
+   "sub": "0.5 is common, not required",
+   "size": 80,
+   "say": "To make a decision, you choose a threshold. Above it, flag the case. Point five is common, but for fraud, teams often adjust it based on the cost of missed fraud versus false alarms."
+  },
+  {
+   "tag": "WHY IT'S LOVED",
+   "text": "Simple and explainable",
+   "sub": "Often a strong baseline",
+   "size": 80,
+   "say": "Logistic regression is fast, and its weights show which inputs push the probability up or down. That's why it's often used as a first model, especially in credit and finance."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Overfitting vs underfitting",
+   "size": 80,
+   "say": "Next lesson: overfitting versus underfitting, and why a model can be too clever or too simple."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Classification predicts a category, like fraud or not fraud. Logistic regression turns a straight-line score into a probability between 0 and 1 using the S-shaped sigmoid curve, then a chosen threshold turns that probability into a decision.",
+ "practice": "Imagine a model gives these fraud probabilities to five transactions: 0.10, 0.45, 0.55, 0.80, 0.95. Which ones get flagged with a 0.5 threshold? Which with 0.7? Write one sentence on why a bank might choose the higher threshold."
+}

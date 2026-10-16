@@ -103,9 +103,9 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | # | Lesson | Watch | Study notes |
 |:-:|:--|:-:|:-:|
 | 18 | Train/test split: why we hide data from the model | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-18.md) |
-| 19 | Linear regression intuition | 🔜 Soon | — |
-| 20 | Classification and logistic regression | 🔜 Soon | — |
-| 21 | Overfitting vs underfitting | 🔜 Soon | — |
+| 19 | Linear regression intuition | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-19.md) |
+| 20 | Classification and logistic regression | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-20.md) |
+| 21 | Overfitting vs underfitting | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-21.md) |
 | 22 | Why accuracy can lie | 🔜 Soon | — |
 | 23 | The confusion matrix, precision & recall | 🔜 Soon | — |
 | 24 | Decision trees | 🔜 Soon | — |
@@ -135,7 +135,7 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 38 | Project 3 · Part 2: City rents — exploring prices across the city | 🔜 Soon | — |
 | 39 | Project 3 · Part 3: City rents — a price model, error analysis and portfolio write-up | 🔜 Soon | — |
 
-<sub>18 of 39 planned lessons released · new lessons are added daily.</sub>
+<sub>21 of 39 planned lessons released · new lessons are added daily.</sub>
 <!-- COURSE-TABLE:END -->
 
 ## 🗺️ Roadmap
