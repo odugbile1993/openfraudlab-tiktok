@@ -116,13 +116,13 @@
     },
     {
       "lesson": 20,
-      "status": "scheduled via Metricool but expected to fail (October Free-plan limit reached); not counted as posted",
+      "status": "FAILED in Metricool: 'You have reached your Metricool account limit.' Not posted; video kept for re-posting.",
       "publish": "2026-10-16T13:00 Africa/Lagos",
       "metricool_id": 397421276
     },
     {
       "lesson": 21,
-      "status": "scheduled via Metricool but expected to fail (October Free-plan limit reached); not counted as posted",
+      "status": "FAILED in Metricool: 'You have reached your Metricool account limit.' Not posted; video kept for re-posting.",
       "publish": "2026-10-16T20:00 Africa/Lagos",
       "metricool_id": 397421296
     }
