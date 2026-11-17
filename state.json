@@ -111,9 +111,10 @@
     },
     {
       "lesson": 19,
-      "status": "FAILED in Metricool: 'You have reached your Metricool account limit.' Not posted; video kept for re-posting.",
+      "status": "PUBLISHED on TikTok (backlog re-post, Free plan cadence)",
       "publish": "2026-10-16T08:00 Africa/Lagos",
-      "metricool_id": 397421258
+      "metricool_id": 397421258,
+      "tiktok_url": "https://www.tiktok.com/@_drhola/video/7708738892513512756"
     },
     {
       "lesson": 20,
@@ -164,12 +165,19 @@
     },
     {
       "lesson": 19,
-      "status": "scheduled via Metricool (backlog, Free plan cadence)",
+      "status": "PUBLISHED on TikTok (backlog re-post, Free plan cadence)",
       "publish": "2026-11-16T13:00 Africa/Lagos",
-      "metricool_id": 429591155
+      "metricool_id": 429591155,
+      "tiktok_url": "https://www.tiktok.com/@_drhola/video/7708738892513512756"
+    },
+    {
+      "lesson": 20,
+      "status": "scheduled via Metricool (backlog, Free plan cadence)",
+      "publish": "2026-11-17T13:00 Africa/Lagos",
+      "metricool_id": 431003836
     }
   ],
   "academy_next": 40,
-  "posted_through": 18,
-  "posting_note": "Metricool Free plan (20 posts/month). Lessons 14-18 published (Nov 3, 5, 6, 12, 13). Lesson 19 scheduled Nov 16 13:00. Lessons 20-21 are rendered but unposted; they post next, 4 a week (Mon/Tue/Thu/Fri 13:00 Lagos), unless Ayodele uploads them manually (then raise posted_through)."
+  "posted_through": 19,
+  "posting_note": "Metricool Free plan (20 posts/month). Lessons 14-19 published (Nov 3, 5, 6, 12, 13, 16). Lesson 20 scheduled Nov 17 13:00. Lesson 21 is rendered but unposted; it posts next (Mon/Tue/Thu/Fri 13:00 Lagos), unless Ayodele uploads it manually (then raise posted_through)."
 }
