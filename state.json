@@ -176,9 +176,15 @@
       "publish": "2026-11-17T13:00 Africa/Lagos",
       "metricool_id": 431003836,
       "tiktok_url": "https://www.tiktok.com/@_drhola/video/7709110038287240456"
+    },
+    {
+      "lesson": 21,
+      "status": "scheduled via Metricool (backlog, Free plan cadence)",
+      "publish": "2026-11-19T13:00 Africa/Lagos",
+      "metricool_id": 433769293
     }
   ],
   "academy_next": 40,
   "posted_through": 20,
-  "posting_note": "Metricool Free plan (20 posts/month). Lessons 14-20 published (Nov 3, 5, 6, 12, 13, 16, 17). Lesson 21 is rendered but unposted; it posts next (Mon/Tue/Thu/Fri 13:00 Lagos), unless Ayodele uploads it manually (then raise posted_through)."
+  "posting_note": "Metricool Free plan (20 posts/month). Lessons 14-20 published (Nov 3, 5, 6, 12, 13, 16, 17); lesson 21 scheduled Nov 19 13:00 Lagos (verify PUBLISHED next run, then posted_through = 21). Lesson 22 is next to make and post (Mon/Tue/Thu/Fri 13:00 Lagos)."
 }
