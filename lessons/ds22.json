@@ -1,0 +1,70 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 22,
+ "slides": [
+  {
+   "tag": "LESSON 22",
+   "text": "Why accuracy can lie",
+   "sub": "The rare-class trap",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson twenty two: why accuracy can lie."
+  },
+  {
+   "tag": "ACCURACY",
+   "text": "Correct ÷ total",
+   "sub": "Share of right answers",
+   "size": 80,
+   "say": "Accuracy is the simplest score for a classifier: the number of correct predictions divided by the total number of predictions. It sounds like all you need. But it can fool you."
+  },
+  {
+   "tag": "IMAGINE",
+   "text": "1 fraud in 100",
+   "sub": "A made-up example",
+   "size": 80,
+   "say": "Imagine a made-up dataset of one hundred transactions where only one is fraud. In real fraud data, the fraud class is often this rare, or rarer."
+  },
+  {
+   "tag": "THE LAZY MODEL",
+   "text": "Always \"not fraud\"",
+   "size": 80,
+   "say": "Now build a lazy model that ignores the data and always predicts not fraud. It gets ninety nine of the hundred right."
+  },
+  {
+   "tag": "THE RESULT",
+   "text": "99% accurate",
+   "sub": "Catches zero fraud",
+   "size": 80,
+   "say": "That's ninety nine percent accuracy, and it catches exactly zero fraud. The one case you actually cared about slipped straight through."
+  },
+  {
+   "tag": "WHY",
+   "text": "Imbalanced classes",
+   "sub": "The majority class dominates",
+   "size": 80,
+   "say": "This happens with imbalanced classes. When one class is much bigger, accuracy is mostly a score on that big class, so it hides how the model does on the rare one."
+  },
+  {
+   "tag": "WHAT TO DO",
+   "text": "Check each class",
+   "sub": "Not just one number",
+   "size": 80,
+   "say": "So always check how many of each class there are, compare against a simple baseline like always guessing the majority, and look at how the model does on the rare class itself."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Precision & recall",
+   "sub": "The confusion matrix",
+   "size": 80,
+   "say": "Next lesson: the confusion matrix, precision and recall, the tools that show what accuracy hides."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Accuracy is the share of predictions a model gets right, but with imbalanced classes it can look excellent while the model misses every rare case. A model that always predicts the majority class sets the baseline any useful model must beat.",
+ "practice": "Out of 200 loan applications, 10 end in default. Work out the accuracy of a model that always predicts \"no default\", then write down how many defaults it catches and why that score is misleading."
+}
