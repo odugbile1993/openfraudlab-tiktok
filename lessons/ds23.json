@@ -1,0 +1,71 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 23,
+ "slides": [
+  {
+   "tag": "LESSON 23",
+   "text": "The confusion matrix",
+   "sub": "Precision and recall",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson twenty three: the confusion matrix, precision and recall."
+  },
+  {
+   "tag": "FOUR BOXES",
+   "text": "TP · FP · FN · TN",
+   "sub": "Every prediction lands in one",
+   "size": 80,
+   "say": "A confusion matrix sorts every prediction into four boxes. True positive: flagged as fraud, and it was fraud. False positive: flagged, but it was fine. False negative: fraud you missed. True negative: a normal case correctly left alone."
+  },
+  {
+   "tag": "PRECISION",
+   "text": "TP ÷ (TP + FP)",
+   "sub": "Of my alerts, how many were right?",
+   "size": 80,
+   "say": "Precision asks: of everything the model flagged, how much was really fraud? Low precision means lots of false alarms."
+  },
+  {
+   "tag": "RECALL",
+   "text": "TP ÷ (TP + FN)",
+   "sub": "Of real fraud, how much caught?",
+   "size": 80,
+   "say": "Recall asks: of all the real fraud, how much did the model catch? Low recall means fraud slipping through."
+  },
+  {
+   "tag": "EXAMPLE",
+   "text": "10 flagged, 8 real",
+   "sub": "A made-up example",
+   "size": 80,
+   "say": "A made-up example. There are twenty real fraud cases. The model flags ten, and eight are real. Precision is eight out of ten, eighty percent. Recall is eight out of twenty, just forty percent."
+  },
+  {
+   "tag": "THE TRADE-OFF",
+   "text": "Move the threshold",
+   "sub": "One usually rises, one falls",
+   "size": 80,
+   "say": "There's usually a trade-off. Lower the threshold and recall goes up, but false alarms rise, so precision often drops."
+  },
+  {
+   "tag": "WHICH MATTERS?",
+   "text": "Depends on the cost",
+   "sub": "Missed fraud vs false alarms",
+   "size": 80,
+   "say": "Which matters more depends on the cost of each mistake. Missed fraud loses money. Too many false alarms annoy honest customers and swamp reviewers."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Decision trees",
+   "sub": "Models that ask questions",
+   "size": 80,
+   "say": "Next lesson: decision trees, models that make predictions by asking a series of yes or no questions."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "A confusion matrix splits predictions into true positives, false positives, false negatives and true negatives. Precision measures how many flagged cases were real; recall measures how many real cases were caught, and moving the threshold usually trades one for the other.",
+ "practice": "A model reviews 500 transactions containing 25 real frauds. It flags 30, and 15 of those are real fraud. Fill in the four boxes of the confusion matrix, then calculate precision and recall."
+}
