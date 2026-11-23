@@ -194,11 +194,13 @@
     },
     {
       "lesson": 23,
-      "status": "rendered 2026-11-21 (Saturday: no post per Free-plan cadence); to schedule next posting day",
-      "video": "videos/ds23_confusion_matrix.mp4"
+      "status": "scheduled via Metricool (Free plan cadence)",
+      "video": "videos/ds23_confusion_matrix.mp4",
+      "publish": "2026-11-23T13:00 Africa/Lagos",
+      "metricool_id": 438291977
     }
   ],
   "academy_next": 40,
   "posted_through": 22,
-  "posting_note": "Metricool Free plan (20 posts/month). Lessons 14-22 published (Nov 3, 5, 6, 12, 13, 16, 17, 19, 20); 12 of 20 November posts used. Lesson 23 is rendered and is next to post (Mon/Tue/Thu/Fri 13:00 Lagos) - Monday Nov 23."
+  "posting_note": "Metricool Free plan (20 posts/month). Lessons 14-22 published (Nov 3, 5, 6, 12, 13, 16, 17, 19, 20); lesson 23 scheduled Mon Nov 23 13:00 Lagos; 13 of 20 November posts used. Next posting day Tue Nov 24: render lesson 24 (decision trees) once 23 is published."
 }
