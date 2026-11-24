@@ -1,5 +1,5 @@
 {
-  "next_lesson": 24,
+  "next_lesson": 25,
   "log": [
     {
       "lesson": 1,
@@ -194,13 +194,21 @@
     },
     {
       "lesson": 23,
-      "status": "scheduled via Metricool (Free plan cadence)",
+      "status": "PUBLISHED on TikTok (Free plan cadence)",
       "video": "videos/ds23_confusion_matrix.mp4",
       "publish": "2026-11-23T13:00 Africa/Lagos",
-      "metricool_id": 438291977
+      "metricool_id": 438291977,
+      "tiktok_url": "https://www.tiktok.com/@_drhola/video/7711336498745986325"
+    },
+    {
+      "lesson": 24,
+      "status": "scheduled via Metricool (Free plan cadence)",
+      "video": "videos/ds24_decision_trees.mp4",
+      "publish": "2026-11-24T13:00 Africa/Lagos",
+      "metricool_id": 439807775
     }
   ],
   "academy_next": 40,
-  "posted_through": 22,
-  "posting_note": "Metricool Free plan (20 posts/month). Lessons 14-22 published (Nov 3, 5, 6, 12, 13, 16, 17, 19, 20); lesson 23 scheduled Mon Nov 23 13:00 Lagos; 13 of 20 November posts used. Next posting day Tue Nov 24: render lesson 24 (decision trees) once 23 is published."
+  "posted_through": 23,
+  "posting_note": "Metricool Free plan (20 posts/month). Lessons 14-23 published (Nov 3, 5, 6, 12, 13, 16, 17, 19, 20, 23); lesson 24 scheduled Tue Nov 24 13:00 Lagos; 15 of 20 November posts used. Next posting day Thu Nov 26: render lesson 25 (feature engineering) once 24 is published."
 }
