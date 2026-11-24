@@ -1,0 +1,71 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 24,
+ "slides": [
+  {
+   "tag": "LESSON 24",
+   "text": "Decision trees",
+   "sub": "Models that ask questions",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson twenty four: decision trees, models that make predictions by asking questions."
+  },
+  {
+   "tag": "THE IDEA",
+   "text": "A flowchart of questions",
+   "sub": "Yes or no, step by step",
+   "size": 80,
+   "say": "A decision tree works like a flowchart. It asks a yes or no question about one feature, follows the answer down a branch, and keeps asking until it reaches a prediction."
+  },
+  {
+   "tag": "EXAMPLE",
+   "text": "Amount > 500?",
+   "sub": "A made-up fraud check",
+   "size": 80,
+   "say": "Here's a made-up example. Is the transaction amount over five hundred? If yes, is it from a new device? If yes again, flag it for review. If not, let it through."
+  },
+  {
+   "tag": "THE PARTS",
+   "text": "Root · branches · leaves",
+   "sub": "Leaves hold the prediction",
+   "size": 80,
+   "say": "The first question is the root. Each answer is a branch. The end points are leaves, and each leaf holds the prediction, like fraud or not fraud, or a number for regression."
+  },
+  {
+   "tag": "LEARNING SPLITS",
+   "text": "Purest groups win",
+   "sub": "Gini impurity or entropy",
+   "size": 80,
+   "say": "How does the tree choose its questions? During training, it tries many possible splits and picks the one that separates the classes most cleanly. Common measures of this are Gini impurity and entropy."
+  },
+  {
+   "tag": "STRENGTH",
+   "text": "Easy to explain",
+   "sub": "You can read the rules",
+   "size": 80,
+   "say": "A big strength: a small tree is easy to explain. You can read its rules out loud, which helps when a decision needs to be justified."
+  },
+  {
+   "tag": "WATCH OUT",
+   "text": "Deep trees overfit",
+   "sub": "Limit depth, test on new data",
+   "size": 80,
+   "say": "The catch: a tree allowed to grow too deep can memorise the training data. That's overfitting. Limiting the depth, or the minimum rows per leaf, usually helps, and you always check on a test set."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Feature engineering",
+   "sub": "Better inputs, better models",
+   "size": 80,
+   "say": "Next lesson: feature engineering, turning raw data into inputs your model can actually learn from."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "A decision tree predicts by asking a sequence of yes/no questions about the features, from the root down to a leaf that holds the prediction. Training picks the splits that best separate the classes; trees are easy to explain but can overfit if they grow too deep.",
+ "practice": "On paper, draw a decision tree with two questions that decides whether to bring an umbrella (for example: Is the sky cloudy? Is rain forecast?). Label the root, the branches and each leaf's prediction."
+}
