@@ -202,13 +202,14 @@
     },
     {
       "lesson": 24,
-      "status": "scheduled via Metricool (Free plan cadence)",
+      "status": "PUBLISHED on TikTok (Free plan cadence)",
       "video": "videos/ds24_decision_trees.mp4",
       "publish": "2026-11-24T13:00 Africa/Lagos",
-      "metricool_id": 439807775
+      "metricool_id": 439807775,
+      "tiktok_url": "https://www.tiktok.com/@_drhola/video/7711707621140516117"
     }
   ],
   "academy_next": 40,
-  "posted_through": 23,
-  "posting_note": "Metricool Free plan (20 posts/month). Lessons 14-23 published (Nov 3, 5, 6, 12, 13, 16, 17, 19, 20, 23); lesson 24 scheduled Tue Nov 24 13:00 Lagos; 15 of 20 November posts used. Next posting day Thu Nov 26: render lesson 25 (feature engineering) once 24 is published."
+  "posted_through": 24,
+  "posting_note": "Metricool Free plan (20 posts/month). Lessons 14-24 published (Nov 3, 5, 6, 12, 13, 16, 17, 19, 20, 23, 24); 14 November posts shown in Metricool (incl. 3 other Open Fraud Labs posts). Next posting day Thu Nov 26: render and schedule lesson 25 (all rendered lessons are now posted)."
 }
