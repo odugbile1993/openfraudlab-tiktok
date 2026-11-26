@@ -109,9 +109,9 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 22 | Why accuracy can lie | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-22.md) |
 | 23 | The confusion matrix, precision & recall | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-23.md) |
 | 24 | Decision trees | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-24.md) |
-| 25 | Feature engineering | 🔜 Soon | — |
-| 26 | Cross-validation | 🔜 Soon | — |
-| 27 | Imbalanced data: the fraud detection problem | 🔜 Soon | — |
+| 25 | Feature engineering | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-25.md) |
+| 26 | Cross-validation | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-26.md) |
+| 27 | Imbalanced data: the fraud detection problem | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-27.md) |
 
 #### Module 5 · Responsible Data Science & Next Steps
 
@@ -135,7 +135,7 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 38 | Project 3 · Part 2: City rents — exploring prices across the city | 🔜 Soon | — |
 | 39 | Project 3 · Part 3: City rents — a price model, error analysis and portfolio write-up | 🔜 Soon | — |
 
-<sub>24 of 39 planned lessons released · new lessons are added daily.</sub>
+<sub>27 of 39 planned lessons released · new lessons are added daily.</sub>
 <!-- COURSE-TABLE:END -->
 
 ## 🗺️ Roadmap

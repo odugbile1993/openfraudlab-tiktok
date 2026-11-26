@@ -1,0 +1,71 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 26,
+ "slides": [
+  {
+   "tag": "LESSON 26",
+   "text": "Cross-validation",
+   "sub": "A fairer test for models",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson twenty six: cross-validation, a fairer way to test your model."
+  },
+  {
+   "tag": "THE PROBLEM",
+   "text": "One split can mislead",
+   "sub": "Lucky or unlucky test sets",
+   "size": 80,
+   "say": "In lesson eighteen we split data into a training set and a test set. But one split can be lucky or unlucky. By chance, the test set might be unusually easy, or unusually hard, and your score moves with it."
+  },
+  {
+   "tag": "THE IDEA",
+   "text": "Test on every part",
+   "sub": "Rotate the held-out piece",
+   "size": 80,
+   "say": "Cross-validation fixes this by testing on several different parts of the data, then combining the results."
+  },
+  {
+   "tag": "K-FOLD",
+   "text": "Split into 5 folds",
+   "sub": "Train on 4, test on 1",
+   "size": 80,
+   "say": "The most common version is k-fold. With five folds, you split the data into five equal parts. Train on four, test on the one left out, and repeat five times, so every part gets a turn as the test set."
+  },
+  {
+   "tag": "THE RESULT",
+   "text": "Average and spread",
+   "sub": "Mean score and its variation",
+   "size": 80,
+   "say": "You get five scores. Their average is a more stable estimate of performance, and how much they vary tells you how far to trust it."
+  },
+  {
+   "tag": "RARE CLASSES",
+   "text": "Stratified folds",
+   "sub": "Same class balance per fold",
+   "size": 80,
+   "say": "When one class is rare, like fraud, use stratified folds. They keep roughly the same share of each class in every fold, so no fold ends up with almost no fraud cases."
+  },
+  {
+   "tag": "WATCH OUT",
+   "text": "Keep a final test set",
+   "sub": "Do data prep inside each fold",
+   "size": 80,
+   "say": "Two cautions. Fit steps like scaling inside each fold, using only that fold's training data, to avoid leakage. And if you use cross-validation to tune your model, keep a separate final test set for an honest last check. For time-ordered data, use splits that respect time."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Imbalanced data",
+   "sub": "The fraud detection problem",
+   "size": 80,
+   "say": "Next lesson: imbalanced data, and why it sits at the heart of fraud detection."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Cross-validation tests a model on several different splits of the data and averages the scores, giving a more stable estimate than a single train/test split. Stratified folds keep rare classes represented in every fold.",
+ "practice": "Write the numbers 1 to 10 on paper and split them into 5 folds of 2. For each of the 5 rounds, write which numbers are used for training and which for testing, then check that every number was tested exactly once."
+}

@@ -1,0 +1,71 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 27,
+ "slides": [
+  {
+   "tag": "LESSON 27",
+   "text": "Imbalanced data",
+   "sub": "The fraud detection problem",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson twenty seven: imbalanced data, the core problem in fraud detection."
+  },
+  {
+   "tag": "THE PROBLEM",
+   "text": "Fraud is rare",
+   "sub": "Few positives, many negatives",
+   "size": 80,
+   "say": "In many fraud datasets, fraud cases are a tiny share of all transactions, often less than one percent. When one class is that rare, we call the data imbalanced."
+  },
+  {
+   "tag": "WHY IT HURTS",
+   "text": "Models ignore the minority",
+   "sub": "Accuracy hides the misses",
+   "size": 80,
+   "say": "A model trained on this data can learn that predicting not fraud is almost always a safe bet. As we saw in lesson twenty two, accuracy then looks great while real fraud slips through."
+  },
+  {
+   "tag": "MEASURE RIGHT",
+   "text": "Use precision and recall",
+   "sub": "Not plain accuracy",
+   "size": 80,
+   "say": "So first, measure the right thing. Track precision and recall from lesson twenty three, or the area under the precision recall curve, instead of plain accuracy."
+  },
+  {
+   "tag": "RESAMPLING",
+   "text": "Rebalance training data",
+   "sub": "Oversample the rare class",
+   "size": 80,
+   "say": "Second, you can rebalance the training data. Oversampling repeats or creates extra fraud examples, for example with a method called SMOTE. Undersampling keeps fewer normal examples. Only do this to the training data, never the test set."
+  },
+  {
+   "tag": "CLASS WEIGHTS",
+   "text": "Make misses cost more",
+   "sub": "Weight the rare class higher",
+   "size": 80,
+   "say": "Third, use class weights. Many libraries, including scikit-learn, let you tell the model that missing a fraud case costs more than a false alarm, so it pays more attention to the rare class."
+  },
+  {
+   "tag": "THRESHOLDS",
+   "text": "Tune the threshold",
+   "sub": "Fewer misses or fewer alarms",
+   "size": 80,
+   "say": "Finally, adjust the decision threshold. A lower threshold usually catches more fraud, but raises more false alarms. The right balance depends on the cost of each mistake, and how many alerts your team can review."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Explainable AI",
+   "sub": "Why did the model decide that?",
+   "size": 80,
+   "say": "Next lesson: explainable AI. Why did the model decide that?"
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "In imbalanced data one class, like fraud, is rare, so models can ignore it and accuracy hides the misses. Measure with precision and recall, rebalance only the training data, use class weights, and tune the decision threshold.",
+ "practice": "Imagine 1,000 transactions that include 5 frauds. Work out the accuracy of a model that always says 'not fraud', then its recall for fraud. Write one sentence explaining why accuracy alone is misleading here."
+}
