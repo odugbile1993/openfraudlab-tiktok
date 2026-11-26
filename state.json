@@ -1,5 +1,5 @@
 {
-  "next_lesson": 25,
+  "next_lesson": 28,
   "log": [
     {
       "lesson": 1,
@@ -207,9 +207,30 @@
       "publish": "2026-11-24T13:00 Africa/Lagos",
       "metricool_id": 439807775,
       "tiktok_url": "https://www.tiktok.com/@_drhola/video/7711707621140516117"
+    },
+    {
+      "lesson": 25,
+      "status": "scheduled via Metricool",
+      "video": "videos/ds25_feature_engineering.mp4",
+      "publish": "2026-11-26T08:00 Africa/Lagos",
+      "metricool_id": 442657773
+    },
+    {
+      "lesson": 26,
+      "status": "scheduled via Metricool",
+      "video": "videos/ds26_cross_validation.mp4",
+      "publish": "2026-11-26T13:00 Africa/Lagos",
+      "metricool_id": 442657797
+    },
+    {
+      "lesson": 27,
+      "status": "scheduled via Metricool",
+      "video": "videos/ds27_imbalanced_data.mp4",
+      "publish": "2026-11-26T20:00 Africa/Lagos",
+      "metricool_id": 442657819
     }
   ],
   "academy_next": 40,
   "posted_through": 24,
-  "posting_note": "Metricool Free plan (20 posts/month). Lessons 14-24 published (Nov 3, 5, 6, 12, 13, 16, 17, 19, 20, 23, 24); 14 November posts shown in Metricool (incl. 3 other Open Fraud Labs posts). Next posting day Thu Nov 26: render and schedule lesson 25 (all rendered lessons are now posted)."
+  "posting_note": "Metricool Free plan (20 posts/month). Nov 26 run scheduled lessons 25-27 (08:00, 13:00, 20:00 Lagos), bringing November to 17 posts in Metricool (incl. 3 other Open Fraud Labs posts); 3 left this month. Next run: confirm 25-27 published and set posted_through."
 }
