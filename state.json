@@ -1,5 +1,5 @@
 {
-  "next_lesson": 28,
+  "next_lesson": 31,
   "log": [
     {
       "lesson": 1,
@@ -210,27 +210,51 @@
     },
     {
       "lesson": 25,
-      "status": "scheduled via Metricool",
+      "status": "PUBLISHED on TikTok (Free plan cadence)",
       "video": "videos/ds25_feature_engineering.mp4",
       "publish": "2026-11-26T08:00 Africa/Lagos",
-      "metricool_id": 442657773
+      "metricool_id": 442657773,
+      "tiktok_url": "https://www.tiktok.com/@_drhola/video/7712372361055554837"
     },
     {
       "lesson": 26,
-      "status": "scheduled via Metricool",
+      "status": "PUBLISHED on TikTok (Free plan cadence)",
       "video": "videos/ds26_cross_validation.mp4",
       "publish": "2026-11-26T13:00 Africa/Lagos",
-      "metricool_id": 442657797
+      "metricool_id": 442657797,
+      "tiktok_url": "https://www.tiktok.com/@_drhola/video/7712449896191757588"
     },
     {
       "lesson": 27,
-      "status": "scheduled via Metricool",
+      "status": "PUBLISHED on TikTok (Free plan cadence)",
       "video": "videos/ds27_imbalanced_data.mp4",
       "publish": "2026-11-26T20:00 Africa/Lagos",
-      "metricool_id": 442657819
+      "metricool_id": 442657819,
+      "tiktok_url": "https://www.tiktok.com/@_drhola/video/7712558134396587271"
+    },
+    {
+      "lesson": 28,
+      "status": "scheduled via Metricool",
+      "video": "videos/ds28_explainable_ai.mp4",
+      "publish": "2026-11-27T08:00 Africa/Lagos",
+      "metricool_id": 443935441
+    },
+    {
+      "lesson": 29,
+      "status": "scheduled via Metricool",
+      "video": "videos/ds29_data_ethics.mp4",
+      "publish": "2026-11-27T13:00 Africa/Lagos",
+      "metricool_id": 443935453
+    },
+    {
+      "lesson": 30,
+      "status": "scheduled via Metricool",
+      "video": "videos/ds30_roadmap.mp4",
+      "publish": "2026-11-27T20:00 Africa/Lagos",
+      "metricool_id": 443935469
     }
   ],
   "academy_next": 40,
-  "posted_through": 24,
-  "posting_note": "Metricool Free plan (20 posts/month). Nov 26 run scheduled lessons 25-27 (08:00, 13:00, 20:00 Lagos), bringing November to 17 posts in Metricool (incl. 3 other Open Fraud Labs posts); 3 left this month. Next run: confirm 25-27 published and set posted_through."
+  "posted_through": 27,
+  "posting_note": "Metricool Free plan (20 posts/month). Nov 27 run scheduled lessons 28-30 (08:00, 13:00, 20:00 Lagos), bringing November to 20 posts in Metricool (incl. 3 other Open Fraud Labs posts): the November quota is now used up. Next run: confirm 28-30 published and set posted_through."
 }
