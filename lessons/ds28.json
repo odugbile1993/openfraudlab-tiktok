@@ -1,0 +1,71 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 28,
+ "slides": [
+  {
+   "tag": "LESSON 28",
+   "text": "Explainable AI",
+   "sub": "Why did the model decide that?",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson twenty eight: explainable AI. Why did the model decide that?"
+  },
+  {
+   "tag": "THE QUESTION",
+   "text": "Not just what, but why",
+   "sub": "Trust needs reasons",
+   "size": 80,
+   "say": "A model flags a transaction as fraud, or declines a loan. The next question is always: why? If nobody can answer, it is hard to trust the model, fix it, or explain the decision to a customer."
+  },
+  {
+   "tag": "GLASS BOX",
+   "text": "Some models explain themselves",
+   "sub": "Linear models, small trees",
+   "size": 80,
+   "say": "Some models are fairly easy to read. In linear or logistic regression, each feature has a weight. A small decision tree is a set of yes or no rules you can follow by hand."
+  },
+  {
+   "tag": "BLACK BOX",
+   "text": "Others are harder",
+   "sub": "Big ensembles, neural networks",
+   "size": 80,
+   "say": "Others, like large tree ensembles or neural networks, often predict better, but their reasoning is spread across thousands of steps. For these, we use explanation tools after training."
+  },
+  {
+   "tag": "GLOBAL VIEW",
+   "text": "Feature importance",
+   "sub": "Which inputs matter overall?",
+   "size": 80,
+   "say": "A global explanation asks which features matter most across all predictions. Feature importance, or permutation importance, which shuffles one feature and measures how much the score drops, are common ways to see this."
+  },
+  {
+   "tag": "LOCAL VIEW",
+   "text": "Explain one prediction",
+   "sub": "SHAP · LIME",
+   "size": 80,
+   "say": "A local explanation asks why the model made one specific decision. Tools such as SHAP and LIME estimate how much each feature pushed this one prediction up or down. For example: a large amount at three a.m. from a new device raised the fraud score."
+  },
+  {
+   "tag": "CAUTION",
+   "text": "Explanations aren't causes",
+   "sub": "They describe the model",
+   "size": 80,
+   "say": "One warning. These tools explain what the model learned, not what causes fraud in the real world. If the data is biased, the explanation will faithfully show you that bias."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Data ethics and bias",
+   "sub": "Fair models, responsible data",
+   "size": 80,
+   "say": "Next lesson: data ethics, and bias in models."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Explainable AI helps answer why a model made a decision. Simple models like linear regression and small trees are readable on their own; for complex models, use global tools like feature importance and local tools like SHAP or LIME, remembering they explain the model, not real-world causes.",
+ "practice": "Write down a simple fraud rule with three features, for example amount, hour of day and new device. For one made-up transaction, write a one-sentence explanation a customer could understand of why it was flagged."
+}

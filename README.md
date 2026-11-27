@@ -117,9 +117,9 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 
 | # | Lesson | Watch | Study notes |
 |:-:|:--|:-:|:-:|
-| 28 | Explainable AI: why did the model decide that? | 🔜 Soon | — |
-| 29 | Data ethics and bias in models | 🔜 Soon | — |
-| 30 | Your data science roadmap | 🔜 Soon | — |
+| 28 | Explainable AI: why did the model decide that? | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-28.md) |
+| 29 | Data ethics and bias in models | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-29.md) |
+| 30 | Your data science roadmap | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-30.md) |
 
 #### Module 6 · Going Further
 
@@ -135,7 +135,7 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 38 | Project 3 · Part 2: City rents — exploring prices across the city | 🔜 Soon | — |
 | 39 | Project 3 · Part 3: City rents — a price model, error analysis and portfolio write-up | 🔜 Soon | — |
 
-<sub>27 of 39 planned lessons released · new lessons are added daily.</sub>
+<sub>30 of 39 planned lessons released · new lessons are added daily.</sub>
 <!-- COURSE-TABLE:END -->
 
 ## 🗺️ Roadmap

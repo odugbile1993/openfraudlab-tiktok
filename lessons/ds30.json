@@ -1,0 +1,71 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 30,
+ "slides": [
+  {
+   "tag": "LESSON 30",
+   "text": "Your data science roadmap",
+   "sub": "Where to go from here",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson thirty: your data science roadmap, and where to go from here."
+  },
+  {
+   "tag": "LOOK BACK",
+   "text": "You've covered a lot",
+   "sub": "Data, stats, models, ethics",
+   "size": 80,
+   "say": "Look how far you've come. You've learned data types, statistics, cleaning, charts, Python, SQL, models, evaluation, and ethics. That is the core of the field."
+  },
+  {
+   "tag": "STEP 1",
+   "text": "Practise the basics",
+   "sub": "Python · SQL · statistics",
+   "size": 80,
+   "say": "Step one: keep practising the foundations. Short, regular sessions with Python, pandas, SQL, and basic statistics usually beat occasional long ones."
+  },
+  {
+   "tag": "STEP 2",
+   "text": "Do real projects",
+   "sub": "Question → data → answer",
+   "size": 80,
+   "say": "Step two: do projects. Pick a real question, find a dataset, clean it, explore it, model it if needed, and write up what you found. Projects are where the ideas join together."
+  },
+  {
+   "tag": "STEP 3",
+   "text": "Explain your work",
+   "sub": "Charts · plain words",
+   "size": 80,
+   "say": "Step three: practise communicating. A good analysis that nobody understands has little impact. Explain your results in plain words, with one clear chart."
+  },
+  {
+   "tag": "STEP 4",
+   "text": "Build a portfolio",
+   "sub": "Show, don't just tell",
+   "size": 80,
+   "say": "Step four: share your work. Put your projects on GitHub, or write short posts about them. A small portfolio often says more than a list of courses."
+  },
+  {
+   "tag": "TAKEAWAY",
+   "text": "Consistency over speed",
+   "sub": "Small steps, every week",
+   "size": 80,
+   "say": "The real secret is consistency. Small steps, every week, add up faster than you might expect."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Project 1: Credit risk",
+   "sub": "Framing the problem",
+   "size": 80,
+   "say": "Next lesson, we start project one: credit risk. Framing the problem, and preparing the data."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "You have covered the core of data science, from data types to models and ethics. Next: practise Python, SQL and statistics regularly, do real projects, explain your results clearly, and share them in a portfolio.",
+ "practice": "Write a one-page plan: one question you want to answer with data, where you might find a dataset for it, and three steps you will take this week to start."
+}
