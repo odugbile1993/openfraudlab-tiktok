@@ -1,0 +1,71 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 31,
+ "slides": [
+  {
+   "tag": "LESSON 31",
+   "text": "Project 1: Credit risk",
+   "sub": "Framing the problem",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson thirty-one: project one, credit risk. Framing the problem, and preparing the data."
+  },
+  {
+   "tag": "THE QUESTION",
+   "text": "Will this loan default?",
+   "sub": "Predict risk at application",
+   "size": 80,
+   "say": "Every project starts with a clear question. Here it is: when someone applies for a loan, how likely are they to default? A lender can use that answer to decide who to approve."
+  },
+  {
+   "tag": "THE DATA",
+   "text": "3,000 loan applications",
+   "sub": "Synthetic practice data, 2024–2025",
+   "size": 80,
+   "say": "Our practice dataset has three thousand synthetic loan applications, from 2024 and 2025. Each row is one application, with income, existing debt, loan amount, employment, and repayment history."
+  },
+  {
+   "tag": "THE TARGET",
+   "text": "defaulted = 1 or 0",
+   "sub": "About 9% defaulted",
+   "size": 80,
+   "say": "The target column is called defaulted: one if the loan went bad, zero if it didn't. Only about nine percent defaulted, so this is an imbalanced problem, like the ones in lesson twenty-seven."
+  },
+  {
+   "tag": "NO LEAKAGE",
+   "text": "Only what's known at application",
+   "sub": "No future information",
+   "size": 80,
+   "say": "A key rule: only use information you would actually have on the day someone applies. Anything recorded after the loan was given would leak the answer, and make the model look better than it really is."
+  },
+  {
+   "tag": "MISSING VALUES",
+   "text": "Check, then fill",
+   "sub": "Employment, months at employer",
+   "size": 80,
+   "say": "Next, check for missing values. A few columns, like employment type and months at employer, have gaps. Fill them with a sensible value, like the median, or an unknown category, and write down what you did."
+  },
+  {
+   "tag": "NEW FEATURE",
+   "text": "Debt-to-income ratio",
+   "sub": "Repayments ÷ income",
+   "size": 80,
+   "say": "Then build a useful feature: the debt to income ratio. That's monthly repayments, including existing debt, divided by monthly income. Lenders often use a measure like this to judge affordability."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "What drives default?",
+   "sub": "Project 1 · Part 2",
+   "size": 80,
+   "say": "Next lesson: part two of the project. Exploring the data, to see what drives default."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "A data science project starts with a clear question. Here we predict loan default at application time, using a synthetic dataset of 3,000 applications: we define the target, avoid leakage, handle missing values and build a debt-to-income feature.",
+ "practice": "Imagine you are a lender. Write down 5 pieces of information you would know on the day someone applies for a loan, and 2 pieces you would only know later. Explain why the later ones must not be used to predict default."
+}

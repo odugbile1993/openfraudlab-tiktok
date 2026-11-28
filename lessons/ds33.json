@@ -1,0 +1,71 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 33,
+ "slides": [
+  {
+   "tag": "LESSON 33",
+   "text": "A default model",
+   "sub": "Project 1 · Part 3",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson thirty-three: project one, part three. A default model, and an approval policy."
+  },
+  {
+   "tag": "SPLIT BY TIME",
+   "text": "Train 2024, test 2025",
+   "sub": "Past → future",
+   "size": 80,
+   "say": "First, split by time. Train on the 2024 applications, and test on 2025. That mimics real life: you build a model on the past, then use it on new applicants."
+  },
+  {
+   "tag": "THE MODEL",
+   "text": "Logistic regression",
+   "sub": "A probability of default",
+   "size": 80,
+   "say": "We start with logistic regression, from lesson twenty. It turns features like debt to income and past late payments into a probability of default for each applicant."
+  },
+  {
+   "tag": "HOW GOOD?",
+   "text": "AUC ≈ 0.72",
+   "sub": "0.5 = guessing · 1 = perfect",
+   "size": 80,
+   "say": "To measure how well it ranks applicants, we use AUC. Zero point five is no better than guessing, and one is perfect. Our simple model scored about zero point seven two on the 2025 test set. Useful, but far from perfect."
+  },
+  {
+   "tag": "SCORE TO POLICY",
+   "text": "Pick a cut-off",
+   "sub": "Decline or review the riskiest",
+   "size": 80,
+   "say": "A probability isn't a decision. The lender needs a policy. For example: decline, or manually review, the riskiest twenty percent of applicants."
+  },
+  {
+   "tag": "THE TRADE-OFF",
+   "text": "Fewer defaults, fewer loans",
+   "sub": "Riskiest 20%: about half of defaults",
+   "size": 80,
+   "say": "In our test, the riskiest twenty percent of applicants held about half of all the defaults. But that cut-off also turns away many good customers. The right choice depends on what a default costs, compared with a lost good loan."
+  },
+  {
+   "tag": "WRITE IT UP",
+   "text": "Explain your decision",
+   "sub": "Question · data · method · limits",
+   "size": 80,
+   "say": "Finally, write it up: the question, the data, how you tested the model, the policy you'd suggest, and its limits. That write-up is what turns this into a portfolio project."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Project 2: Clinic no-shows",
+   "sub": "Framing the problem",
+   "size": 80,
+   "say": "Next lesson, we start project two: clinic no-shows. Framing the problem, and preparing the data."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "Split by time (train on the past, test on the future), fit a logistic regression to get default probabilities, check ranking quality with AUC, then turn scores into an approval policy by choosing a cut-off that balances missed defaults against lost good customers.",
+ "practice": "A lender loses 1,000 when a loan defaults and earns 150 on a loan that is repaid. Out of 100 applicants, a cut-off would decline 20 people: 5 who would default and 15 who would repay. Work out whether declining that group gains or loses money overall."
+}

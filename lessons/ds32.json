@@ -1,0 +1,71 @@
+{
+ "series": "Data Science from Scratch",
+ "lesson": 32,
+ "slides": [
+  {
+   "tag": "LESSON 32",
+   "text": "What drives default?",
+   "sub": "Project 1 · Part 2",
+   "size": 88,
+   "say": "Data Science from Scratch, lesson thirty-two: project one, part two. Credit risk: what drives default?"
+  },
+  {
+   "tag": "START SIMPLE",
+   "text": "Default rate by group",
+   "sub": "Group, then average",
+   "size": 80,
+   "say": "Exploring a target like default usually starts simple. Split the applications into groups, then compare the default rate in each group."
+  },
+  {
+   "tag": "IN PANDAS",
+   "text": "groupby + mean",
+   "sub": "Mean of 0/1 = rate",
+   "size": 80,
+   "say": "In pandas, that's a groupby, followed by the mean of the defaulted column. Because defaulted is zero or one, its mean is simply the default rate for each group."
+  },
+  {
+   "tag": "AFFORDABILITY",
+   "text": "Higher DTI, more defaults",
+   "sub": "Top quarter: about 17%",
+   "size": 80,
+   "say": "Start with debt to income. Split it into four equal groups. In our practice data, the lowest quarter defaults about four percent of the time, and the highest quarter about seventeen percent."
+  },
+  {
+   "tag": "HISTORY",
+   "text": "Past late payments matter",
+   "sub": "None: about 7% default",
+   "size": 80,
+   "say": "Repayment history matters too. Applicants with no previous late payments default about seven percent of the time. With two late payments, it's nearer thirty percent, though that group is small."
+  },
+  {
+   "tag": "GROUP SIZE",
+   "text": "Count the rows",
+   "sub": "Few rows, noisy rates",
+   "size": 80,
+   "say": "So always check how many rows sit behind each rate. With only a dozen people in a group, one or two defaults can swing the rate a lot."
+  },
+  {
+   "tag": "CAUTION",
+   "text": "Pattern isn't cause",
+   "sub": "Synthetic data, for practice",
+   "size": 80,
+   "say": "And remember: these are patterns, not proof of cause. They tell us which features are worth giving to a model. This dataset is also synthetic, built for practice, so don't apply its numbers to real borrowers."
+  },
+  {
+   "tag": "NEXT LESSON",
+   "text": "Model and approval policy",
+   "sub": "Project 1 · Part 3",
+   "size": 80,
+   "say": "Next lesson: part three. A default model, and an approval policy."
+  },
+  {
+   "tag": "THANKS FOR WATCHING",
+   "text": "Follow, like & share for more",
+   "size": 92,
+   "sub": "Ayodele Odugbile · OpenFraudLab",
+   "say": "Follow, like, and share for more. This lesson was brought to you by Ayodele Odugbile, of OpenFraudLab."
+  }
+ ],
+ "summary": "To explore what drives a 0/1 target like default, group the data and compare the mean (the default rate) in each group. In the practice data, higher debt-to-income and past late payments go with more defaults, but always check group sizes and remember patterns are not proof of cause.",
+ "practice": "Make a small table of 10 imaginary loans with two columns: 'has late payments' (yes/no) and 'defaulted' (1/0). Work out the default rate for each group by hand, then ask yourself whether 10 rows is enough to trust the difference."
+}

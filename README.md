@@ -125,9 +125,9 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 
 | # | Lesson | Watch | Study notes |
 |:-:|:--|:-:|:-:|
-| 31 | Project 1 · Part 1: Credit risk — framing the problem and preparing the data | 🔜 Soon | — |
-| 32 | Project 1 · Part 2: Credit risk — what drives default? | 🔜 Soon | — |
-| 33 | Project 1 · Part 3: Credit risk — a default model and an approval policy | 🔜 Soon | — |
+| 31 | Project 1 · Part 1: Credit risk — framing the problem and preparing the data | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-31.md) |
+| 32 | Project 1 · Part 2: Credit risk — what drives default? | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-32.md) |
+| 33 | Project 1 · Part 3: Credit risk — a default model and an approval policy | [▶ Watch](https://www.tiktok.com/@_drhola) | [📝 Notes](notes/lesson-33.md) |
 | 34 | Project 2 · Part 1: Clinic no-shows — framing the problem and preparing the data | 🔜 Soon | — |
 | 35 | Project 2 · Part 2: Clinic no-shows — who misses appointments, and why? | 🔜 Soon | — |
 | 36 | Project 2 · Part 3: Clinic no-shows — predicting no-shows and targeting reminders | 🔜 Soon | — |
@@ -135,7 +135,7 @@ No prior coding or statistics knowledge is needed. Code arrives gradually, from 
 | 38 | Project 3 · Part 2: City rents — exploring prices across the city | 🔜 Soon | — |
 | 39 | Project 3 · Part 3: City rents — a price model, error analysis and portfolio write-up | 🔜 Soon | — |
 
-<sub>30 of 39 planned lessons released · new lessons are added daily.</sub>
+<sub>33 of 39 planned lessons released · new lessons are added daily.</sub>
 <!-- COURSE-TABLE:END -->
 
 ## 🗺️ Roadmap
